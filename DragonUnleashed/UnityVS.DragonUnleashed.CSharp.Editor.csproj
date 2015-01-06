@@ -81,11 +81,22 @@
     <Compile Include="Assets\Occulus\OVR\Editor\OVRShimLoader.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Art\Materials\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Art\Models\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Art\Particles\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Art\Textures\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Managers\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Networking\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Occulus\OVR\Fonts\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Occulus\OVR\Shaders\OVRGUIShader.shader" />
     <None Include="Assets\Occulus\OVR\Shaders\TextShader3D.shader" />
     <None Include="Assets\Occulus\Plugins\donotdelete.txt" />
     <None Include="Assets\Occulus\Plugins\x86\donotdelete.txt" />
     <None Include="Assets\Occulus\Plugins\x86_64\donotdelete.txt" />
+    <None Include="Assets\Prefabs\Environment\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Prefabs\Props\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Prefabs\UI\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\Sounds\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Unity Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.CSharp.targets" />
