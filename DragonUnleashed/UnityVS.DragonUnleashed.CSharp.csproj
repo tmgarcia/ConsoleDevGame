@@ -74,7 +74,6 @@
     <Compile Include="Assets\Unity Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Art\Materials\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Models\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Particles\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Textures\RemoveThisWhenFolderNotEmpty.txt" />
