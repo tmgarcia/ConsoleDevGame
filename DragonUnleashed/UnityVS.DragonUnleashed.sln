@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.DragonUnleashed.CSharp", "UnityVS.DragonUnleashed.CSharp.csproj", "{915294DB-C13E-F34C-692C-87F6744B4DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.DragonUnleashed.CSharp.Editor", "UnityVS.DragonUnleashed.CSharp.Editor.csproj", "{7306BD13-F7A4-8B23-5E9C-5C918F374B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{915294DB-C13E-F34C-692C-87F6744B4DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915294DB-C13E-F34C-692C-87F6744B4DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915294DB-C13E-F34C-692C-87F6744B4DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915294DB-C13E-F34C-692C-87F6744B4DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7306BD13-F7A4-8B23-5E9C-5C918F374B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7306BD13-F7A4-8B23-5E9C-5C918F374B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7306BD13-F7A4-8B23-5E9C-5C918F374B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7306BD13-F7A4-8B23-5E9C-5C918F374B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
