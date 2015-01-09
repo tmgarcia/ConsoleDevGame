@@ -63,6 +63,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Managers\RoomManager.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRCameraRig.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRCommon.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRDisplay.cs" />
