@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 	public PlayerRole Role = PlayerRole.Villager;
 	private Damageable damageable;
 	public bool IsAlive { get; set; }
+	public int StartingLivePool = 15;
+	public static int? LivePool = null;
 
 	void Start()
 	{
@@ -18,6 +20,12 @@ public class Player : MonoBehaviour
 			Debug.LogException(new UnityException("Player GameObject must contain Damageable script."));
 			Destroy(this);
 		}
+
+		if (LivePool == null)
+		{
+			LivePool = StartingLivePool;
+		}
+
 	}
 
 	void Update()

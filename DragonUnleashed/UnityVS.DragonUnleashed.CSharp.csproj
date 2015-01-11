@@ -69,7 +69,6 @@
     <Compile Include="Assets\FireBreathing.cs" />
     <Compile Include="Assets\FireParticleCollision.cs" />
     <Compile Include="Assets\Flammable.cs" />
-    <Compile Include="Assets\Managers\RoomManager.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRCameraRig.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRCommon.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\OVRDisplay.cs" />
@@ -86,6 +85,7 @@
     <Compile Include="Assets\Occulus\OVR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\Util\OVRUGUI.cs" />
     <Compile Include="Assets\Occulus\OVR\Scripts\Util\OVRVisionGuide.cs" />
+    <Compile Include="Assets\Occulus\OVR\Scripts\Util\PlayersManager.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />
@@ -194,12 +194,16 @@
     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+    <Compile Include="Assets\Scripts\BasePlayerScript.cs" />
     <Compile Include="Assets\Scripts\Damageable.cs" />
     <Compile Include="Assets\Scripts\DragonMovement.cs" />
+    <Compile Include="Assets\Scripts\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\GameSetupManager.cs" />
     <Compile Include="Assets\Scripts\NetworkAgent.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerRole.cs" />
     <Compile Include="Assets\Scripts\RespawnManager.cs" />
+    <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\VillagerMovement.cs" />
     <Compile Include="Assets\Unity Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
   </ItemGroup>
