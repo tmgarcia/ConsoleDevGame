@@ -1,58 +1,48 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flammable : MonoBehaviour {
+public class Flammable : Damageable
+{
+	private float BurninationLevel;
 
-	public float StartingIntegrity = 100.0f;
-
-	[HideInInspector]
-    public float Integrity;
-    private float BurninationLevel;
-
-	// Use this for initialization
-	void Start () {
-		Integrity = StartingIntegrity;
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (BurninationLevel > 0)
-        {
-            ReduceIntegrity();
-            ReduceBurnination();
-
-        }
-
+	void Start()
+	{
+		CurrentIntegrity = StartingIntegrity;
 	}
 
-    private void ReduceBurnination()
-    {
+	void Update()
+	{
+		if (BurninationLevel > 0)
+		{
+			ReduceIntegrity();
+			ReduceBurnination();
+		}
+	}
 
-        BurninationLevel -= (BurninationLevel * Time.deltaTime);
+	private void ReduceBurnination()
+	{
+		BurninationLevel -= (BurninationLevel * Time.deltaTime);
+	}
+	private void ReduceIntegrity()
+	{
+		CurrentIntegrity -= (BurninationLevel * Time.deltaTime);
+		print("CurrentIntegrity: " + CurrentIntegrity);
+		if (CurrentIntegrity <= 0)
+		{
+			Disintegrate();
+		}
+	}
 
-    }
-    private void ReduceIntegrity()
-    {
-        Integrity -= (BurninationLevel * Time.deltaTime);
-        print("Integrity: " + Integrity);
-        if (Integrity <= 0)
-        {
-            Disintegrate();
-        }
-    }
+	public void Burn(float flameIntensity)
+	{
+		//print("BURNINATING!!!!!!!!");
+		BurninationLevel += flameIntensity;
+	}
 
-    public void Burn(float flameIntensity)
-    {
-        //print("BURNINATING!!!!!!!!");
-        BurninationLevel += flameIntensity;
-    }
-
-    private void Disintegrate()
-    {
-        //create ash particle effect
-        //destroy object? Possibly replace with ash pile model
-        Destroy(this.gameObject);
-
-    }
+	private void Disintegrate()
+	{
+		//create ash particle effect
+		//destroy object? Possibly replace with ash pile model
+		Destroy(this.gameObject);
+	}
 }

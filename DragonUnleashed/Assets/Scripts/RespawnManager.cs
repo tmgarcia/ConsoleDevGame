@@ -14,11 +14,6 @@ public class RespawnManager : MonoBehaviour
 		}
 	}
 
-	void Update()
-	{
-		Respawn(gameObject);
-	}
-
 	public void Respawn(GameObject character)
 	{
 		if (RespawnPoints.Count < 1)

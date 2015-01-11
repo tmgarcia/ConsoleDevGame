@@ -5,28 +5,24 @@ using System.Linq;
 public class Player : MonoBehaviour
 {
 	public PlayerRole Role = PlayerRole.Villager;
-	private Flammable flammable;
+	private Damageable damageable;
+	public bool IsAlive { get; set; }
 
-	[HideInInspector]
-	public bool IsAlive;
-
-
-	// Use this for initialization
 	void Start()
 	{
-		flammable = GetComponent<Flammable>();
+		IsAlive = true;
+		damageable = GetComponent<Damageable>();
 
-		if (flammable == null)
+		if (damageable == null)
 		{
-			Debug.LogException(new UnityException("Player GameObject must contain Flammable script."));
+			Debug.LogException(new UnityException("Player GameObject must contain Damageable script."));
 			Destroy(this);
 		}
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
-		if (flammable.Integrity <= float.Epsilon && IsAlive)
+		if (damageable.CurrentIntegrity <= float.Epsilon && IsAlive)
 		{
 			OnDeath();
 		}
@@ -37,7 +33,7 @@ public class Player : MonoBehaviour
 		if (Role == PlayerRole.Villager)
 		{
 			RespawnManager.instance.Respawn(gameObject);
-			flammable.Integrity = flammable.StartingIntegrity;
+			damageable.CurrentIntegrity = damageable.StartingIntegrity;
 		}
 		else if (Role == PlayerRole.Dragon)
 		{
