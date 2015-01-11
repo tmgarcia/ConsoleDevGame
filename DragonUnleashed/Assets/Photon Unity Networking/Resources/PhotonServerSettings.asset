@@ -33,4 +33,7 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupTimes
   - TaggedPlayer
+  - MovePlayerToHiders
+  - MovePlayerLabelToHiders
+  - MovePlayerLabelToSeekers
   DisableAutoOpenWizard: 0
