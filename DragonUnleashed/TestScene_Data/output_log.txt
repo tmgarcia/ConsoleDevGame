@@ -1,0 +1,29 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.4052]
+    Renderer: NVIDIA Quadro 2000M 
+    Vendor:   NVIDIA
+    VRAM:     1998 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\System.dll (this message is harmless)
+Update() was called by Unity. Scene is loaded. Let's connect to the Photon Master Server. Calling: PhotonNetwork.ConnectUsingSettings();
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

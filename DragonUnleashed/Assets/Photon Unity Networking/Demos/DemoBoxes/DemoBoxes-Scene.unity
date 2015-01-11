@@ -284,6 +284,8 @@ MonoBehaviour:
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
+  ObservedComponents: []
+  ObservedComponentsFoldoutOpen: 1
   viewIdField: 1
   instantiationId: 1
 --- !u!114 &696397978
