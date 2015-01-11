@@ -3,12 +3,15 @@ using System.Collections;
 
 public class Flammable : MonoBehaviour {
 
-    private float Integrity;
+	public float StartingIntegrity = 100.0f;
+
+	[HideInInspector]
+    public float Integrity;
     private float BurninationLevel;
 
 	// Use this for initialization
 	void Start () {
-        Integrity = 100.0f;
+		Integrity = StartingIntegrity;
 
 	}
 	
