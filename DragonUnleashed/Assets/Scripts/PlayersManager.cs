@@ -124,4 +124,13 @@ public class PlayersManager : MonoBehaviour
                 break;
         }
     }
+
+    [RPC]
+    public void InitializePlayers()
+    {
+        foreach (GameObject p in playerObjects)
+        {
+            p.GetComponent<BasePlayerScript>().InitializeGame();
+        }
+    }
 }

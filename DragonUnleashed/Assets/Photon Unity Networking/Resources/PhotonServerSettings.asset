@@ -42,4 +42,6 @@ MonoBehaviour:
   - SetToNotReady
   - SetToReady
   - AddNewPlayer
+  - InitializeGame
+  - InitializePlayers
   DisableAutoOpenWizard: 0

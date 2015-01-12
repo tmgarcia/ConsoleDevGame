@@ -16,6 +16,11 @@ public class BasePlayerScript : MonoBehaviour
     private CharacterRole _role;
     private bool completedInitialSetup = false;
 
+    public GameObject villagerPrefab;
+    public GameObject dragonPrefab;
+
+    public GameObject playerCharacter;
+
 	void Start () 
     {
 	    
@@ -34,7 +39,7 @@ public class BasePlayerScript : MonoBehaviour
             {
                 setupPlayerLabel = (GameObject)Instantiate(PlayerSelfLabelPrefab);
                 setupPlayerLabel.name = "PlayerSelf";
-                setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().onClick.AddListener(() => { GameObject.Find("GameManager").GetComponent<GameSetupManager>().SetSelfToReady(); });
+                setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().onClick.AddListener(() => { GameObject.FindObjectOfType<GameSetupManager>().SetSelfToReady(); });
                 setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID + " (You)";
             }
             else
@@ -42,9 +47,18 @@ public class BasePlayerScript : MonoBehaviour
                 setupPlayerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
                 setupPlayerLabel.name = "PlayerOther" + playerID;
                 setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID;
+                
             }
             completedInitialSetup = true;
         }
+    }
+
+    public void InitializeGame()
+    {
+        if(Role == CharacterRole.Hider)
+            playerCharacter = (GameObject)Instantiate(villagerPrefab);
+        else if (Role == CharacterRole.Seeker)
+            playerCharacter = (GameObject)Instantiate(dragonPrefab);
     }
 
     public CharacterRole Role

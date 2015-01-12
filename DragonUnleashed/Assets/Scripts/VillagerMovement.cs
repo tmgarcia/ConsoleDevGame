@@ -17,34 +17,13 @@ public class VillagerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
-        PhotonNetwork.ConnectUsingSettings("0.1");
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
-	}
-
-    void OnGUI()
-    {
-        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-    }
-
-    void OnJoinedLobby()
-    {
-        Debug.Log("JoinRandom");
-        PhotonNetwork.JoinRandomRoom();
-    }
-
-    void OnPhotonRandomJoinFailed()
-    {
-        PhotonNetwork.CreateRoom(null);
-    }
-
-    void OnJoinedRoom()
-    {
         if (photonView.isMine)
         {
             cam.GetComponent<Camera>().enabled = true;
         }
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {

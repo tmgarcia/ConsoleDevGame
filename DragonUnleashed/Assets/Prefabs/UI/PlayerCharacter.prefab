@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &129566
+--- !u!1 &162592
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 429566}
-  - 114: {fileID: 11429566}
+  - 4: {fileID: 462592}
+  - 114: {fileID: 11462592}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -16,24 +16,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &429566
+--- !u!4 &462592
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 129566}
+  m_GameObject: {fileID: 162592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 757.618164, y: 290.637665, z: -43.9157715}
+  m_LocalPosition: {x: 962.705383, y: 0, z: 769.868103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11429566
+--- !u!114 &11462592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 129566}
+  m_GameObject: {fileID: 162592}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f5bae7bb17d6c849b77b591221de851, type: 3}
@@ -47,6 +47,9 @@ MonoBehaviour:
     type: 2}
   PlayerOtherLabelPrefab: {fileID: 188922, guid: bf51dff20d8f3304184fd111fb039a21,
     type: 2}
+  villagerPrefab: {fileID: 180758, guid: 6bb91b4c12633034fa7b12ec6dc036da, type: 2}
+  dragonPrefab: {fileID: 139686, guid: 94d58c507b0f6d54f8450e076210898c, type: 2}
+  playerCharacter: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -56,6 +59,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 129566}
+  m_RootGameObject: {fileID: 162592}
   m_IsPrefabParent: 1
   m_IsExploded: 1

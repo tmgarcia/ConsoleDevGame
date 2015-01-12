@@ -49,6 +49,7 @@ GameObject:
   - 114: {fileID: 11480758}
   - 54: {fileID: 5480758}
   - 114: {fileID: 11480754}
+  - 114: {fileID: 11483788}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Untagged
@@ -228,6 +229,18 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
+--- !u!114 &11483788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103d59f493e52d341acc99f24d4984ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 129196, guid: 4dc6c521dbfa51646844d8ea987e57df, type: 2}
 --- !u!124 &12480758
 Behaviour:
   m_ObjectHideFlags: 1
