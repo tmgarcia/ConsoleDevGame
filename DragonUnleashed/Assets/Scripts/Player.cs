@@ -42,11 +42,16 @@ public class Player : MonoBehaviour
 		{
 			RespawnManager.instance.Respawn(gameObject);
 			damageable.CurrentIntegrity = damageable.StartingIntegrity;
+			if (--LivePool == 0)
+			{
+				GameOverManager.instance.ShowDragonWin();
+			}
 		}
 		else if (Role == PlayerRole.Dragon)
 		{
 			print("You killed the dragon yay.");
 			IsAlive = false;
+			GameOverManager.instance.ShowVillagerWin();
 		}
 	}
 }
