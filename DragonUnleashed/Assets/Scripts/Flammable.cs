@@ -23,6 +23,7 @@ public class Flammable : Damageable
 	{
 		BurninationLevel -= (BurninationLevel * Time.deltaTime);
 	}
+
 	private void ReduceIntegrity()
 	{
 		CurrentIntegrity -= (BurninationLevel * Time.deltaTime);

@@ -44,4 +44,6 @@ MonoBehaviour:
   - AddNewPlayer
   - InitializeGame
   - InitializePlayers
+  - DisableFire
+  - EnableFire
   DisableAutoOpenWizard: 0

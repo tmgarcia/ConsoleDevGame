@@ -86,7 +86,6 @@
     <None Include="Assets\Plugins\release_history.txt" />
     <None Include="Assets\Plugins\x86\donotdelete.txt" />
     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
-    <None Include="Assets\Prefabs\Environment\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Prefabs\Props\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Prefabs\UI\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Sounds\RemoveThisWhenFolderNotEmpty.txt" />
