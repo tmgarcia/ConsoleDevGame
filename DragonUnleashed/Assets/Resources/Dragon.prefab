@@ -206,6 +206,7 @@ GameObject:
   - 15: {fileID: 1594694}
   - 12: {fileID: 1294692}
   - 26: {fileID: 2694692}
+  - 114: {fileID: 11414950}
   m_Layer: 0
   m_Name: InnerCore
   m_TagString: Untagged
@@ -235,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 266.785126, y: 1.52854061, z: 262.356049}
+  m_LocalPosition: {x: 287.812744, y: 1.52854061, z: 174.471436}
   m_LocalScale: {x: 3.05707979, y: 3.05708122, z: 3.05708122}
   m_Children:
   - {fileID: 439698}
@@ -923,6 +924,18 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
+--- !u!114 &11414950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ee8ccfcaebecb448e5200f03604aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlameIntensity: 1
 --- !u!114 &11434774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -935,6 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 139692}
+  playerID: 0
 --- !u!114 &11439702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,6 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 139688}
+  playerID: 0
 --- !u!114 &11444826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1045,6 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 139696}
+  playerID: 0
 --- !u!114 &11447188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1081,6 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 139698}
+  playerID: 0
 --- !u!114 &11466100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1143,6 +1160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 139694}
+  playerID: 0
 --- !u!114 &11496390
 MonoBehaviour:
   m_ObjectHideFlags: 1
