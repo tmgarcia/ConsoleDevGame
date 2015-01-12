@@ -8,26 +8,29 @@ public class DragonMovement : MonoBehaviour {
     private GameObject cam;
     public float speed = 5;
     private float speedLimiter = 0.95f;
+    public bool isLocal = false;
 
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
         cam = transform.FindChild("DragonCamera").gameObject;
-        if (photonView.isMine)
+        if (isLocal)
         {
-            cam.GetComponent<Camera>().enabled = true;
+            
         }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (photonView.isMine)
+        if (isLocal)
         {
+            cam.GetComponent<Camera>().enabled = true;
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = gameObject.transform.right;
             Vector3 accelaration = forward * speed;
             if (Input.GetKey(KeyCode.W)) accelaration *= 2;
             if (Input.GetKey(KeyCode.S)) accelaration *= 0.5f;
+            if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             gameObject.GetComponent<Rigidbody>().velocity *= speedLimiter;
 

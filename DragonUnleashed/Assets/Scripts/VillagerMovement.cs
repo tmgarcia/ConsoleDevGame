@@ -13,13 +13,14 @@ public class VillagerMovement : MonoBehaviour {
     private Transform tether;
     private Vector3 overhead = new Vector3(0.0f,0.9f,0.0f);
     private Vector3 overshoulder = new Vector3(1.2f, 0.45f, 0.0f);
+    public bool isLocal = false;
 
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
-        if (photonView.isMine)
+        if (isLocal)
         {
             cam.GetComponent<Camera>().enabled = true;
         }
@@ -27,7 +28,7 @@ public class VillagerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (photonView.isMine)
+        if (isLocal)
         {
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = Vector3.Cross(forward, Vector3.up);

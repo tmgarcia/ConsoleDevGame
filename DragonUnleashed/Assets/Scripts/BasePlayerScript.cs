@@ -59,11 +59,13 @@ public class BasePlayerScript : MonoBehaviour
         {
             playerCharacter = (GameObject)Instantiate(villagerPrefab);
             playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 1, Random.Range(10, 20));
+            playerCharacter.GetComponent<VillagerMovement>().isLocal = isLocalPlayer;
         }
         else if (Role == CharacterRole.Seeker)
         {
             playerCharacter = (GameObject)Instantiate(dragonPrefab);
             playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 10, Random.Range(10, 20));
+            playerCharacter.transform.FindChild("DragonHead").GetComponent<DragonMovement>().isLocal = isLocalPlayer;
         }
     }
 

@@ -10,13 +10,12 @@ public class DragonSegment : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
-        movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
 	}
 	
 	// Update is called once per frame
     void Update()
     {
-        
+        if (movement == null) movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
             if (Vector3.Distance(transform.position, parent.position) > 1)
             {
                 transform.position = Vector3.Lerp(transform.position, parent.position, Time.deltaTime * movement.speed);
