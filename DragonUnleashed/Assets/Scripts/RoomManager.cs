@@ -56,6 +56,8 @@ public class RoomManager : Photon.MonoBehaviour
         NetworkDebugText.text = "Room successfully joined";
         GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = true;
         GameObject.Find("SelfIDText").GetComponent<Text>().text = "Your Player ID: " + PhotonNetwork.player.ID;
-        gameObject.GetComponent<GameSetupManager>().MoveSelfToHiders();
+        GetComponent<PlayersManager>().localPlayerID = PhotonNetwork.player.ID;
+        PlayersManager.NewPlayer(PhotonNetwork.player.ID);
+        //gameObject.GetComponent<GameSetupManager>().MoveSelfToHiders();
     }
 }

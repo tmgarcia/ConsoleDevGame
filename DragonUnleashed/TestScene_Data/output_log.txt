@@ -19,13 +19,25 @@ Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleash
 Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.054 seconds
+- Completed reload, in  0.062 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\System.dll (this message is harmless)
 Update() was called by Unity. Scene is loaded. Let's connect to the Photon Master Server. Calling: PhotonNetwork.ConnectUsingSettings();
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+AddNewPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NewPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+AddNewPlayer
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 

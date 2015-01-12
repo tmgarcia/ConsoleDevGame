@@ -36,4 +36,10 @@ MonoBehaviour:
   - MovePlayerToHiders
   - MovePlayerLabelToHiders
   - MovePlayerLabelToSeekers
+  - MoveToHiders
+  - MoveToSeekers
+  - MoveToUnassigned
+  - SetToNotReady
+  - SetToReady
+  - AddNewPlayer
   DisableAutoOpenWizard: 0

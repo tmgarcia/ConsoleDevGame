@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BasePlayerScript : MonoBehaviour 
 {
@@ -29,7 +30,19 @@ public class BasePlayerScript : MonoBehaviour
     {
         if (!completedInitialSetup)
         {
-
+            if (isLocalPlayer)
+            {
+                setupPlayerLabel = (GameObject)Instantiate(PlayerSelfLabelPrefab);
+                setupPlayerLabel.name = "PlayerSelf";
+                setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().onClick.AddListener(() => { GameObject.Find("GameManager").GetComponent<GameSetupManager>().SetSelfToReady(); });
+                setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID + " (You)";
+            }
+            else
+            {
+                setupPlayerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
+                setupPlayerLabel.name = "PlayerOther" + playerID;
+                setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID;
+            }
             completedInitialSetup = true;
         }
     }

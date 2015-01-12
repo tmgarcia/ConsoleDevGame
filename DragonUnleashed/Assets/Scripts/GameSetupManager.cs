@@ -4,197 +4,203 @@ using UnityEngine.UI;
 
 public class GameSetupManager : Photon.MonoBehaviour
 {
-    public int maxNumHiders = 4;
-    public int maxNumSeekers = 1;
-
-    private static int currentNumHiders = 0;
-    private static int currentNumSeekers = 0;
-
-    public GameObject PlayerSelfLabelPrefab;
-    public GameObject PlayerOtherLabelPrefab;
+    public GameObject HidersPanel;
+    public GameObject SeekersPanel;
+    public GameObject UnassignedPanel;
+    public GameObject StartGameButton;
 
     private static PhotonView ScenePhotonView;
+    private static PlayersManager playersManager;
 
-	// Use this for initialization
+
 	void Start () 
     {
         ScenePhotonView = this.GetComponent<PhotonView>();
+        playersManager = this.GetComponent<PlayersManager>();
 	}
 	
-	// Update is called once per frame
 	void Update () 
     {
         if (PhotonNetwork.inRoom && GameObject.Find("GameSetupUI")!=null)
         {
-            GameObject.Find("SeekersLabel").GetComponent<Text>().text = "Seekers " + currentNumSeekers + "/" + maxNumSeekers;
-            GameObject.Find("HidersLabel").GetComponent<Text>().text = "Hiders " + currentNumHiders + "/" + maxNumHiders;
+            GameObject.Find("SeekersLabel").GetComponent<Text>().text = "Seekers " + playersManager.currentNumSeekers + "/" + playersManager.maxNumSeekers;
+            GameObject.Find("HidersLabel").GetComponent<Text>().text = "Hiders " + playersManager.currentNumHiders + "/" + playersManager.maxNumHiders;
+            GameObject.Find("UnassignedLabel").GetComponent<Text>().text = "Unassigned " + playersManager.currentNumUnassigned;
+        }
+        if (PhotonNetwork.isMasterClient)
+        {
+            if(playersManager.AllPlayersAreReady())
+            {
+                StartGameButton.SetActive(true);
+            }
         }
 	}
-
-
+    public void SetSelfToReady()
+    {
+        SetToReady(GetComponent<PlayersManager>().localPlayerID);
+        SetPlayerToReady(GetComponent<PlayersManager>().localPlayerID);
+    }
+    public void SetSelfToNotReady()
+    {
+        SetToNotReady(GetComponent<PlayersManager>().localPlayerID);
+        SetPlayerToNotReady(GetComponent<PlayersManager>().localPlayerID);
+    }
     public void MoveSelfToHiders()
     {
-        //Already a hider
-        if(GameObject.Find("HiderPlayersPanel").transform.FindChild("PlayerSelf")!=null)
+        SetToNotReady(playersManager.localPlayerID);
+        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Hider);
+        MovePlayerToHiders(playersManager.localPlayerID);
+    }
+    public void MoveSelfToSeekers()
+    {
+        SetToNotReady(playersManager.localPlayerID);
+        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Seeker);
+        MovePlayerToSeekers(playersManager.localPlayerID);
+    }
+    public void MoveSelfToUnassigned()
+    {
+        SetToNotReady(playersManager.localPlayerID);
+        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Unassigned);
+        MovePlayerToUnassigned(playersManager.localPlayerID);
+    }
+    public void MoveToRole(int playerID, BasePlayerScript.CharacterRole role)
+    {
+        switch (role)
         {
-            GameObject.Find("OtherDebugText").GetComponent<Text>().text = "You are already a Hider!";
+            case BasePlayerScript.CharacterRole.Hider:
+                MoveToHiders(playerID);
+                break;
+            case BasePlayerScript.CharacterRole.Seeker:
+                MoveToSeekers(playerID);
+                break;
+            case BasePlayerScript.CharacterRole.Unassigned:
+                MoveToUnassigned(playerID);
+                break;
         }
-        //Not already a Hider
+    }
+    [RPC]
+    public void MoveToHiders(int playerID)
+    {
+        BasePlayerScript playerToMove = playersManager.GetPlayer(playerID).GetComponent<BasePlayerScript>();
+        if (HidersPanel.transform.FindChild(playerToMove.setupPlayerLabel.name) != null)
+        {
+            if (playerToMove.isLocalPlayer)
+            {
+                GameObject.Find("OtherDebugText").GetComponent<Text>().text = "You are already a Hider!";
+            }
+        }
         else
         {
-            //Not at max num hiders
-            if (currentNumHiders < maxNumHiders)
+            if (playersManager.currentNumHiders < playersManager.maxNumHiders)
             {
-                //Already assigned as seeker
-                if (GameObject.Find("SeekerPlayersPanel").transform.FindChild("PlayerSelf") != null)
-                {
-                    var selfLabel = GameObject.Find("SeekerPlayersPanel").transform.FindChild("PlayerSelf").gameObject;
-                    selfLabel.transform.SetParent(GameObject.Find("HiderPlayersPanel").transform, false);
-                    selfLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready?";
-                    selfLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = true;
-
-                    currentNumSeekers -= 1;
-                }
-                //not yet assigned
-                else
-                {
-                    var selfLabel = (GameObject)Instantiate(PlayerSelfLabelPrefab);
-                    selfLabel.name = "PlayerSelf";
-                    selfLabel.transform.SetParent(GameObject.Find("HiderPlayersPanel").transform, false);
-                    selfLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready?";
-                    selfLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = true;
-                    selfLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "ID: " + PhotonNetwork.player.ID;
-                }
-                currentNumHiders += 1;
-                MovePlayerToHiders(PhotonNetwork.player.ID);
+                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Hider);
+                playerToMove.Role = BasePlayerScript.CharacterRole.Hider;
+                playerToMove.setupPlayerLabel.transform.SetParent(HidersPanel.transform, false);
             }
-            //At max num hiders
             else
             {
-                GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Too many hiders! Wait for someone to switch or join as seeker.";
-                if (currentNumSeekers >= maxNumSeekers)
+                if (playerToMove.isLocalPlayer)
                 {
-                    GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Too many hiders!\nToo many seekers! Game full, sorry?";
+                    GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Hiders Full!";
                 }
             }
         }
     }
-    public void MoveSelfToSeekers()
+    [RPC]
+    public void MoveToSeekers(int playerID)
     {
-        //Already a seeker
-        if (GameObject.Find("SeekerPlayersPanel").transform.FindChild("PlayerSelf") != null)
+        BasePlayerScript playerToMove = playersManager.GetPlayer(playerID).GetComponent<BasePlayerScript>();
+        if (SeekersPanel.transform.FindChild(playerToMove.setupPlayerLabel.name) != null)
         {
-            GameObject.Find("OtherDebugText").GetComponent<Text>().text = "You are already a Seeker!";
+            if (playerToMove.isLocalPlayer)
+            {
+                GameObject.Find("OtherDebugText").GetComponent<Text>().text = "You are already a Seeker!";
+            }
         }
-        //Not already a seeker
         else
         {
-            //Not at max num seekers
-            if (currentNumSeekers < maxNumSeekers)
+            if (playersManager.currentNumSeekers < playersManager.maxNumSeekers )
             {
-                //Currently assigned as hider
-                if (GameObject.Find("HiderPlayersPanel").transform.FindChild("PlayerSelf") != null)
-                {
-                    var selfLabel = GameObject.Find("HiderPlayersPanel").transform.FindChild("PlayerSelf").gameObject;
-                    selfLabel.transform.SetParent(GameObject.Find("SeekerPlayersPanel").transform, false);
-                    selfLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready?";
-                    selfLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = true;
-
-                    currentNumHiders -= 1;
-                }
-                 //not yet assigned to role
-                else
-                {
-                    var selfLabel = (GameObject)Instantiate(PlayerSelfLabelPrefab);
-                    selfLabel.name = "PlayerSelf";
-                    selfLabel.transform.SetParent(GameObject.Find("SeekerPlayersPanel").transform, false);
-                    selfLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready?";
-                    selfLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = true;
-                    selfLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "ID: " + PhotonNetwork.player.ID;
-                }
-                currentNumSeekers += 1;
-                MovePlayerToSeekers(PhotonNetwork.player.ID);
+                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Seeker);
+                playerToMove.Role = BasePlayerScript.CharacterRole.Seeker;
+                playerToMove.setupPlayerLabel.transform.SetParent(SeekersPanel.transform, false);
             }
-            //Too many seekers
             else
             {
-                GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Too many seekers! Wait for someone to switch or join as hider.";
-                //Too many hiders AND seekers (shouldn't hit this, adjust max num hiders or seekers for bigger room
-                if (currentNumHiders >= maxNumHiders)
+                if (playerToMove.isLocalPlayer)
                 {
-                    GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Too many seekers!\nToo many Hiders!\n Game full, sorry?";
+                    GameObject.Find("OtherDebugText").GetComponent<Text>().text = "Seekers Full!";
                 }
             }
         }
+    }
+    [RPC]
+    public void MoveToUnassigned(int playerID)
+    {
+        BasePlayerScript playerToMove = playersManager.GetPlayer(playerID).GetComponent<BasePlayerScript>();
+        if (UnassignedPanel.transform.FindChild(playerToMove.setupPlayerLabel.name) != null)
+        {
+            if (playerToMove.isLocalPlayer)
+            {
+                GameObject.Find("OtherDebugText").GetComponent<Text>().text = "You are already Unassigned!";
+            }
+        }
+        else
+        {
+            playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Unassigned);
+            playerToMove.Role = BasePlayerScript.CharacterRole.Unassigned;
+            playerToMove.setupPlayerLabel.transform.SetParent(UnassignedPanel.transform, false);
+        }
+    }
+    [RPC]
+    public void SetToReady(int playerID)
+    {
+        BasePlayerScript playerToMove = playersManager.GetPlayer(playerID).GetComponent<BasePlayerScript>();
+        if (playerToMove.isLocalPlayer)
+        {
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready.";
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = false;
+        }
+        else
+        {
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Ready.";
+        }
+        playerToMove.ready = true;
+    }
+    [RPC]
+    public void SetToNotReady(int playerID)
+    {
+        BasePlayerScript playerToMove = GetComponent<PlayersManager>().GetPlayer(playerID).GetComponent<BasePlayerScript>();
+        if (playerToMove.isLocalPlayer)
+        {
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyButton").FindChild("ReadyButtonText").GetComponent<Text>().text = "Ready?";
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().enabled = true;
+        }
+        else
+        {
+            playerToMove.setupPlayerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Waiting";
+        }
+        playerToMove.ready = false;
     }
 
     public static void MovePlayerToHiders(int playerID)
     {
-        ScenePhotonView.RPC("MovePlayerLabelToHiders", PhotonTargets.OthersBuffered, playerID);
+        ScenePhotonView.RPC("MoveToHiders", PhotonTargets.OthersBuffered, playerID);
     }
     public static void MovePlayerToSeekers(int playerID)
     {
-        ScenePhotonView.RPC("MovePlayerLabelToSeekers", PhotonTargets.OthersBuffered, playerID);
+        ScenePhotonView.RPC("MoveToSeekers", PhotonTargets.OthersBuffered, playerID);
     }
-
-    [RPC]
-    void MovePlayerLabelToHiders(int playerID)
+    public static void MovePlayerToUnassigned(int playerID)
     {
-        if (playerID != PhotonNetwork.player.ID)
-        {
-            string playerOtherName = "PlayerOther" + playerID;
-            if (GameObject.Find("HiderPlayersPanel").transform.FindChild(playerOtherName) != null)
-            {
-                //do nothing
-            }
-            //They were a seeker
-            else if (GameObject.Find("SeekerPlayersPanel").transform.FindChild(playerOtherName) != null)
-            {
-                var playerLabel = GameObject.Find("SeekerPlayersPanel").transform.FindChild(playerOtherName).gameObject;
-                playerLabel.transform.SetParent(GameObject.Find("HiderPlayersPanel").transform, false);
-                playerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Waiting";
-                currentNumHiders += 1;
-                currentNumSeekers -= 1;
-            }
-            //They were not assigned
-            else
-            {
-                var playerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
-                playerLabel.name = playerOtherName;
-                playerLabel.transform.SetParent(GameObject.Find("HiderPlayersPanel").transform, false);
-                playerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Waiting";
-                playerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "ID: " + playerID;
-                currentNumHiders += 1;
-            }
-        }
+        ScenePhotonView.RPC("MoveToUnassigned", PhotonTargets.OthersBuffered, playerID);
     }
-    [RPC]
-    void MovePlayerLabelToSeekers(int playerID)
+    public static void SetPlayerToReady(int playerID)
     {
-        if (playerID != PhotonNetwork.player.ID)
-        {
-            string playerOtherName = "PlayerOther" + playerID;
-            if (GameObject.Find("SeekerPlayersPanel").transform.FindChild(playerOtherName) != null)
-            {
-                //do nothing
-            }
-            else if (GameObject.Find("HiderPlayersPanel").transform.FindChild(playerOtherName) != null)
-            {
-                var playerLabel = GameObject.Find("HiderPlayersPanel").transform.FindChild(playerOtherName).gameObject;
-                playerLabel.transform.SetParent(GameObject.Find("SeekerPlayersPanel").transform, false);
-                playerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Waiting";
-                currentNumSeekers += 1;
-                currentNumHiders -= 1;
-            }
-            else
-            {
-                var playerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
-                playerLabel.name = playerOtherName;
-                playerLabel.transform.SetParent(GameObject.Find("SeekerPlayersPanel").transform, false);
-                playerLabel.transform.FindChild("ReadyText").GetComponent<Text>().text = "Waiting";
-                playerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "ID: " + playerID;
-                currentNumSeekers += 1;
-            }
-        }
+        ScenePhotonView.RPC("SetToReady", PhotonTargets.OthersBuffered, playerID);
+    }
+    public static void SetPlayerToNotReady(int playerID)
+    {
+        ScenePhotonView.RPC("SetToNotReady", PhotonTargets.OthersBuffered, playerID);
     }
 }

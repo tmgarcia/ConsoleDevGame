@@ -8,25 +8,34 @@ public class PlayersManager : MonoBehaviour
     public int maxNumHiders = 4;
     public int maxNumSeekers = 1;
 
-    private static int currentNumHiders = 0;
-    private static int currentNumSeekers = 0;
-    private static int currentNumUnassigned = 0;
+    public int localPlayerID;
+
+    public int currentNumHiders = 0;
+    public int currentNumSeekers = 0;
+    public int currentNumUnassigned = 0;
 
     public List<GameObject> playerObjects;
 
     public GameObject PlayerCharacterPrefab;
 
-	// Use this for initialization
-	void Start () 
-    {
+    private static PhotonView ScenePhotonView;
 
-	}
+    void Start()
+    {
+        ScenePhotonView = this.GetComponent<PhotonView>();
+    }
 	
 	// Update is called once per frame
 	void Update () 
     {
 	    
 	}
+
+    public static void NewPlayer(int playerID)
+    {
+        ScenePhotonView.RPC("AddNewPlayer", PhotonTargets.AllBuffered, playerID);
+        print("NewPlayer");
+    }
 
     public GameObject GetPlayer(int playerID)
     {
@@ -43,15 +52,19 @@ public class PlayersManager : MonoBehaviour
         GameObject player = playerObjects.FirstOrDefault(p => p.GetComponent<BasePlayerScript>().playerID == playerID);
         player.GetComponent<BasePlayerScript>().Role = role;
     }
-    public void AddNewPlayer(int playerID, bool isLocalPlayer, bool ready)
+    [RPC]
+    public void AddNewPlayer(int playerID)
     {
+        print("AddNewPlayer");
         var newPlayer = (GameObject)Instantiate(PlayerCharacterPrefab);
         BasePlayerScript newPlayerBase = newPlayer.GetComponent<BasePlayerScript>();
         newPlayerBase.playerID = playerID;
-        newPlayerBase.isLocalPlayer = isLocalPlayer;
-        newPlayerBase.ready = ready;
+        newPlayerBase.isLocalPlayer = (playerID == localPlayerID);
+        newPlayerBase.ready = false;
         newPlayerBase.Role = BasePlayerScript.CharacterRole.Unassigned;
         newPlayerBase.InitialSetup();
+        playerObjects.Add(newPlayer);
+        GetComponent<GameSetupManager>().MoveToRole(playerID, BasePlayerScript.CharacterRole.Unassigned);
         currentNumUnassigned += 1;
     }
     public bool AllPlayersAreReady()
@@ -65,5 +78,32 @@ public class PlayersManager : MonoBehaviour
             }
         }
         return allReady;
+    }
+    public void AdjustRoleNumbersForMovedPlayer(BasePlayerScript.CharacterRole oldRole, BasePlayerScript.CharacterRole newRole)
+    {
+        switch (oldRole)
+        {
+            case BasePlayerScript.CharacterRole.Hider:
+                currentNumHiders -= 1;
+                break;
+            case BasePlayerScript.CharacterRole.Seeker:
+                currentNumSeekers -= 1;
+                break;
+            case BasePlayerScript.CharacterRole.Unassigned:
+                currentNumUnassigned -= 1;
+                break;
+        }
+        switch (newRole)
+        {
+            case BasePlayerScript.CharacterRole.Hider:
+                currentNumHiders += 1;
+                break;
+            case BasePlayerScript.CharacterRole.Seeker:
+                currentNumSeekers += 1;
+                break;
+            case BasePlayerScript.CharacterRole.Unassigned:
+                currentNumUnassigned += 1;
+                break;
+        }
     }
 }
