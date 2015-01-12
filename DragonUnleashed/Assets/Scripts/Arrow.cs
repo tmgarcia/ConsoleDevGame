@@ -19,16 +19,22 @@ public class Arrow : MonoBehaviour {
     {
         if (!stuck)
         {
-            if (collision.gameObject.name != "Arrow(Clone)")
+            if (collision.gameObject.name != "Arrow(Clone)")/////////////////////////Sticky check
             {
                 gameObject.transform.parent = collision.gameObject.transform;
                 Destroy(rigidbody);
             }
+
+
+             var damcom = collision.gameObject.GetComponent("Damageable");
            
-            if (collision.gameObject.name == "Dragon")
-            {
                 //inflict damage with damageable
-            }
+             if (damcom != null && damcom.damageRole == damageRole.dragon)////////////Damage check
+             { 
+             
+             
+             }
+            
             stuck = true;
         }
     }
