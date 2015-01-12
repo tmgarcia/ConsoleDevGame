@@ -29,10 +29,7 @@ public class GameSetupManager : Photon.MonoBehaviour
         }
         if (PhotonNetwork.isMasterClient)
         {
-            if(playersManager.AllPlayersAreReady())
-            {
-                StartGameButton.SetActive(true);
-            }
+            StartGameButton.SetActive(playersManager.AllPlayersAreReady());
         }
 	}
     public void SetSelfToReady()

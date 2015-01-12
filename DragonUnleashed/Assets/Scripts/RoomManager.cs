@@ -60,4 +60,9 @@ public class RoomManager : Photon.MonoBehaviour
         PlayersManager.NewPlayer(PhotonNetwork.player.ID);
         //gameObject.GetComponent<GameSetupManager>().MoveSelfToHiders();
     }
+    public void OnPhotonPlayerDisconnected(PhotonPlayer other)
+    {
+        GetComponent<PlayersManager>().RemoveExistingPlayer(other.ID);
+    }
+   
 }

@@ -30,7 +30,25 @@ public class PlayersManager : MonoBehaviour
     {
 	    
 	}
-
+    public void RemoveExistingPlayer(int playerID)
+    {
+        GameObject playerToRemove = GetPlayer(playerID);
+        switch (playerToRemove.GetComponent<BasePlayerScript>().Role)
+        {
+            case BasePlayerScript.CharacterRole.Hider:
+                currentNumHiders -= 1;
+                break;
+            case BasePlayerScript.CharacterRole.Seeker:
+                currentNumSeekers -= 1;
+                break;
+            case BasePlayerScript.CharacterRole.Unassigned:
+                currentNumUnassigned -= 1;
+                break;
+        }
+        playerToRemove.GetComponent<BasePlayerScript>().setupPlayerLabel.SetActive(false);
+        playerObjects.Remove(playerToRemove);
+        Destroy(playerToRemove);
+    }
     public static void NewPlayer(int playerID)
     {
         ScenePhotonView.RPC("AddNewPlayer", PhotonTargets.AllBuffered, playerID);

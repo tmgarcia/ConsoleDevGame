@@ -19,7 +19,7 @@ Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleash
 Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading T:\School\ConsoleGameDev\GitRepo\ConsoleDevGame\DragonUnleashed\TestScene_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.062 seconds
+- Completed reload, in  0.054 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
