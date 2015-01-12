@@ -7,7 +7,7 @@ public class FireBreathing : MonoBehaviour {
 	private NetworkAgent na;
 	// Use this for initialization
 	void Start() {
-        DisableFire();
+        StopFire();
 		na = gameObject.GetComponentInParent<NetworkAgent>();
 	}
 	
@@ -18,24 +18,33 @@ public class FireBreathing : MonoBehaviour {
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				EnableFire();
+                EnableFire();
 			}
 			else if (Input.GetKeyUp(KeyCode.Space))
 			{
-				DisableFire();
+                DisableFire();
 			}
 		}
 	}
 
+    public static void EnableFire()
+    {
+        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCEnableFire", PhotonTargets.All);
+    }
+    public static void DisableFire()
+    {
+        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCDisableFire", PhotonTargets.All);
+    }
+
 	[RPC]
-    private void DisableFire()
+    private void RPCDisableFire()
     {
         FireInside.emit = false;
         FireOutside.emit = false;
     }
 
 	[RPC]
-    private void EnableFire()
+    private void RPCEnableFire()
     {
         FireInside.emit = true;
         FireOutside.emit = true;

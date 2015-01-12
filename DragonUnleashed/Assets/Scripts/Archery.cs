@@ -34,13 +34,18 @@ public class Archery : MonoBehaviour
 			}
 			if (aiming && Input.GetMouseButtonDown(0)) //Left mouse down
 			{
-				FireArrow();
+                FireArrow();
 			}
 		}
 	}
 
+    public static void FireArrow()
+    {
+        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCFireArrow", PhotonTargets.All);
+    }
+
 	[RPC]
-	private void FireArrow()
+	private void RPCFireArrow()
 	{
 		GameObject launchedArrow = Instantiate(arrow, gameObject.transform.position + new Vector3(0.75f, 0.75f, 0), transform.rotation) as GameObject;
 		launchedArrow.rigidbody.AddForce(Camera.main.transform.forward * 1000);
