@@ -57,16 +57,11 @@ public class BasePlayerScript : MonoBehaviour
     {
         if(Role == CharacterRole.Hider)
         {
-            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", new Vector3(Random.Range(10, 20), 1, Random.Range(10, 20)), Quaternion.identity, 0);//villagerPrefab);
-            //playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 1, Random.Range(10, 20));
-            //playerCharacter.GetComponent<VillagerMovement>().isLocal = 
+            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", new Vector3(Random.Range(200, 220), 1, Random.Range(160, 180)), Quaternion.identity, 0);
         }
         else if (Role == CharacterRole.Seeker)
         {
-            //playerCharacter = (GameObject)Instantiate(dragonPrefab);
-            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", new Vector3(Random.Range(10, 20), 1, Random.Range(10, 20)), Quaternion.identity, 0);//villagerPrefab);
-            //playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 10, Random.Range(10, 20));
-            //playerCharacter.transform.FindChild("DragonHead").GetComponent<DragonMovement>().isLocal = isLocalPlayer;
+            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", new Vector3(Random.Range(200, 220), 10, Random.Range(160, 180)), Quaternion.identity, 0);
         }
     }
 
