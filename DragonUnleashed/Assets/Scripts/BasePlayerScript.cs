@@ -56,9 +56,15 @@ public class BasePlayerScript : MonoBehaviour
     public void InitializeGame()
     {
         if(Role == CharacterRole.Hider)
+        {
             playerCharacter = (GameObject)Instantiate(villagerPrefab);
+            playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 1, Random.Range(10, 20));
+        }
         else if (Role == CharacterRole.Seeker)
+        {
             playerCharacter = (GameObject)Instantiate(dragonPrefab);
+            playerCharacter.transform.position = new Vector3(Random.Range(10, 20), 10, Random.Range(10, 20));
+        }
     }
 
     public CharacterRole Role

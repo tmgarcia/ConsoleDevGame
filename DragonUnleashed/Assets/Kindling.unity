@@ -3802,6 +3802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
+  damageRole: 1
 --- !u!4 &1959719732
 Transform:
   m_ObjectHideFlags: 0
