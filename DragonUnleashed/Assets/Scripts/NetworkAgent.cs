@@ -5,6 +5,7 @@ public class NetworkAgent : Photon.MonoBehaviour
 {
     private Vector3 networkPosition;
     private Quaternion networkRotation;
+    public GameObject agent;
 
 	// Use this for initialization
 	void Start () 
@@ -16,8 +17,8 @@ public class NetworkAgent : Photon.MonoBehaviour
     {
         if (stream.isWriting)
         {
-            stream.SendNext(transform.FindChild("DragonHead").transform.position);
-            stream.SendNext(transform.FindChild("DragonHead").transform.rotation);
+            stream.SendNext(agent.transform.position);
+            stream.SendNext(agent.transform.rotation);
         }
         else
         {
