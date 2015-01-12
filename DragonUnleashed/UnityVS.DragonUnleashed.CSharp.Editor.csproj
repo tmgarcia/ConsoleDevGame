@@ -88,6 +88,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
+    <Compile Include="Assets\OVR\Editor\OVRGameView.cs" />
+    <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
+    <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\Editor\PunStartup.cs" />
     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\AccountService.cs" />
     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonConverter.cs" />
@@ -109,13 +113,18 @@
     <None Include="Assets\Art\Particles\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Textures\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Managers\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+    <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
     <None Include="Assets\Photon Unity Networking\changelog.txt" />
     <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
     <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
     <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
     <None Include="Assets\Photon Unity Networking\readme.txt" />
+    <None Include="Assets\Plugins\donotdelete.txt" />
     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
     <None Include="Assets\Plugins\release_history.txt" />
+    <None Include="Assets\Plugins\x86\donotdelete.txt" />
+    <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
     <None Include="Assets\Prefabs\Environment\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Prefabs\Props\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Prefabs\UI\RemoveThisWhenFolderNotEmpty.txt" />
