@@ -14,17 +14,16 @@ public class DragonMovement : MonoBehaviour {
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
         cam = transform.FindChild("DragonCamera").gameObject;
-        if (isLocal)
-        {
-            
-        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (isLocal)
         {
-            cam.GetComponent<Camera>().enabled = true;
+            if (!cam.GetComponent<Camera>().enabled)
+            {
+                cam.GetComponent<Camera>().enabled = true;
+            }
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = gameObject.transform.right;
             Vector3 accelaration = forward * speed;

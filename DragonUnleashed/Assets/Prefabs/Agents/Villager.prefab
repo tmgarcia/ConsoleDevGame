@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95d8b1491feef07419e7270cf4ae464c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocal: 0
 --- !u!114 &11480758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +227,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 480758}
+  - {fileID: 11480754}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

@@ -20,16 +20,16 @@ public class VillagerMovement : MonoBehaviour {
         photonView = gameObject.GetComponent<PhotonView>();
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
-        if (isLocal)
-        {
-            cam.GetComponent<Camera>().enabled = true;
-        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (isLocal)
         {
+            if (!cam.GetComponent<Camera>().enabled)
+            {
+                cam.GetComponent<Camera>().enabled = true;
+            }
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = Vector3.Cross(forward, Vector3.up);
             Vector3 accelaration = new Vector3(0, 0, 0);

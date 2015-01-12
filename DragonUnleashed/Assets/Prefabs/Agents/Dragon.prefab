@@ -635,6 +635,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 439698}
+  - {fileID: 11439714}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -651,6 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   airPlaneControls: 0
   speed: 5
+  isLocal: 0
 --- !u!114 &11439714
 MonoBehaviour:
   m_ObjectHideFlags: 1
