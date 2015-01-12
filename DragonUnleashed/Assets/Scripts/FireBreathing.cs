@@ -7,7 +7,7 @@ public class FireBreathing : MonoBehaviour {
 	private NetworkAgent na;
 	// Use this for initialization
 	void Start() {
-        StopFire();
+        RPCDisableFire();
 		na = gameObject.GetComponentInParent<NetworkAgent>();
 	}
 	
