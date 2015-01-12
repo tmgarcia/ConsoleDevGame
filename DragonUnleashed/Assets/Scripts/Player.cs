@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
 			{
 				GameOverManager.instance.ShowDragonWin();
 			}
+			print("Current Live Pool: " + LivePool);
 		}
 		else if (Role == PlayerRole.Dragon)
 		{

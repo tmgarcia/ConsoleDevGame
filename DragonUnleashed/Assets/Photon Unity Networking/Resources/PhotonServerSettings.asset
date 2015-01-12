@@ -46,4 +46,5 @@ MonoBehaviour:
   - InitializePlayers
   - DisableFire
   - EnableFire
+  - FireArrow
   DisableAutoOpenWizard: 0

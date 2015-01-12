@@ -51,6 +51,7 @@ GameObject:
   - 114: {fileID: 11480754}
   - 114: {fileID: 11483788}
   - 114: {fileID: 11401146}
+  - 114: {fileID: 11425188}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Untagged
@@ -197,6 +198,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
   damageRole: 1
+--- !u!114 &11425188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea5f0fe75a5d154681c17b235d54f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Role: 1
+  StartingLivePool: 15
 --- !u!114 &11480754
 MonoBehaviour:
   m_ObjectHideFlags: 1
