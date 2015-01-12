@@ -134,5 +134,6 @@ public class PlayersManager : MonoBehaviour
         //}
         GetPlayer(localPlayerID).GetComponent<BasePlayerScript>().InitializeGame();
         GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("GameSetupUI").SetActive(false);
     }
 }

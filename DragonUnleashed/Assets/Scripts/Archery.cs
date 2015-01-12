@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Archery : MonoBehaviour
+public class Archery : Photon.MonoBehaviour
 {
-
 	private bool aiming;
 	public GameObject arrow;
 	private NetworkAgent na;
+    private static PhotonView photonView;
 
 	// Use this for initialization
 	void Start()
 	{
 		aiming = false;
 		na = GetComponent<NetworkAgent>();
-	}
+        photonView = GetComponent<PhotonView>();
+    }
 
 	// Update is called once per frame
 	void Update()
@@ -41,7 +42,7 @@ public class Archery : MonoBehaviour
 
     public static void FireArrow()
     {
-        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCFireArrow", PhotonTargets.All);
+        photonView.RPC("RPCFireArrow", PhotonTargets.All);
     }
 
 	[RPC]

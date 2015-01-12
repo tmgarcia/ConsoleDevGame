@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FireBreathing : MonoBehaviour {
+public class FireBreathing : Photon.MonoBehaviour
+{
     public ParticleEmitter FireInside;
     public ParticleEmitter FireOutside;
+    private static PhotonView photonView;
 	private NetworkAgent na;
 	// Use this for initialization
 	void Start() {
         RPCDisableFire();
-		na = gameObject.GetComponentInParent<NetworkAgent>();
+		na = gameObject.GetComponent<NetworkAgent>();
+        photonView = gameObject.GetComponent<PhotonView>();
 	}
 	
 	// Update is called once per frame
@@ -29,11 +32,12 @@ public class FireBreathing : MonoBehaviour {
 
     public static void EnableFire()
     {
-        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCEnableFire", PhotonTargets.All);
+        photonView.RPC("RPCEnableFire", PhotonTargets.All);
+         //.GetComponent<PhotonView>().RPC("RPCEnableFire", PhotonTargets.All);
     }
     public static void DisableFire()
     {
-        GameObject.Find("GameManager").GetComponent<PhotonView>().RPC("RPCDisableFire", PhotonTargets.All);
+        photonView.RPC("RPCDisableFire", PhotonTargets.All);
     }
 
 	[RPC]
