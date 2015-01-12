@@ -83,7 +83,7 @@ public class VillagerMovement : MonoBehaviour {
             float deltaY = Input.GetAxis("Mouse Y");
 
             Vector3 newYEuler = tether.rotation.eulerAngles;
-            newYEuler.x += deltaY;
+            newYEuler.x -= deltaY;
             tether.rotation = Quaternion.Euler(newYEuler);
 
             Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
