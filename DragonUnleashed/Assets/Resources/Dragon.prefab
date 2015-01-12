@@ -207,6 +207,7 @@ GameObject:
   - 12: {fileID: 1294692}
   - 26: {fileID: 2694692}
   - 114: {fileID: 11414950}
+  - 76: {fileID: 7690152}
   m_Layer: 0
   m_Name: InnerCore
   m_TagString: Untagged
@@ -236,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 287.812744, y: 1.52854061, z: 174.471436}
+  m_LocalPosition: {x: 213.234451, y: 0, z: 232.295715}
   m_LocalScale: {x: 3.05707979, y: 3.05708122, z: 3.05708122}
   m_Children:
   - {fileID: 439698}
@@ -827,6 +828,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!76 &7690152
+WorldParticleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194696}
+  m_BounceFactor: .5
+  m_CollisionEnergyLoss: 0
+  m_CollidesWith:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SendCollisionMessage: 1
+  m_MinKillVelocity: 0
 --- !u!81 &8139686
 AudioListener:
   m_ObjectHideFlags: 1
