@@ -66,13 +66,13 @@ public class VillagerMovement : MonoBehaviour {
 
             gameObject.GetComponent<Rigidbody>().velocity = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, storedY, gameObject.GetComponent<Rigidbody>().velocity.z);
 
-            if (/*gameObject.GetComponent<Archery>().getAiming()*/Input.GetKey(KeyCode.Mouse1)&&Vector3.Distance(tether.localPosition,overshoulder)>0.01f)
+            if (gameObject.GetComponent<Archery>().GetAiming()&&Vector3.Distance(tether.localPosition,overshoulder)>0.01f)
             {
                 tether.localPosition = Vector3.Lerp(tether.localPosition, overshoulder, Time.deltaTime * cameraSwitchSpeed);
                 cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, new Vector3(0, 0,-2), Time.deltaTime * cameraSwitchSpeed);
                 cameraRestingDistance = Mathf.Lerp(cameraRestingDistance, 2, Time.deltaTime * cameraSwitchSpeed);
             }
-            else if (!Input.GetKey(KeyCode.Mouse1)&&Vector3.Distance(tether.localPosition,overhead)>0.01f)
+            else if (!gameObject.GetComponent<Archery>().GetAiming() && Vector3.Distance(tether.localPosition, overhead) > 0.01f)
             {
                 tether.localPosition = Vector3.Lerp(tether.localPosition, overhead, Time.deltaTime * cameraSwitchSpeed);
                 cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, new Vector3(0.0f, 0.0f,-4.6f), Time.deltaTime * cameraSwitchSpeed);
