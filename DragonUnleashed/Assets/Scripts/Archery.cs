@@ -51,16 +51,16 @@ public class Archery : Photon.MonoBehaviour
 	private void RPCFireArrow(int firingPlayerID, Vector3 force)
 	{
         print("RPCFireArrow " + firingPlayerID);
-        if (na.playerID == firingPlayerID)
-        {
-            print("correct player firing");
+        //if (na.playerID == firingPlayerID)
+        //{
+            //print("correct player firing");
             GameObject launchedArrow = Instantiate(arrow, gameObject.transform.position + new Vector3(0.75f, 0.75f, 0), transform.rotation) as GameObject;
             launchedArrow.rigidbody.AddForce(force);
-        }
-        else
-        {
-            print("not correct player firing");
-        }
+        //}
+        //else
+        //{
+        //    print("not correct player firing");
+        //}
 	}
 
 	public bool GetAiming()
