@@ -28,7 +28,7 @@ public class VillagerMovement : MonoBehaviour {
 	void Update () {
         if (isLocal)
         {
-            if (!cam.GetComponent<Camera>().enabled)
+            if (!cam.GetActive())
             {
                 cam.SetActive(true);
             }
