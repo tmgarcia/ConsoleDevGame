@@ -131,6 +131,7 @@ public class PlayersManager : MonoBehaviour
         foreach (GameObject p in playerObjects)
         {
             p.GetComponent<BasePlayerScript>().InitializeGame();
+            GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
         }
     }
 }

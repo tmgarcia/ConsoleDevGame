@@ -203,6 +203,5 @@ public class GameSetupManager : Photon.MonoBehaviour
     public void StartGame()
     {
         ScenePhotonView.RPC("InitializePlayers", PhotonTargets.All);
-        GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
     }
 }
