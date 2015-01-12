@@ -197,6 +197,7 @@
     <Compile Include="Assets\Scripts\BasePlayerScript.cs" />
     <Compile Include="Assets\Scripts\Damageable.cs" />
     <Compile Include="Assets\Scripts\DragonMovement.cs" />
+    <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GameSetupManager.cs" />
     <Compile Include="Assets\Scripts\NetworkAgent.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

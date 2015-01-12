@@ -62,3 +62,5 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.suo
+*.suo
+*.csproj
