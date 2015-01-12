@@ -26,12 +26,12 @@ public class Arrow : MonoBehaviour {
             }
 
 
-             var damcom = collision.gameObject.GetComponent("Damageable");
+             var damcom = collision.gameObject.GetComponent<Damageable>();
            
                 //inflict damage with damageable
-             if (damcom != null && damcom.damageRole == damageRole.dragon)////////////Damage check
-             { 
-             
+             if (damcom != null && damcom.damageRole == DamageRole.Dragon)////////////Damage check
+             {
+                 damcom.CurrentIntegrity -= 10;
              
              }
             
