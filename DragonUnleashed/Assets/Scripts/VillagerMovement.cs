@@ -15,6 +15,14 @@ public class VillagerMovement : MonoBehaviour {
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
 	}
+
+    //void OnJoinedRoom()
+    //{
+    //    if (photonView.isMine)
+    //    {
+    //        cam.GetComponent<Camera>().enabled = true;
+    //    }
+    //}
 	
 	// Update is called once per frame
 	void Update () {
