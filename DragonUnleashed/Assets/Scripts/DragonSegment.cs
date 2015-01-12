@@ -16,7 +16,7 @@ public class DragonSegment : MonoBehaviour {
     void Update()
     {
         if (movement == null) movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
-            if (Vector3.Distance(transform.position, parent.position) > 1)
+            if (Vector3.Distance(transform.position, parent.position) > 3.5f)
             {
                 transform.position = Vector3.Lerp(transform.position, parent.position, Time.deltaTime * movement.speed);
             }
