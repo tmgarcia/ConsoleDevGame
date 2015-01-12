@@ -30,7 +30,7 @@ public class VillagerMovement : MonoBehaviour {
         {
             if (!cam.GetComponent<Camera>().enabled)
             {
-                cam.GetComponent<Camera>().enabled = true;
+                cam.SetActive(true);
             }
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = Vector3.Cross(forward, Vector3.up);

@@ -23,7 +23,7 @@ public class DragonMovement : MonoBehaviour {
         {
             if (!cam.GetComponent<Camera>().enabled)
             {
-                cam.GetComponent<Camera>().enabled = true;
+                cam.SetActive(true);
             }
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = gameObject.transform.right;
