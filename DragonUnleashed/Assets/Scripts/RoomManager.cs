@@ -8,7 +8,7 @@ public class RoomManager : Photon.MonoBehaviour
     Text NetworkStatusText;
     Text NetworkDebugText;
     public byte Version = 1;
-    int maxNumPlayers = 4;
+    int maxNumPlayers = 5;
 
 	void Start () 
     {
