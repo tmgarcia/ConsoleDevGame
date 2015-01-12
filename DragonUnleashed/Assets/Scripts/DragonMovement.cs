@@ -14,7 +14,7 @@ public class DragonMovement : MonoBehaviour {
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
         cam = transform.FindChild("DragonCamera").gameObject;
-        isLocal = GetComponent<NetworkAgent>().IsLocalCharacter();
+        isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
 	// Update is called once per frame
