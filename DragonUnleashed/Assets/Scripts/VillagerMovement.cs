@@ -16,10 +16,12 @@ public class VillagerMovement : MonoBehaviour {
     public bool isLocal = false;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         photonView = gameObject.GetComponent<PhotonView>();
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
+        isLocal = GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
 	// Update is called once per frame

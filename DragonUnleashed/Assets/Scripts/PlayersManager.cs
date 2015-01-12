@@ -128,10 +128,11 @@ public class PlayersManager : MonoBehaviour
     [RPC]
     public void InitializePlayers()
     {
-        foreach (GameObject p in playerObjects)
-        {
-            p.GetComponent<BasePlayerScript>().InitializeGame();
-            GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
-        }
+        //foreach (GameObject p in playerObjects)
+        //{
+        //    p.GetComponent<BasePlayerScript>().InitializeGame();
+        //}
+        GetPlayer(localPlayerID).GetComponent<BasePlayerScript>().InitializeGame();
+        GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
     }
 }

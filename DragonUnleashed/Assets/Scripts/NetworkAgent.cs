@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NetworkAgent : MonoBehaviour {
-
+public class NetworkAgent : Photon.MonoBehaviour
+{
     private Vector3 networkPosition;
     private Quaternion networkRotation;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+    {
+	    
 	}
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -34,9 +35,15 @@ public class NetworkAgent : MonoBehaviour {
     {
         return networkRotation;
     }
+
+    public bool IsLocalCharacter()
+    {
+        return photonView.isMine;
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 	
 	}
 }
