@@ -12,9 +12,9 @@ public class DragonMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        photonView = gameObject.GetComponent<PhotonView>();
+        photonView = transform.parent.gameObject.GetComponent<PhotonView>();
         cam = transform.FindChild("DragonCamera").gameObject;
-        isLocal = GetComponent<NetworkAgent>().IsLocalCharacter();
+        isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
 	// Update is called once per frame
@@ -52,8 +52,8 @@ public class DragonMovement : MonoBehaviour {
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, gameObject.GetComponent<NetworkAgent>().GetNetworkPosition(), Time.deltaTime * 5);
-            transform.rotation = Quaternion.Lerp(transform.rotation, gameObject.GetComponent<NetworkAgent>().GetNetworkRotation(), Time.deltaTime * 5);
+            transform.position = Vector3.Lerp(transform.position, transform.parent.gameObject.GetComponent<NetworkAgent>().GetNetworkPosition(), Time.deltaTime * 5);
+            transform.rotation = Quaternion.Lerp(transform.rotation, transform.parent.gameObject.GetComponent<NetworkAgent>().GetNetworkRotation(), Time.deltaTime * 5);
         }
 	}
 }

@@ -16,8 +16,8 @@ public class NetworkAgent : Photon.MonoBehaviour
     {
         if (stream.isWriting)
         {
-            stream.SendNext(transform.position);
-            stream.SendNext(transform.rotation);
+            stream.SendNext(transform.FindChild("DragonHead").transform.position);
+            stream.SendNext(transform.FindChild("DragonHead").transform.rotation);
         }
         else
         {
