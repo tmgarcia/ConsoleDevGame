@@ -215,7 +215,7 @@
     <None Include="Assets\Art\Models\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Particles\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\Art\Textures\RemoveThisWhenFolderNotEmpty.txt" />
-    <None Include="Assets\Managers\RemoveThisWhenFolderNotEmpty.txt" />
+    <None Include="Assets\OVR\Managers\RemoveThisWhenFolderNotEmpty.txt" />
     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
     <None Include="Assets\Photon Unity Networking\changelog.txt" />
