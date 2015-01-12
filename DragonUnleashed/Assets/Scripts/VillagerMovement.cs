@@ -4,25 +4,47 @@ using System.Collections;
 public class VillagerMovement : MonoBehaviour {
 
     private PhotonView photonView;
-    private float speed = 50;
+    private float speed = 30;
+    private float jumpheight = 10;
     private float speedLimiter = 0.95f;
+    private float cameraSwitchSpeed = 30;
+    private float cameraRestingDistance = 5;
     private GameObject cam;
     private Transform tether;
+    private Vector3 overhead = new Vector3(0.0f,0.9f,0.0f);
+    private Vector3 overshoulder = new Vector3(1.2f, 0.45f, 0.0f);
 
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
+        PhotonNetwork.ConnectUsingSettings("0.1");
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
 	}
 
-    //void OnJoinedRoom()
-    //{
-    //    if (photonView.isMine)
-    //    {
-    //        cam.GetComponent<Camera>().enabled = true;
-    //    }
-    //}
+    void OnGUI()
+    {
+        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+    }
+
+    void OnJoinedLobby()
+    {
+        Debug.Log("JoinRandom");
+        PhotonNetwork.JoinRandomRoom();
+    }
+
+    void OnPhotonRandomJoinFailed()
+    {
+        PhotonNetwork.CreateRoom(null);
+    }
+
+    void OnJoinedRoom()
+    {
+        if (photonView.isMine)
+        {
+            cam.GetComponent<Camera>().enabled = true;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -36,8 +58,26 @@ public class VillagerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration -= forward;
             if (Input.GetKey(KeyCode.D)) accelaration -= right;
             accelaration.Normalize();
+            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight;
+
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
+            float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
             gameObject.GetComponent<Rigidbody>().velocity *= speedLimiter;
+
+            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, storedY, gameObject.GetComponent<Rigidbody>().velocity.z);
+
+            if (/*gameObject.GetComponent<Archery>().getAiming()*/Input.GetKey(KeyCode.Mouse1)&&Vector3.Distance(tether.localPosition,overshoulder)>0.01f)
+            {
+                tether.localPosition = Vector3.Lerp(tether.localPosition, overshoulder, Time.deltaTime * cameraSwitchSpeed);
+                cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, new Vector3(0, 0,-2), Time.deltaTime * cameraSwitchSpeed);
+                cameraRestingDistance = Mathf.Lerp(cameraRestingDistance, 2, Time.deltaTime * cameraSwitchSpeed);
+            }
+            else if (!Input.GetKey(KeyCode.Mouse1)&&Vector3.Distance(tether.localPosition,overhead)>0.01f)
+            {
+                tether.localPosition = Vector3.Lerp(tether.localPosition, overhead, Time.deltaTime * cameraSwitchSpeed);
+                cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, new Vector3(0.0f, 0.0f,-4.6f), Time.deltaTime * cameraSwitchSpeed);
+                cameraRestingDistance = Mathf.Lerp(cameraRestingDistance, 5, Time.deltaTime * cameraSwitchSpeed);
+            }
 
             float deltaX = Input.GetAxis("Mouse X");
             float deltaY = Input.GetAxis("Mouse Y");
@@ -59,9 +99,20 @@ public class VillagerMovement : MonoBehaviour {
         }
 	}
 
+    private bool canJump()
+    {
+        bool result = false;
+        RaycastHit hit = new RaycastHit();
+        if (Physics.Linecast(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), out hit))
+        {
+            if (!hit.collider.gameObject!=gameObject) result = true;
+        }
+        return result;
+    }
+
     private void CamCollide()
     {
-        if (cam.transform.localPosition.z > -5)
+        if (cam.transform.localPosition.z > -cameraRestingDistance)
         {
             Vector3 newPos = cam.transform.localPosition;
             newPos.z = -5;
@@ -90,14 +141,14 @@ public class VillagerMovement : MonoBehaviour {
         points[6] = new Vector3(0.3f, -0.2f, 0.0f);
         points[7] = new Vector3(-0.3f, -0.2f, 0.0f);
 
-        Debug.DrawLine(target, camPos + (camRot * (points[0])), Color.blue);
-        Debug.DrawLine(target, camPos + (camRot * (points[1])), Color.red);
-        Debug.DrawLine(target, camPos + (camRot * (points[2])), Color.gray);
-        Debug.DrawLine(target, camPos + (camRot * (points[3])), Color.green);
-        Debug.DrawLine(target, camPos + (camRot * (points[4])), Color.magenta);
-        Debug.DrawLine(target, camPos + (camRot * (points[5])), Color.cyan);
-        Debug.DrawLine(target, camPos + (camRot * (points[6])), Color.black);
-        Debug.DrawLine(target, camPos + (camRot * (points[7])), Color.white);
+        //Debug.DrawLine(target, camPos + (camRot * (points[0])), Color.blue);
+        //Debug.DrawLine(target, camPos + (camRot * (points[1])), Color.red);
+        //Debug.DrawLine(target, camPos + (camRot * (points[2])), Color.gray);
+        //Debug.DrawLine(target, camPos + (camRot * (points[3])), Color.green);
+        //Debug.DrawLine(target, camPos + (camRot * (points[4])), Color.magenta);
+        //Debug.DrawLine(target, camPos + (camRot * (points[5])), Color.cyan);
+        //Debug.DrawLine(target, camPos + (camRot * (points[6])), Color.black);
+        //Debug.DrawLine(target, camPos + (camRot * (points[7])), Color.white);
 
         bool ithit = false;
         int closest = 0;
@@ -118,7 +169,7 @@ public class VillagerMovement : MonoBehaviour {
         }
         if (ithit)
         {
-            Debug.DrawLine(target, target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f)), Color.yellow, 1);
+            //Debug.DrawLine(target, target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f)), Color.yellow, 1);
             cam.transform.position = target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f));
         }
     }
