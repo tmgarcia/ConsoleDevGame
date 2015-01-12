@@ -8,6 +8,7 @@ public class Arrow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         stuck = false;
+        Destroy(gameObject, 10.00f);
 	}
 	
 	// Update is called once per frame
