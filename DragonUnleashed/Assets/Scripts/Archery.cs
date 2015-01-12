@@ -36,31 +36,21 @@ public class Archery : Photon.MonoBehaviour
 			if (aiming && Input.GetMouseButtonDown(0)) //Left mouse down
 			{
                 Vector3 arrowForce = Camera.main.transform.forward * 1000;
-                FireArrow(na.playerID, arrowForce);
+                FireArrow(gameObject.transform.position, transform.rotation, arrowForce);
 			}
 		}
 	}
 
-    public static void FireArrow(int playerId, Vector3 force)
+    public static void FireArrow(Vector3 position, Quaternion rotation, Vector3 force)
     {
-        photonView.RPC("RPCFireArrow", PhotonTargets.All, new object[] { playerId, force });
-        print("FireArrow " + playerId);
+        photonView.RPC("RPCFireArrow", PhotonTargets.All, new object[] { position, rotation, force });
     }
 
 	[RPC]
-	private void RPCFireArrow(int firingPlayerID, Vector3 force)
+	private void RPCFireArrow(Vector3 position, Quaternion rotation, Vector3 force)
 	{
-        print("RPCFireArrow " + firingPlayerID);
-        //if (na.playerID == firingPlayerID)
-        //{
-            //print("correct player firing");
-            GameObject launchedArrow = Instantiate(arrow, gameObject.transform.position + new Vector3(0.75f, 0.75f, 0), transform.rotation) as GameObject;
-            launchedArrow.rigidbody.AddForce(force);
-        //}
-        //else
-        //{
-        //    print("not correct player firing");
-        //}
+        GameObject launchedArrow = Instantiate(arrow, position + new Vector3(0.75f, 0.75f, 0), rotation) as GameObject;
+        launchedArrow.rigidbody.AddForce(force);
 	}
 
 	public bool GetAiming()
