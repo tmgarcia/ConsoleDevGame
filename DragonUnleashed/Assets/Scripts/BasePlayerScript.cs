@@ -58,10 +58,12 @@ public class BasePlayerScript : MonoBehaviour
         if(Role == CharacterRole.Hider)
         {
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", new Vector3(Random.Range(200, 220), 1, Random.Range(160, 180)), Quaternion.identity, 0);
+            playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
         else if (Role == CharacterRole.Seeker)
         {
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", new Vector3(Random.Range(200, 220), 10, Random.Range(160, 180)), Quaternion.identity, 0);
+            playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
     }
 

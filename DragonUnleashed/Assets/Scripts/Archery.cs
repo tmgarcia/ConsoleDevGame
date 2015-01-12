@@ -36,20 +36,20 @@ public class Archery : Photon.MonoBehaviour
 			if (aiming && Input.GetMouseButtonDown(0)) //Left mouse down
 			{
                 Vector3 arrowForce = Camera.main.transform.forward * 1000;
-                FireArrow(arrowForce);
+                FireArrow(na.playerID, arrowForce);
 			}
 		}
 	}
 
-    public static void FireArrow(Vector3 force)
+    public static void FireArrow(int playerId, Vector3 force)
     {
-        photonView.RPC("RPCFireArrow", PhotonTargets.All, new object[]{photonView.ownerId, force});
+        photonView.RPC("RPCFireArrow", PhotonTargets.All, new object[] { playerId, force });
     }
 
 	[RPC]
 	private void RPCFireArrow(int firingPlayerID, Vector3 force)
 	{
-        if (photonView.ownerId == firingPlayerID)
+        if (na.playerID == firingPlayerID)
         {
             GameObject launchedArrow = Instantiate(arrow, gameObject.transform.position + new Vector3(0.75f, 0.75f, 0), transform.rotation) as GameObject;
             launchedArrow.rigidbody.AddForce(force);

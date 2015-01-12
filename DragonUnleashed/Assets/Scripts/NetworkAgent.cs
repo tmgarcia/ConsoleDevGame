@@ -6,6 +6,7 @@ public class NetworkAgent : Photon.MonoBehaviour
     private Vector3 networkPosition;
     private Quaternion networkRotation;
     public GameObject agent;
+    public int playerID;
 
 	// Use this for initialization
 	void Start () 
