@@ -43,6 +43,10 @@ public class Flammable : Damageable
 	{
 		//create ash particle effect
 		//destroy object? Possibly replace with ash pile model
-		Destroy(this.gameObject);
+
+		if (damageRole == DamageRole.Scenery)
+		{
+			Destroy(this.gameObject);
+		}
 	}
 }

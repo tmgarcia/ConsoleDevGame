@@ -50,6 +50,7 @@ GameObject:
   - 54: {fileID: 5480758}
   - 114: {fileID: 11480754}
   - 114: {fileID: 11483788}
+  - 114: {fileID: 11401146}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Untagged
@@ -175,7 +176,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180756}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &9280758
 Behaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +184,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180756}
   m_Enabled: 1
+--- !u!114 &11401146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  damageRole: 1
 --- !u!114 &11480754
 MonoBehaviour:
   m_ObjectHideFlags: 1
