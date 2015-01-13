@@ -3052,8 +3052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: 'Survive the Dragon: '
-  StartingMinutes: 0
-  StartingSeconds: 15
+  StartingMinutes: 10
+  StartingSeconds: 0
   StartOnStart: 0
 --- !u!114 &603028382
 MonoBehaviour:
@@ -4231,6 +4231,14 @@ Prefab:
     - target: {fileID: 22434572, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434574, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
+      propertyPath: StartingSeconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434574, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
+      propertyPath: StartingMinutes
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
