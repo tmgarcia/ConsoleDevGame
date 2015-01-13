@@ -36,7 +36,8 @@ public class Archery : Photon.MonoBehaviour
 			if (aiming && Input.GetMouseButtonDown(0)) //Left mouse down
 			{
                 Vector3 arrowForce = Camera.main.transform.forward * 1000;
-                FireArrow(gameObject.transform.position, transform.rotation, arrowForce);
+                Vector3 launchLocation = gameObject.transform.position + (0.75f * (gameObject.transform.up + gameObject.transform.right)); 
+                FireArrow(launchLocation, transform.rotation, arrowForce);
 			}
 		}
 	}
@@ -49,7 +50,7 @@ public class Archery : Photon.MonoBehaviour
 	[RPC]
 	private void RPCFireArrow(Vector3 position, Quaternion rotation, Vector3 force)
 	{
-        GameObject launchedArrow = Instantiate(arrow, position + new Vector3(0.75f, 0.75f, 0), rotation) as GameObject;
+        GameObject launchedArrow = Instantiate(arrow, position , rotation) as GameObject;
         launchedArrow.rigidbody.AddForce(force);
 	}
 
