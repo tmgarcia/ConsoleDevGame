@@ -21,14 +21,11 @@ public class PlayersManager : MonoBehaviour
     private static PhotonView ScenePhotonView;
 	public static PlayersManager instance;
 
-	private int random;
-
     void Start()
     {
 		if (instance == null)
 		{
 			instance = this;
-			random = Random.Range(int.MinValue, int.MaxValue);
 		}
 
         ScenePhotonView = this.GetComponent<PhotonView>();
@@ -37,20 +34,20 @@ public class PlayersManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-		print(random);
+
 	}
     public void RemoveExistingPlayer(int playerID)
     {
         GameObject playerToRemove = GetPlayer(playerID);
         switch (playerToRemove.GetComponent<BasePlayerScript>().Role)
         {
-            case BasePlayerScript.CharacterRole.Hider:
+            case PlayerRole.Villager:
                 currentNumHiders -= 1;
                 break;
-            case BasePlayerScript.CharacterRole.Seeker:
+            case PlayerRole.Dragon:
                 currentNumSeekers -= 1;
                 break;
-            case BasePlayerScript.CharacterRole.Unassigned:
+            case PlayerRole.Unassigned:
                 currentNumUnassigned -= 1;
                 break;
         }
@@ -69,12 +66,12 @@ public class PlayersManager : MonoBehaviour
         GameObject player = playerObjects.FirstOrDefault(p => p.GetComponent<BasePlayerScript>().playerID == playerID);
         return player;
     }
-    public BasePlayerScript.CharacterRole GetPlayerRole(int playerID)
+    public PlayerRole GetPlayerRole(int playerID)
     {
         GameObject player = playerObjects.FirstOrDefault(p => p.GetComponent<BasePlayerScript>().playerID == playerID);
         return player.GetComponent<BasePlayerScript>().Role;
     }
-    public void SetPlayerRole(int playerID, BasePlayerScript.CharacterRole role)
+    public void SetPlayerRole(int playerID, PlayerRole role)
     {
         GameObject player = playerObjects.FirstOrDefault(p => p.GetComponent<BasePlayerScript>().playerID == playerID);
         player.GetComponent<BasePlayerScript>().Role = role;
@@ -88,10 +85,10 @@ public class PlayersManager : MonoBehaviour
         newPlayerBase.playerID = playerID;
         newPlayerBase.isLocalPlayer = (playerID == localPlayerID);
         newPlayerBase.ready = false;
-        newPlayerBase.Role = BasePlayerScript.CharacterRole.Unassigned;
+        newPlayerBase.Role = PlayerRole.Unassigned;
         newPlayerBase.InitialSetup();
         playerObjects.Add(newPlayer);
-        GetComponent<GameSetupManager>().MoveToRole(playerID, BasePlayerScript.CharacterRole.Unassigned);
+        GetComponent<GameSetupManager>().MoveToRole(playerID, PlayerRole.Unassigned);
         currentNumUnassigned += 1;
     }
     public bool AllPlayersAreReady()
@@ -106,29 +103,29 @@ public class PlayersManager : MonoBehaviour
         }
         return allReady;
     }
-    public void AdjustRoleNumbersForMovedPlayer(BasePlayerScript.CharacterRole oldRole, BasePlayerScript.CharacterRole newRole)
+    public void AdjustRoleNumbersForMovedPlayer(PlayerRole oldRole, PlayerRole newRole)
     {
         switch (oldRole)
         {
-            case BasePlayerScript.CharacterRole.Hider:
+            case PlayerRole.Villager:
                 currentNumHiders -= 1;
                 break;
-            case BasePlayerScript.CharacterRole.Seeker:
+            case PlayerRole.Dragon:
                 currentNumSeekers -= 1;
                 break;
-            case BasePlayerScript.CharacterRole.Unassigned:
+            case PlayerRole.Unassigned:
                 currentNumUnassigned -= 1;
                 break;
         }
         switch (newRole)
         {
-            case BasePlayerScript.CharacterRole.Hider:
+            case PlayerRole.Villager:
                 currentNumHiders += 1;
                 break;
-            case BasePlayerScript.CharacterRole.Seeker:
+            case PlayerRole.Dragon:
                 currentNumSeekers += 1;
                 break;
-            case BasePlayerScript.CharacterRole.Unassigned:
+            case PlayerRole.Unassigned:
                 currentNumUnassigned += 1;
                 break;
         }

@@ -5,7 +5,8 @@ using System.Collections.Generic;
 public class Timer : MonoBehaviour
 {
 	public string VillagerTimerText = "Survive the Dragon: ";
-	public string DragonTimerText = "Survive the Dragon: ";
+	public string DragonTimerText = "Kill Them All: ";
+	private string localTimerText = "";
 	public int StartingMinutes = 5;
 	public int StartingSeconds = 0;
 	private float currentSeconds;
@@ -19,11 +20,16 @@ public class Timer : MonoBehaviour
 
 	public bool StartOnStart = true;
 
+	private PlayerRole localPlayerRole;
+
 	void Start()
 	{
 		timerText = GetComponent<Text>();
 		StopTimer();
 		ResetTimer();
+		int localPlayerID = PlayersManager.instance.localPlayerID;
+		localPlayerRole = PlayersManager.instance.GetPlayerRole(localPlayerID);
+
 		if (StartOnStart)
 		{
 			StartTimer();
@@ -76,10 +82,28 @@ public class Timer : MonoBehaviour
 
 		if (newDisplayMinutes != currentDisplayMinutes || newDisplaySecounds != currentDisplaySeconds)
 		{
-			timerText.text = VillagerTimerText + newDisplayMinutes + ":";
+			SetLocalText();
+			timerText.text = localTimerText + newDisplayMinutes + ":";
 			timerText.text += (newDisplaySecounds > 9) ? newDisplaySecounds.ToString() : ("0" + newDisplaySecounds.ToString());
 			currentDisplayMinutes = newDisplayMinutes;
 			currentDisplaySeconds = newDisplaySecounds;
+		}
+	}
+
+	private void SetLocalText()
+	{
+		switch(localPlayerRole)
+		{
+			case PlayerRole.Villager:
+				localTimerText = VillagerTimerText;
+				break;
+			case PlayerRole.Dragon:
+				localTimerText = DragonTimerText;
+				break;
+			default:
+				localTimerText = "Unknown Player Role: ";
+				Debug.Log(new UnityException("Timer's local player role set to unhandled type."));
+				break;
 		}
 	}
 
