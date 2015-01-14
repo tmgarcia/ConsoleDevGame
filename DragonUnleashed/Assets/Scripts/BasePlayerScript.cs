@@ -8,6 +8,7 @@ public class BasePlayerScript : MonoBehaviour
     public bool ready;
     public bool isLocalPlayer;
     public GameObject setupPlayerLabel;
+	public GameObject playerReadyButton;
 
     public GameObject PlayerSelfLabelPrefab;
     public GameObject PlayerOtherLabelPrefab;
@@ -39,12 +40,14 @@ public class BasePlayerScript : MonoBehaviour
                 setupPlayerLabel = (GameObject)Instantiate(PlayerSelfLabelPrefab);
                 setupPlayerLabel.name = "PlayerSelf";
                 setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().onClick.AddListener(() => { GameObject.FindObjectOfType<GameSetupManager>().SetSelfToReady(); });
+				playerReadyButton = setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().gameObject;
                 setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID + " (You)";
             }
             else
             {
                 setupPlayerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
                 setupPlayerLabel.name = "PlayerOther" + playerID;
+				playerReadyButton = setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().gameObject;
                 setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID;
                 
             }
@@ -59,9 +62,10 @@ public class BasePlayerScript : MonoBehaviour
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
-		else if (Role == PlayerRole.Dragon)
+	else if (Role == PlayerRole.Dragon)
         {
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
+            //playerCharacter = (GameObject)PhotonNetwork.Instantiate("DragonOVR", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
     }

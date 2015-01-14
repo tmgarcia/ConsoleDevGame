@@ -12,9 +12,32 @@ public class GameSetupManager : Photon.MonoBehaviour
     private static PhotonView ScenePhotonView;
     private static PlayersManager playersManager;
 
+	//private bool isOculusConnected;
+
+	//private void CheckOculusConnection()
+	//{
+	//	isOculusConnected = Ovr.Hmd.Detect() > 0;
+	//}
+
+	private bool IsOculusConnected()
+	{
+		return Ovr.Hmd.Detect() > 0;
+	}
+
+	void Awake()
+	{
+		print("Oculus Connection: " + IsOculusConnected());
+	}
 
 	void Start () 
     {
+		//CheckOculusConnection();
+		//print("connection: " + (Ovr.Hmd.Detect() > 0));
+		//OVRManager.HMDAcquired += CheckOculusConnection;
+		//OVRManager.HMDLost += CheckOculusConnection;
+
+		print("Oculus Connection: " + IsOculusConnected());
+
         ScenePhotonView = this.GetComponent<PhotonView>();
         playersManager = this.GetComponent<PlayersManager>();
 	}
@@ -93,6 +116,7 @@ public class GameSetupManager : Photon.MonoBehaviour
                 playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Villager);
                 playerToMove.Role = PlayerRole.Villager;
                 playerToMove.setupPlayerLabel.transform.SetParent(HidersPanel.transform, false);
+				playerToMove.playerReadyButton.SetActive(true);
             }
             else
             {
@@ -121,6 +145,7 @@ public class GameSetupManager : Photon.MonoBehaviour
                 playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Dragon);
                 playerToMove.Role = PlayerRole.Dragon;
                 playerToMove.setupPlayerLabel.transform.SetParent(SeekersPanel.transform, false);
+				playerToMove.playerReadyButton.SetActive(true);
             }
             else
             {
@@ -147,6 +172,7 @@ public class GameSetupManager : Photon.MonoBehaviour
             playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Unassigned);
             playerToMove.Role = PlayerRole.Unassigned;
             playerToMove.setupPlayerLabel.transform.SetParent(UnassignedPanel.transform, false);
+			playerToMove.playerReadyButton.SetActive(false);
         }
     }
     [RPC]
