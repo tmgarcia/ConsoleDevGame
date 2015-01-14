@@ -6,7 +6,7 @@ public class DragonMovement : MonoBehaviour {
     public bool airPlaneControls = true;
     private PhotonView photonView;
     private GameObject cam;
-    public float speed = 5;
+    public float speed = 10;
     private float speedLimiter = 0.95f;
     public bool isLocal = false;
 
@@ -29,7 +29,7 @@ public class DragonMovement : MonoBehaviour {
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = gameObject.transform.right;
             Vector3 accelaration = forward * speed;
-            if (Input.GetKey(KeyCode.W)) accelaration *= 2;
+            if (Input.GetKey(KeyCode.W)) accelaration *= 4;
             if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
             if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
