@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class BasePlayerScript : MonoBehaviour 
 {
-    public enum CharacterRole { Unassigned, Hider, Seeker}
     public int playerID;
     public bool ready;
     public bool isLocalPlayer;
@@ -13,7 +12,7 @@ public class BasePlayerScript : MonoBehaviour
     public GameObject PlayerSelfLabelPrefab;
     public GameObject PlayerOtherLabelPrefab;
 
-    private CharacterRole _role;
+    private PlayerRole _role;
     private bool completedInitialSetup = false;
 
     public GameObject villagerPrefab;
@@ -55,19 +54,19 @@ public class BasePlayerScript : MonoBehaviour
 
     public void InitializeGame()
     {
-        if(Role == CharacterRole.Hider)
+        if(Role == PlayerRole.Villager)
         {
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", new Vector3(Random.Range(200, 220), 1, Random.Range(160, 180)), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
-        else if (Role == CharacterRole.Seeker)
+		else if (Role == PlayerRole.Dragon)
         {
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", new Vector3(Random.Range(200, 220), 10, Random.Range(160, 180)), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
     }
 
-    public CharacterRole Role
+    public PlayerRole Role
     {
         get
         {

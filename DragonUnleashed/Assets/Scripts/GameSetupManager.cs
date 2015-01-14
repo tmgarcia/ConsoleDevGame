@@ -45,32 +45,32 @@ public class GameSetupManager : Photon.MonoBehaviour
     public void MoveSelfToHiders()
     {
         SetToNotReady(playersManager.localPlayerID);
-        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Hider);
+        MoveToRole(playersManager.localPlayerID, PlayerRole.Villager);
         MovePlayerToHiders(playersManager.localPlayerID);
     }
     public void MoveSelfToSeekers()
     {
         SetToNotReady(playersManager.localPlayerID);
-        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Seeker);
+        MoveToRole(playersManager.localPlayerID, PlayerRole.Dragon);
         MovePlayerToSeekers(playersManager.localPlayerID);
     }
     public void MoveSelfToUnassigned()
     {
         SetToNotReady(playersManager.localPlayerID);
-        MoveToRole(playersManager.localPlayerID, BasePlayerScript.CharacterRole.Unassigned);
+        MoveToRole(playersManager.localPlayerID, PlayerRole.Unassigned);
         MovePlayerToUnassigned(playersManager.localPlayerID);
     }
-    public void MoveToRole(int playerID, BasePlayerScript.CharacterRole role)
+    public void MoveToRole(int playerID, PlayerRole role)
     {
         switch (role)
         {
-            case BasePlayerScript.CharacterRole.Hider:
+            case PlayerRole.Villager:
                 MoveToHiders(playerID);
                 break;
-            case BasePlayerScript.CharacterRole.Seeker:
+            case PlayerRole.Dragon:
                 MoveToSeekers(playerID);
                 break;
-            case BasePlayerScript.CharacterRole.Unassigned:
+            case PlayerRole.Unassigned:
                 MoveToUnassigned(playerID);
                 break;
         }
@@ -90,8 +90,8 @@ public class GameSetupManager : Photon.MonoBehaviour
         {
             if (playersManager.currentNumHiders < playersManager.maxNumHiders)
             {
-                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Hider);
-                playerToMove.Role = BasePlayerScript.CharacterRole.Hider;
+                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Villager);
+                playerToMove.Role = PlayerRole.Villager;
                 playerToMove.setupPlayerLabel.transform.SetParent(HidersPanel.transform, false);
             }
             else
@@ -118,8 +118,8 @@ public class GameSetupManager : Photon.MonoBehaviour
         {
             if (playersManager.currentNumSeekers < playersManager.maxNumSeekers )
             {
-                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Seeker);
-                playerToMove.Role = BasePlayerScript.CharacterRole.Seeker;
+                playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Dragon);
+                playerToMove.Role = PlayerRole.Dragon;
                 playerToMove.setupPlayerLabel.transform.SetParent(SeekersPanel.transform, false);
             }
             else
@@ -144,8 +144,8 @@ public class GameSetupManager : Photon.MonoBehaviour
         }
         else
         {
-            playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, BasePlayerScript.CharacterRole.Unassigned);
-            playerToMove.Role = BasePlayerScript.CharacterRole.Unassigned;
+            playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Unassigned);
+            playerToMove.Role = PlayerRole.Unassigned;
             playerToMove.setupPlayerLabel.transform.SetParent(UnassignedPanel.transform, false);
         }
     }

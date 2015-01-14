@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
 
 	public bool StartOnStart = true;
 
+	private int localPlayerID = -1;
 	private PlayerRole localPlayerRole;
 
 	void Start()
@@ -27,8 +28,6 @@ public class Timer : MonoBehaviour
 		timerText = GetComponent<Text>();
 		StopTimer();
 		ResetTimer();
-		int localPlayerID = PlayersManager.instance.localPlayerID;
-		localPlayerRole = PlayersManager.instance.GetPlayerRole(localPlayerID);
 
 		if (StartOnStart)
 		{
@@ -92,6 +91,9 @@ public class Timer : MonoBehaviour
 
 	private void SetLocalText()
 	{
+		localPlayerID = PlayersManager.instance.localPlayerID;
+		localPlayerRole = PlayersManager.instance.GetPlayerRole(localPlayerID);
+
 		switch(localPlayerRole)
 		{
 			case PlayerRole.Villager:
@@ -102,7 +104,7 @@ public class Timer : MonoBehaviour
 				break;
 			default:
 				localTimerText = "Unknown Player Role: ";
-				Debug.Log(new UnityException("Timer's local player role set to unhandled type."));
+				Debug.LogException(new UnityException("Timer's local player role set to unhandled type."));
 				break;
 		}
 	}
@@ -112,7 +114,6 @@ public class Timer : MonoBehaviour
 		if (TimerFinishEvent != null)
 		{
 			TimerFinishEvent();
-			print("Ding");
 		}
 	}
 }
