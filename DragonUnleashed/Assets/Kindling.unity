@@ -3051,7 +3051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d994f479a11bb94789f08113e6cbd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimerText: 'Survive the Dragon: '
+  VillagerTimerText: 'Survive the Dragon: '
+  DragonTimerText: 
   StartingMinutes: 10
   StartingSeconds: 0
   StartOnStart: 0
@@ -3557,7 +3558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22401886, guid: aee494c6589032e49bb42a10efe18f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 22401886, guid: aee494c6589032e49bb42a10efe18f1d, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -3851,7 +3852,7 @@ RectTransform:
   - {fileID: 1266430155}
   - {fileID: 941224664}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4240,6 +4241,10 @@ Prefab:
     - target: {fileID: 11434574, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
       propertyPath: StartingMinutes
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434574, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
+      propertyPath: DragonTimerText
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
@@ -7137,7 +7142,7 @@ RectTransform:
   - {fileID: 916252709}
   - {fileID: 172121607}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 965.728027, y: 0}
