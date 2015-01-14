@@ -13,6 +13,7 @@ public class DragonMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
+        //cam = transform.FindChild("OVRCameraRig").gameObject;
         cam = transform.FindChild("DragonCamera").gameObject;
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
@@ -29,7 +30,7 @@ public class DragonMovement : MonoBehaviour {
             Vector3 right = gameObject.transform.right;
             Vector3 accelaration = forward * speed;
             if (Input.GetKey(KeyCode.W)) accelaration *= 2;
-            if (Input.GetKey(KeyCode.S)) accelaration *= 0.5f;
+            if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
             if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             gameObject.GetComponent<Rigidbody>().velocity *= speedLimiter;

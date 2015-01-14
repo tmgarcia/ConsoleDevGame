@@ -64,6 +64,7 @@ public class BasePlayerScript : MonoBehaviour
         }
 		else if (Role == PlayerRole.Dragon)
         {
+            //playerCharacter = (GameObject)PhotonNetwork.Instantiate("DragonOVR", new Vector3(Random.Range(200, 220), 10, Random.Range(160, 180)), Quaternion.identity, 0);
             playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", new Vector3(Random.Range(200, 220), 10, Random.Range(160, 180)), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
         }
