@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class Timer : MonoBehaviour
 {
-	public string TimerText = "Survive the Dragon: ";
+	public string VillagerTimerText = "Survive the Dragon: ";
+	public string DragonTimerText = "Survive the Dragon: ";
 	public int StartingMinutes = 5;
 	public int StartingSeconds = 0;
 	private float currentSeconds;
@@ -75,7 +76,7 @@ public class Timer : MonoBehaviour
 
 		if (newDisplayMinutes != currentDisplayMinutes || newDisplaySecounds != currentDisplaySeconds)
 		{
-			timerText.text = TimerText + newDisplayMinutes + ":";
+			timerText.text = VillagerTimerText + newDisplayMinutes + ":";
 			timerText.text += (newDisplaySecounds > 9) ? newDisplaySecounds.ToString() : ("0" + newDisplaySecounds.ToString());
 			currentDisplayMinutes = newDisplayMinutes;
 			currentDisplaySeconds = newDisplaySecounds;

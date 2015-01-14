@@ -203,6 +203,7 @@
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GameSetupManager.cs" />
     <Compile Include="Assets\Scripts\NetworkAgent.cs" />
+    <Compile Include="Assets\Scripts\Options.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerRole.cs" />
     <Compile Include="Assets\Scripts\PlayersManager.cs" />

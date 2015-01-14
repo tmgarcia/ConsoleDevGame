@@ -19,16 +19,25 @@ public class PlayersManager : MonoBehaviour
     public GameObject PlayerCharacterPrefab;
 
     private static PhotonView ScenePhotonView;
+	public static PlayersManager instance;
+
+	private int random;
 
     void Start()
     {
+		if (instance == null)
+		{
+			instance = this;
+			random = Random.Range(int.MinValue, int.MaxValue);
+		}
+
         ScenePhotonView = this.GetComponent<PhotonView>();
     }
 	
 	// Update is called once per frame
 	void Update () 
     {
-	    
+		print(random);
 	}
     public void RemoveExistingPlayer(int playerID)
     {
