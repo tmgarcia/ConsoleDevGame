@@ -199,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
   damageRole: 1
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!114 &11425188
 MonoBehaviour:
   m_ObjectHideFlags: 1
