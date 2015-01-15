@@ -14,6 +14,7 @@ public class VillagerMovement : MonoBehaviour {
     private Vector3 overhead = new Vector3(0.0f,0.9f,0.0f);
     private Vector3 overshoulder = new Vector3(1.2f, 0.45f, 0.0f);
     public bool isLocal = false;
+    private bool grounded;
 
 	// Use this for initialization
 	void Start () 
@@ -40,7 +41,7 @@ public class VillagerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration -= forward;
             if (Input.GetKey(KeyCode.D)) accelaration -= right;
             accelaration.Normalize();
-            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight;
+            if (Input.GetKeyDown(KeyCode.Space)&&grounded) accelaration += Vector3.up*jumpheight;
 
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
@@ -81,16 +82,30 @@ public class VillagerMovement : MonoBehaviour {
         }
 	}
 
-    private bool canJump()
+    void OnCollisionEnter(Collision hit)
     {
-        bool result = false;
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Linecast(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), out hit))
-        {
-            if (!hit.collider.gameObject!=gameObject) result = true;
-        }
-        return result;
+        grounded = hit.collider.tag == "Ground";
     }
+    void OnCollisionExit(Collision hit)
+    {
+        grounded = !(hit.collider.tag == "Ground");
+    }
+
+    //private bool canJump()
+    //{
+    //    bool result = true;
+    //    Debug.DrawLine(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), Color.yellow);
+    //    RaycastHit hit = new RaycastHit();
+    //    if (Physics.Linecast(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), out hit))
+    //    {
+    //        if (hit.collider.gameObject == gameObject) result = false;
+    //    }
+    //    else
+    //    {
+    //        result = false;
+    //    }
+    //    return result;
+    //}
 
     private void CamCollide()
     {
