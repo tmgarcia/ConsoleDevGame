@@ -165,10 +165,12 @@ public class SetUp : MonoBehaviour {
             building.transform.parent = city.transform;
         }
         bob.name = "Landscape";
+#if UNITY_EDITOR
         UnityEditor.AssetDatabase.CreateAsset(bob, @"Assets/Landscape.asset");
         bob.SetAlphamaps(0, 0, maps);
         UnityEditor.PrefabUtility.CreatePrefab(@"Assets/World.prefab", city);
         UnityEditor.AssetDatabase.SaveAssets();
+#endif
 	}
 	
 	// Update is called once per frame

@@ -8,7 +8,6 @@ public class Options : MonoBehaviour
 	public List<Vector2> ResolutionsWH;
 	public List<Resolution> resolutionOptions;
 	public Resolution current;
-	public bool isFullScreen;
 
 	void Start()
 	{
@@ -22,23 +21,35 @@ public class Options : MonoBehaviour
 		current = Screen.GetResolution[0];
 	}
 
-	void Update()
-	{
-
-	}
-
 	public void SetResolution(int width, int height)
 	{
-		Screen.SetResolution(width, height, true);
+		if (current.height != height || current.width != width)
+		{
+			current = new Resolution { width = width, height = height };
+			Screen.SetResolution(width, height, Screen.fullScreen);
+		}
 	}
 
 	public void SetResolution(Resolution resolution)
 	{
-
+		if (current.height != resolution.height || current.width != resolution.width)
+		{
+			current = resolution;
+			Screen.SetResolution(current.width, current.height, Screen.fullScreen);
+		}
 	}
 
 	public void SetResolution(ResolutionInfo ri)
 	{
+		if (current.height != ri.Height || current.width != ri.Width)
+		{
+			current = new Resolution { height = ri.Height, width = ri.Width };
+			Screen.SetResolution(current.width, current.height, Screen.fullScreen);
+		}
+	}
 
+	public void ToggleFullscreen()
+	{
+		Screen.fullScreen = !Screen.fullScreen;
 	}
 }

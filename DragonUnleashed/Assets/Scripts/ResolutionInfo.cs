@@ -3,13 +3,6 @@ using System.Collections.Generic;
 
 public class ResolutionInfo : MonoBehaviour
 {
-	void Start ()
-	{
-	
-	}
-
-	void Update ()
-	{
-	
-	}
+	public int Width;
+	public int Height;
 }
