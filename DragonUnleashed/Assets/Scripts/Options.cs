@@ -5,8 +5,7 @@ using System.Collections.Generic;
 public class Options : MonoBehaviour
 {
 	//allow for easy addition of solutions via outlet
-	//public List<Vector2> ResolutionsWH;
-
+	public List<Vector2> ResolutionsWH;
 	public List<Resolution> resolutionOptions;
 	public Resolution current;
 	public bool isFullScreen;
