@@ -6,7 +6,7 @@ public class DragonMovement : MonoBehaviour {
     public bool airPlaneControls = true;
     private PhotonView photonView;
     private GameObject cam;
-    public float speed = 8;
+    public float speed = 6;
     private float speedLimiter = 0.95f;
     public bool isLocal = false;
 
