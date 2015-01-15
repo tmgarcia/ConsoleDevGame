@@ -13,8 +13,8 @@ public class DragonMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
-        //cam = transform.FindChild("OVRCameraRig").gameObject;
-        cam = transform.FindChild("DragonCamera").gameObject;
+        cam = transform.FindChild("OVRCameraRig").gameObject;
+        //cam = transform.FindChild("DragonCamera").gameObject;
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
