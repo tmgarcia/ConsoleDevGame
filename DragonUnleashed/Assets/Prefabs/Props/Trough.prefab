@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3390416}
   - 23: {fileID: 2390416}
   - 65: {fileID: 6514312}
+  - 114: {fileID: 11424128}
   m_Layer: 0
   m_Name: pCube6
   m_TagString: Untagged
@@ -27,7 +28,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 490418}
   - 95: {fileID: 9590416}
-  - 114: {fileID: 11414312}
   m_Layer: 0
   m_Name: Trough
   m_TagString: Untagged
@@ -114,19 +114,20 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11414312
+--- !u!114 &11424128
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190418}
+  m_GameObject: {fileID: 190416}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  damageRole: 1
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 409388}
   - 95: {fileID: 9509390}
-  - 114: {fileID: 11462262}
   m_Layer: 0
   m_Name: WheatBundle
   m_TagString: Untagged
@@ -28,6 +27,7 @@ GameObject:
   - 33: {fileID: 3309390}
   - 23: {fileID: 2309390}
   - 136: {fileID: 13662262}
+  - 114: {fileID: 11476272}
   m_Layer: 0
   m_Name: pCylinder8
   m_TagString: Untagged
@@ -102,19 +102,20 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11462262
+--- !u!114 &11476272
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109388}
+  m_GameObject: {fileID: 109390}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  damageRole: 1
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!136 &13662262
 CapsuleCollider:
   m_ObjectHideFlags: 1

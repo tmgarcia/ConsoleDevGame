@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 423020}
   - 95: {fileID: 9523022}
-  - 114: {fileID: 11445186}
   m_Layer: 0
   m_Name: Watermelon
   m_TagString: Untagged
@@ -28,6 +27,7 @@ GameObject:
   - 33: {fileID: 3323022}
   - 23: {fileID: 2323022}
   - 136: {fileID: 13645186}
+  - 114: {fileID: 11422698}
   m_Layer: 0
   m_Name: pSphere2
   m_TagString: Untagged
@@ -102,19 +102,20 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11445186
+--- !u!114 &11422698
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123020}
+  m_GameObject: {fileID: 123022}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  damageRole: 1
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!136 &13645186
 CapsuleCollider:
   m_ObjectHideFlags: 1
