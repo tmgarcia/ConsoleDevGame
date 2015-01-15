@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 496634}
   - 33: {fileID: 3396634}
   - 23: {fileID: 2396634}
+  - 136: {fileID: 13633160}
   m_Layer: 0
   m_Name: pCylinder5
   m_TagString: Untagged
@@ -26,6 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 496636}
   - 95: {fileID: 9596634}
+  - 114: {fileID: 11427104}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196636}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 659.834778, y: 2.81706524, z: 1155.20325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496634}
@@ -100,6 +102,32 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11427104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  damageRole: 1
+--- !u!136 &13633160
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .646894991
+  m_Height: 1.37026298
+  m_Direction: 1
+  m_Center: {x: 0, y: .688062489, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

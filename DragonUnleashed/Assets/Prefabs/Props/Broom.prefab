@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 490846}
   - 95: {fileID: 9590848}
+  - 114: {fileID: 11477780}
   m_Layer: 0
   m_Name: Broom
   m_TagString: Untagged
@@ -26,6 +27,7 @@ GameObject:
   - 4: {fileID: 490848}
   - 33: {fileID: 3390848}
   - 23: {fileID: 2390848}
+  - 65: {fileID: 6547968}
   m_Layer: 0
   m_Name: pCylinder7
   m_TagString: Untagged
@@ -40,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190846}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 656.556213, y: 2.87315178, z: 1157.43677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490848}
@@ -85,6 +87,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190848}
   m_Mesh: {fileID: 4300000, guid: a6196645bf792c64faade7cf73570a8d, type: 3}
+--- !u!65 &6547968
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .600221336, y: 2.05694866, z: .155711994}
+  m_Center: {x: -.00128173828, y: 1.02847433, z: 0}
 --- !u!95 &9590848
 Animator:
   serializedVersion: 3
@@ -100,6 +114,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11477780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  damageRole: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

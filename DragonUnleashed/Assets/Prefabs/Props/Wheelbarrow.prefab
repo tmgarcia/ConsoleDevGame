@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495836}
   - 95: {fileID: 9595838}
+  - 114: {fileID: 11490814}
   m_Layer: 0
   m_Name: Wheelbarrow
   m_TagString: Untagged
@@ -26,6 +27,7 @@ GameObject:
   - 4: {fileID: 495838}
   - 33: {fileID: 3395838}
   - 23: {fileID: 2395838}
+  - 65: {fileID: 6590814}
   m_Layer: 0
   m_Name: pCube3
   m_TagString: Untagged
@@ -40,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195836}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 665.47052, y: 2.95127892, z: 1149.05945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495838}
@@ -85,6 +87,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195838}
   m_Mesh: {fileID: 4300000, guid: 68114b3e497cfdf4f922c74edcd8e8d4, type: 3}
+--- !u!65 &6590814
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.55561805, y: 1.611009, z: 1.16277206}
+  m_Center: {x: 0, y: .808507502, z: 0}
 --- !u!95 &9595838
 Animator:
   serializedVersion: 3
@@ -100,6 +114,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11490814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  damageRole: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

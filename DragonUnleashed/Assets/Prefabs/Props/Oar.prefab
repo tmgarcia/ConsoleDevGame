@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 402268}
   - 33: {fileID: 3302268}
   - 23: {fileID: 2302268}
+  - 65: {fileID: 6531426}
   m_Layer: 0
   m_Name: pCube5
   m_TagString: Untagged
@@ -26,6 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 402270}
   - 95: {fileID: 9502268}
+  - 114: {fileID: 11431426}
   m_Layer: 0
   m_Name: Oar
   m_TagString: Untagged
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102270}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 661.687317, y: 2.85081434, z: 1154.62427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402268}
@@ -85,6 +87,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102268}
   m_Mesh: {fileID: 4300000, guid: 8637c7265dfff784fa0725ca4e253531, type: 3}
+--- !u!65 &6531426
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .529627979, y: .0616360009, z: 3.99086595}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9502268
 Animator:
   serializedVersion: 3
@@ -100,6 +114,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11431426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  damageRole: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
