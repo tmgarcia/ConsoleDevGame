@@ -41,7 +41,7 @@ public class VillagerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration -= forward;
             if (Input.GetKey(KeyCode.D)) accelaration -= right;
             accelaration.Normalize();
-            if (Input.GetKeyDown(KeyCode.Space)&&grounded) accelaration += Vector3.up*jumpheight;
+            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight;
 
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
@@ -91,21 +91,17 @@ public class VillagerMovement : MonoBehaviour {
         grounded = !(hit.collider.tag == "Ground");
     }
 
-    //private bool canJump()
-    //{
-    //    bool result = true;
-    //    Debug.DrawLine(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), Color.yellow);
-    //    RaycastHit hit = new RaycastHit();
-    //    if (Physics.Linecast(transform.position, transform.position - new Vector3(0.0f, 1.0f, 0.0f), out hit))
-    //    {
-    //        if (hit.collider.gameObject == gameObject) result = false;
-    //    }
-    //    else
-    //    {
-    //        result = false;
-    //    }
-    //    return result;
-    //}
+    private bool canJump()
+    {
+        bool result = false;
+        Debug.DrawLine(collider.bounds.center, collider.bounds.center - new Vector3(0.0f, collider.bounds.size.y * 0.5f + 0.05f, 0.0f), Color.yellow,1.0f);
+        RaycastHit hit = new RaycastHit();
+        if (Physics.Linecast(collider.bounds.center, collider.bounds.center - new Vector3(0.0f, collider.bounds.size.y * 0.5f + 0.05f, 0.0f), out hit))
+        {
+            if (hit.collider != collider) result = true;
+        }
+        return result;
+    }
 
     private void CamCollide()
     {
