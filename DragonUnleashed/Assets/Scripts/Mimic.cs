@@ -12,8 +12,24 @@ public class Mimic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.E)) BecomeAnotherPerson();
+        if (Input.GetKeyDown(KeyCode.E)) MimicProp();
 	}
+
+    void MimicProp()
+    {
+        GameObject cam = transform.FindChild("CamTetherPoint").FindChild("VillagerCamera").gameObject;
+        Debug.DrawLine(cam.transform.position, cam.transform.position+cam.transform.forward*4, Color.yellow, 1.0f);
+        RaycastHit hit = new RaycastHit();
+        if (Physics.Linecast(cam.transform.position, cam.transform.position+cam.transform.forward*4, out hit))
+        {
+            if (hit.collider.tag == "Prop")
+            {
+                GameObject temp = (GameObject)Instantiate(hit.collider.gameObject, new Vector3(0, -50, 0), new Quaternion());
+                CopyObject(temp.transform.GetChild(0).gameObject);
+                Destroy(temp);
+            }
+        }
+    }
 
     void BecomeAnotherPerson()
     {
