@@ -8,6 +8,7 @@ public class Options : MonoBehaviour
 	public List<Vector2> ResolutionsWH;
 	public List<Resolution> resolutionOptions;
 	public Resolution current;
+	private Canvas optionsCanvas;
 
 	void Start()
 	{
@@ -19,6 +20,16 @@ public class Options : MonoBehaviour
 		}
 
 		current = Screen.GetResolution[0];
+		optionsCanvas = GetComponent<Canvas>();
+		optionsCanvas.enabled = false;
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			optionsCanvas.enabled = !optionsCanvas.enabled;
+		}
 	}
 
 	public void SetResolution(int width, int height)
