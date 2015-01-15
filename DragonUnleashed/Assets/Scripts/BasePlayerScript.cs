@@ -47,7 +47,7 @@ public class BasePlayerScript : MonoBehaviour
             {
                 setupPlayerLabel = (GameObject)Instantiate(PlayerOtherLabelPrefab);
                 setupPlayerLabel.name = "PlayerOther" + playerID;
-				playerReadyButton = setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().gameObject;
+                //playerReadyButton = setupPlayerLabel.transform.FindChild("ReadyButton").GetComponent<Button>().gameObject;
                 setupPlayerLabel.transform.FindChild("PlayerID").GetComponent<Text>().text = "Player " + playerID;
                 
             }

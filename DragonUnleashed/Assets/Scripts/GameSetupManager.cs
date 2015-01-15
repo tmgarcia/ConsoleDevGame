@@ -109,7 +109,10 @@ public class GameSetupManager : Photon.MonoBehaviour
                 playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Villager);
                 playerToMove.Role = PlayerRole.Villager;
                 playerToMove.setupPlayerLabel.transform.SetParent(HidersPanel.transform, false);
-				playerToMove.playerReadyButton.SetActive(true);
+                if (playerToMove.playerReadyButton != null)
+                {
+                    playerToMove.playerReadyButton.SetActive(true);
+                }
             }
             else
             {
@@ -138,7 +141,10 @@ public class GameSetupManager : Photon.MonoBehaviour
                 playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Dragon);
                 playerToMove.Role = PlayerRole.Dragon;
                 playerToMove.setupPlayerLabel.transform.SetParent(SeekersPanel.transform, false);
-				playerToMove.playerReadyButton.SetActive(true);
+                if (playerToMove.playerReadyButton != null)
+                {
+                    playerToMove.playerReadyButton.SetActive(true);
+                }
             }
             else
             {
@@ -165,7 +171,10 @@ public class GameSetupManager : Photon.MonoBehaviour
             playersManager.AdjustRoleNumbersForMovedPlayer(playerToMove.Role, PlayerRole.Unassigned);
             playerToMove.Role = PlayerRole.Unassigned;
             playerToMove.setupPlayerLabel.transform.SetParent(UnassignedPanel.transform, false);
-			playerToMove.playerReadyButton.SetActive(false);
+            if (playerToMove.playerReadyButton != null)
+            {
+                playerToMove.playerReadyButton.SetActive(false);
+            }
         }
     }
     [RPC]
