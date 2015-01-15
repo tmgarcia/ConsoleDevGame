@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   airPlaneControls: 0
-  speed: 8
+  speed: 6
   isLocal: 0
 --- !u!114 &11440094
 MonoBehaviour:
