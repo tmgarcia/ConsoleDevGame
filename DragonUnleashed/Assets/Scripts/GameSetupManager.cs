@@ -12,13 +12,6 @@ public class GameSetupManager : Photon.MonoBehaviour
     private static PhotonView ScenePhotonView;
     private static PlayersManager playersManager;
 
-	//private bool isOculusConnected;
-
-	//private void CheckOculusConnection()
-	//{
-	//	isOculusConnected = Ovr.Hmd.Detect() > 0;
-	//}
-
 	private bool IsOculusConnected()
 	{
 		return Ovr.Hmd.Detect() > 0;

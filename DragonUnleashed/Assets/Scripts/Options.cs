@@ -4,24 +4,42 @@ using System.Collections.Generic;
 
 public class Options : MonoBehaviour
 {
-	public Button resolutionSelection;
-	public Button[] resolutionOptions;
-	public bool toggleOptions = false;
+	//allow for easy addition of solutions via outlet
+	//public List<Vector2> ResolutionsWH;
 
-	void Start ()
+	public List<Resolution> resolutionOptions;
+	public Resolution current;
+	public bool isFullScreen;
+
+	void Start()
 	{
-		resolutionSelection = GameObject.Find("ResButton").GetComponent<Button>();
-		resolutionOptions = resolutionSelection.GetComponentsInChildren<Button>();
+		resolutionOptions = new List<Resolution>();
 
-		foreach (Button b in resolutionOptions)
+		foreach (var importedResolution in ResolutionsWH)
 		{
-			b.enabled = false;
-			//resolutionSelection.onClick += b.
+			resolutionOptions.Add(new Resolution { width = (int)importedResolution.x, height = (int)importedResolution.y });
 		}
+
+		current = Screen.GetResolution[0];
 	}
 
-	void Update ()
+	void Update()
 	{
-	
+
+	}
+
+	public void SetResolution(int width, int height)
+	{
+		Screen.SetResolution(width, height, true);
+	}
+
+	public void SetResolution(Resolution resolution)
+	{
+
+	}
+
+	public void SetResolution(ResolutionInfo ri)
+	{
+
 	}
 }
