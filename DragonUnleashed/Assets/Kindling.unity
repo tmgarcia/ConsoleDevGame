@@ -1433,6 +1433,7 @@ GameObject:
   - 4: {fileID: 78922214}
   - 33: {fileID: 78922213}
   - 23: {fileID: 78922212}
+  - 64: {fileID: 78922215}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -1481,6 +1482,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 1
+--- !u!64 &78922215
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1976150073}
+  m_GameObject: {fileID: 78922211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &87673256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1506,7 @@ GameObject:
   - 4: {fileID: 87673257}
   - 33: {fileID: 87673259}
   - 23: {fileID: 87673258}
+  - 64: {fileID: 87673260}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -1539,6 +1555,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1147282398}
   m_GameObject: {fileID: 87673256}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &87673260
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1147282398}
+  m_GameObject: {fileID: 87673256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &98818719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2799,7 @@ GameObject:
   - 4: {fileID: 173169585}
   - 33: {fileID: 173169584}
   - 23: {fileID: 173169583}
+  - 64: {fileID: 173169586}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -2817,6 +2848,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 0
+--- !u!64 &173169586
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1542334455}
+  m_GameObject: {fileID: 173169582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &177594484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3513,7 @@ GameObject:
   - 4: {fileID: 232891226}
   - 33: {fileID: 232891228}
   - 23: {fileID: 232891227}
+  - 64: {fileID: 232891229}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -3516,6 +3562,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1055543265}
   m_GameObject: {fileID: 232891225}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &232891229
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1055543265}
+  m_GameObject: {fileID: 232891225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &239364681
 GameObject:
   m_ObjectHideFlags: 0
@@ -4902,6 +4962,7 @@ GameObject:
   - 4: {fileID: 348608988}
   - 33: {fileID: 348608990}
   - 23: {fileID: 348608989}
+  - 64: {fileID: 348608991}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -4950,6 +5011,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1618525593}
   m_GameObject: {fileID: 348608987}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &348608991
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618525593}
+  m_GameObject: {fileID: 348608987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &350149273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,6 +5323,7 @@ GameObject:
   - 4: {fileID: 357963377}
   - 33: {fileID: 357963379}
   - 23: {fileID: 357963378}
+  - 64: {fileID: 357963380}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -5296,6 +5372,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 955521881}
   m_GameObject: {fileID: 357963376}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &357963380
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 955521881}
+  m_GameObject: {fileID: 357963376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &360243529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,6 +5720,7 @@ GameObject:
   - 4: {fileID: 374426904}
   - 33: {fileID: 374426906}
   - 23: {fileID: 374426905}
+  - 64: {fileID: 374426907}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -5678,6 +5769,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1079637936}
   m_GameObject: {fileID: 374426903}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &374426907
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1079637936}
+  m_GameObject: {fileID: 374426903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1001 &375398770
 Prefab:
   m_ObjectHideFlags: 0
@@ -7158,6 +7263,7 @@ GameObject:
   - 4: {fileID: 436866758}
   - 33: {fileID: 436866760}
   - 23: {fileID: 436866759}
+  - 64: {fileID: 436866761}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -7206,6 +7312,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1890784022}
   m_GameObject: {fileID: 436866757}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &436866761
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1890784022}
+  m_GameObject: {fileID: 436866757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &440273979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7493,6 +7613,7 @@ GameObject:
   - 4: {fileID: 448667610}
   - 33: {fileID: 448667612}
   - 23: {fileID: 448667611}
+  - 64: {fileID: 448667613}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -7541,6 +7662,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 996666113}
   m_GameObject: {fileID: 448667609}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &448667613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 996666113}
+  m_GameObject: {fileID: 448667609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &450965893
 GameObject:
   m_ObjectHideFlags: 0
@@ -7866,6 +8001,7 @@ GameObject:
   - 4: {fileID: 455358642}
   - 33: {fileID: 455358644}
   - 23: {fileID: 455358643}
+  - 64: {fileID: 455358645}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -7914,6 +8050,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1538838348}
   m_GameObject: {fileID: 455358641}
   m_Mesh: {fileID: 4300002, guid: 191eca118c14ea042929752a6a537410, type: 3}
+--- !u!64 &455358645
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1538838348}
+  m_GameObject: {fileID: 455358641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1001 &461611885
 Prefab:
   m_ObjectHideFlags: 0
@@ -8439,6 +8589,7 @@ GameObject:
   - 4: {fileID: 475382341}
   - 33: {fileID: 475382343}
   - 23: {fileID: 475382342}
+  - 64: {fileID: 475382344}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -8487,6 +8638,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1526956748}
   m_GameObject: {fileID: 475382340}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &475382344
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1526956748}
+  m_GameObject: {fileID: 475382340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &476723382
 GameObject:
   m_ObjectHideFlags: 0
@@ -9578,6 +9743,7 @@ GameObject:
   - 4: {fileID: 544317531}
   - 33: {fileID: 544317530}
   - 23: {fileID: 544317529}
+  - 64: {fileID: 544317532}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -9626,6 +9792,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1172914153}
   m_RootOrder: 5
+--- !u!64 &544317532
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 11461649}
+  m_GameObject: {fileID: 544317528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &549456603
 GameObject:
   m_ObjectHideFlags: 0
@@ -11419,6 +11599,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .780000031
       objectReference: {fileID: 0}
+    - target: {fileID: 2393572, guid: 9ba50aab056d6df4aa21093c170f5d7a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ba50aab056d6df4aa21093c170f5d7a, type: 2}
   m_RootGameObject: {fileID: 1182714194}
@@ -11980,6 +12164,7 @@ GameObject:
   - 4: {fileID: 688812091}
   - 33: {fileID: 688812093}
   - 23: {fileID: 688812092}
+  - 64: {fileID: 688812094}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -12028,6 +12213,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1478215590}
   m_GameObject: {fileID: 688812090}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &688812094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1478215590}
+  m_GameObject: {fileID: 688812090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &690485860
 GameObject:
   m_ObjectHideFlags: 0
@@ -12988,6 +13187,7 @@ GameObject:
   - 4: {fileID: 758519680}
   - 33: {fileID: 758519682}
   - 23: {fileID: 758519681}
+  - 64: {fileID: 758519683}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -13036,6 +13236,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1457441761}
   m_GameObject: {fileID: 758519679}
   m_Mesh: {fileID: 4300002, guid: 191eca118c14ea042929752a6a537410, type: 3}
+--- !u!64 &758519683
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1457441761}
+  m_GameObject: {fileID: 758519679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &760945308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16563,6 +16777,7 @@ GameObject:
   - 4: {fileID: 932606771}
   - 33: {fileID: 932606773}
   - 23: {fileID: 932606772}
+  - 64: {fileID: 932606774}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -16611,6 +16826,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 582174683}
   m_GameObject: {fileID: 932606770}
   m_Mesh: {fileID: 4300002, guid: 191eca118c14ea042929752a6a537410, type: 3}
+--- !u!64 &932606774
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 582174683}
+  m_GameObject: {fileID: 932606770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &933161732
 GameObject:
   m_ObjectHideFlags: 0
@@ -18546,6 +18775,7 @@ GameObject:
   - 4: {fileID: 1034551329}
   - 33: {fileID: 1034551328}
   - 23: {fileID: 1034551327}
+  - 64: {fileID: 1034551330}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -18594,6 +18824,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 4
+--- !u!64 &1034551330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 998954558}
+  m_GameObject: {fileID: 1034551326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &1036880474
 GameObject:
   m_ObjectHideFlags: 0
@@ -20662,6 +20906,7 @@ GameObject:
   - 4: {fileID: 1182714195}
   - 33: {fileID: 1182714197}
   - 23: {fileID: 1182714196}
+  - 64: {fileID: 1182714198}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -20688,7 +20933,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 646497445}
   m_GameObject: {fileID: 1182714194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -20710,6 +20955,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 646497445}
   m_GameObject: {fileID: 1182714194}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &1182714198
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 646497445}
+  m_GameObject: {fileID: 1182714194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &1182966083
 GameObject:
   m_ObjectHideFlags: 0
@@ -22703,6 +22962,7 @@ GameObject:
   - 4: {fileID: 1283027211}
   - 33: {fileID: 1283027210}
   - 23: {fileID: 1283027209}
+  - 64: {fileID: 1283027212}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -22751,6 +23011,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 1
+--- !u!64 &1283027212
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1792533406}
+  m_GameObject: {fileID: 1283027208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &1283961116
 GameObject:
   m_ObjectHideFlags: 0
@@ -26891,6 +27165,7 @@ GameObject:
   - 4: {fileID: 1532964491}
   - 33: {fileID: 1532964493}
   - 23: {fileID: 1532964492}
+  - 64: {fileID: 1532964494}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -26939,6 +27214,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 148017265}
   m_GameObject: {fileID: 1532964490}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &1532964494
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 148017265}
+  m_GameObject: {fileID: 1532964490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1001 &1534628409
 Prefab:
   m_ObjectHideFlags: 0
@@ -27414,6 +27703,7 @@ GameObject:
   - 4: {fileID: 1560158839}
   - 33: {fileID: 1560158838}
   - 23: {fileID: 1560158837}
+  - 64: {fileID: 1560158840}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -27462,6 +27752,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 3
+--- !u!64 &1560158840
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 897371355}
+  m_GameObject: {fileID: 1560158836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &1566067556
 GameObject:
   m_ObjectHideFlags: 0
@@ -27677,6 +27981,7 @@ GameObject:
   - 4: {fileID: 1579455259}
   - 33: {fileID: 1579455258}
   - 23: {fileID: 1579455257}
+  - 64: {fileID: 1579455260}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -27725,6 +28030,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 0
+--- !u!64 &1579455260
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1005011868}
+  m_GameObject: {fileID: 1579455256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &1584258240
 GameObject:
   m_ObjectHideFlags: 0
@@ -29028,6 +29347,7 @@ GameObject:
   - 4: {fileID: 1671039281}
   - 33: {fileID: 1671039280}
   - 23: {fileID: 1671039279}
+  - 64: {fileID: 1671039282}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -29076,6 +29396,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 2
+--- !u!64 &1671039282
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6494748, guid: 02de2bcb90fce354a9837141cf20a3cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1994867582}
+  m_GameObject: {fileID: 1671039278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1 &1679425233
 GameObject:
   m_ObjectHideFlags: 0
@@ -32294,6 +32628,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ba50aab056d6df4aa21093c170f5d7a, type: 2}
   m_RootGameObject: {fileID: 436866757}
@@ -34959,6 +35297,7 @@ GameObject:
   - 4: {fileID: 2075017244}
   - 33: {fileID: 2075017246}
   - 23: {fileID: 2075017245}
+  - 64: {fileID: 2075017247}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -35007,6 +35346,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2094480896}
   m_GameObject: {fileID: 2075017243}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &2075017247
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2094480896}
+  m_GameObject: {fileID: 2075017243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &2075491483
 GameObject:
   m_ObjectHideFlags: 0
@@ -36627,6 +36980,7 @@ GameObject:
   - 4: {fileID: 2142469897}
   - 33: {fileID: 2142469899}
   - 23: {fileID: 2142469898}
+  - 64: {fileID: 2142469900}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -36675,6 +37029,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 630896808}
   m_GameObject: {fileID: 2142469896}
   m_Mesh: {fileID: 4300000, guid: e88424c9e0a090748932e0974e483913, type: 3}
+--- !u!64 &2142469900
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6442520, guid: 9ba50aab056d6df4aa21093c170f5d7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 630896808}
+  m_GameObject: {fileID: 2142469896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 311eec4974b3c5b42abb0ebcd44e053b, type: 3}
 --- !u!1 &2145646172
 GameObject:
   m_ObjectHideFlags: 0

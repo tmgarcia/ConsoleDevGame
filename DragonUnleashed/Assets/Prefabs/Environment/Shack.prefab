@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 447820}
   - 33: {fileID: 3347820}
   - 23: {fileID: 2347820}
+  - 64: {fileID: 6494748}
   m_Layer: 0
   m_Name: Shack
   m_TagString: Untagged
@@ -56,6 +57,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147820}
   m_Mesh: {fileID: 4300002, guid: 191eca118c14ea042929752a6a537410, type: 3}
+--- !u!64 &6494748
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
