@@ -12,7 +12,7 @@ public class Mimic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.E)) BecomeAnotherPerson();
+        if (Input.GetKeyDown(KeyCode.E)) MimicProp();
 	}
 
     void MimicProp()
