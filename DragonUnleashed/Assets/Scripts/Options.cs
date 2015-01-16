@@ -29,7 +29,6 @@ public class Options : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			optionsCanvas.enabled = !optionsCanvas.enabled;
-            Screen.showCursor = optionsCanvas.enabled;
             Screen.lockCursor = !optionsCanvas.enabled;
 		}
 	}
