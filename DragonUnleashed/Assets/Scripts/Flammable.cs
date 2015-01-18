@@ -6,6 +6,7 @@ public class Flammable : Damageable
 	private float BurninationLevel;
     public ParticleSystem fire;
     private ParticleSystem personalFire;
+    private float ignitionThreshold = 0.15f;
     
 
 	void Start()
@@ -53,13 +54,13 @@ public class Flammable : Damageable
 	void Update()
 	{
         //AdjustFlameParticles();
-        if (BurninationLevel > 0.5)/////////////////////////////////////////////////////////////////////////////////////Test lower bound
+        if (BurninationLevel > ignitionThreshold)/////////////////////////////////////////////////////////////////////////////////////Test lower bound
         {
             AdjustFlameParticles();
             ReduceIntegrity();
             ReduceBurnination();
         }
-        else if(personalFire.isPlaying)
+        else if(personalFire.enableEmission)
         {
             DisableFlameParticles();
 
@@ -68,22 +69,23 @@ public class Flammable : Damageable
 
     private void AdjustFlameParticles()
     {
-        if (personalFire.isPaused)
+        if (personalFire.enableEmission)
         {
             EnableFlameParticles();
         }
-        personalFire.emissionRate = BurninationLevel * 20;
+        personalFire.emissionRate = BurninationLevel * 20.0f;
         print(personalFire.emissionRate);
     }
 
     private void EnableFlameParticles()
     {
-        personalFire.Play();
+        personalFire.enableEmission = true;
+        
     }
 
     private void DisableFlameParticles()
     {
-        personalFire.Pause();
+        personalFire.enableEmission = false;
     }
 
 	private void ReduceBurnination()
