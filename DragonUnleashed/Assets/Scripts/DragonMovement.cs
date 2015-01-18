@@ -7,14 +7,14 @@ public class DragonMovement : MonoBehaviour {
     private PhotonView photonView;
     private GameObject cam;
     public float speed = 6;
-    private float speedLimiter = 0.95f;
+    private float speedLimiter = 0.2f;
     public bool isLocal = false;
 
 	// Use this for initialization
 	void Start () {
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
-        cam = transform.FindChild("OVRCameraRig").gameObject;
-        //cam = transform.FindChild("DragonCamera").gameObject;
+        //cam = transform.FindChild("OVRCameraRig").gameObject;
+        cam = transform.FindChild("DragonCamera").gameObject;
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
@@ -33,7 +33,7 @@ public class DragonMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
             if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
-            gameObject.GetComponent<Rigidbody>().velocity *= speedLimiter;
+            gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter,Time.deltaTime);
 
             float deltaX = Input.GetAxis("Mouse X");
             float deltaY = Input.GetAxis("Mouse Y");

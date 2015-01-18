@@ -69,7 +69,7 @@ MeshCollider:
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 632daeccaf77c804c8849709898cc65a, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 9e8c45a1d04e95b4e95e9d4566e45a65, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
