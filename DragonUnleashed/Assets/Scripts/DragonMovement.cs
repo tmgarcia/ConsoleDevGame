@@ -7,7 +7,7 @@ public class DragonMovement : MonoBehaviour {
     private PhotonView photonView;
     private GameObject cam;
     public float speed = 6;
-    private float speedLimiter = 0.2f;
+    private float speedLimiter = 0.1f;
     public bool isLocal = false;
 
 	// Use this for initialization

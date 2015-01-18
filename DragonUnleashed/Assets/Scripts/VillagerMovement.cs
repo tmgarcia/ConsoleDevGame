@@ -5,8 +5,8 @@ public class VillagerMovement : MonoBehaviour {
 
     private PhotonView photonView;
     private float speed = 30;
-    private float jumpheight = 10;
-    private float speedLimiter = 0.95f;
+    private float jumpheight = 0.3f;
+    private float speedLimiter = 0.1f;
     private float cameraSwitchSpeed = 30;
     private float cameraRestingDistance = 5;
     private GameObject cam;
@@ -41,11 +41,11 @@ public class VillagerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration -= forward;
             if (Input.GetKey(KeyCode.D)) accelaration -= right;
             accelaration.Normalize();
-            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight;
+            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight*(1/Time.deltaTime);
 
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
-            gameObject.GetComponent<Rigidbody>().velocity *= speedLimiter;
+            gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter,Time.deltaTime);
 
             gameObject.GetComponent<Rigidbody>().velocity = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, storedY, gameObject.GetComponent<Rigidbody>().velocity.z);
 
