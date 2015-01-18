@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class RespawnManager : MonoBehaviour
 {
 	public static RespawnManager instance;
+    public int maxVillagerLives = 10;
+    public int remainingVillagerLives;
+    public GameObject villagerLivesNumberDisplay;
 	public List<GameObject> VillagerRespawnPoints;
     public List<GameObject> DragonRespawnPoints;
+    private static PhotonView ScenePhotonView;
 
 	void Start()
 	{
@@ -13,7 +18,9 @@ public class RespawnManager : MonoBehaviour
 		{
 			instance = this;
 		}
-	}
+        remainingVillagerLives = maxVillagerLives;
+        ScenePhotonView = this.GetComponent<PhotonView>();
+    }
 
     public Vector3 GetRandomSpawn(PlayerRole role)
     {
@@ -45,7 +52,10 @@ public class RespawnManager : MonoBehaviour
 		{
             if (character.GetComponent<VillagerMovement>() != null)
             {
-                character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+                if (remainingVillagerLives > 0)
+                {
+                    character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+                }
             }
             else
             {
