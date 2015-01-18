@@ -59,13 +59,13 @@ public class BasePlayerScript : MonoBehaviour
     {
         if(Role == PlayerRole.Villager)
         {
-            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
+            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Villager", GameObject.Find("GameManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
             Screen.lockCursor = true;
         }
 	else if (Role == PlayerRole.Dragon)
         {
-            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
+            playerCharacter = (GameObject)PhotonNetwork.Instantiate("Dragon", GameObject.Find("GameManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             //playerCharacter = (GameObject)PhotonNetwork.Instantiate("DragonOVR", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
             Screen.lockCursor = true;
