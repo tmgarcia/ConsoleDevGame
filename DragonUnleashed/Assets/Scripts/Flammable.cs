@@ -27,7 +27,7 @@ public class Flammable : Damageable
         //reposition fire
         personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
         personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);
-        personalFire.transform.parent = transform;//////////////////////////////////////////////////////////////////Create as child //////////////UNTESTED
+        personalFire.transform.parent = transform;
 
         //resize fire 
        
@@ -48,7 +48,7 @@ public class Flammable : Damageable
 	void Update()
 	{
         //AdjustFlameParticles();
-        if (BurninationLevel > ignitionThreshold)/////////////////////////////////////////////////////////////////////////////////////Test lower bound
+        if (BurninationLevel > ignitionThreshold)
         {
             AdjustFlameParticles();
             ReduceIntegrity();
@@ -63,11 +63,11 @@ public class Flammable : Damageable
 
     private void AdjustFlameParticles()
     {
-        if (personalFire.enableEmission)
+        if (!personalFire.enableEmission)
         {
             EnableFlameParticles();
         }
-        personalFire.emissionRate = BurninationLevel * 20.0f;
+        personalFire.emissionRate = BurninationLevel ; // *multiplier?
         print(personalFire.emissionRate);
     }
 
@@ -84,7 +84,7 @@ public class Flammable : Damageable
 
 	private void ReduceBurnination()
 	{
-		BurninationLevel -= (BurninationLevel * Time.deltaTime);//////////////////////////////////////////////////Slow this down?
+		BurninationLevel -= (0.5f * (BurninationLevel * Time.deltaTime));//////////////////////////////////////////////////Slow this down?
 	}
 
 	private void ReduceIntegrity()
