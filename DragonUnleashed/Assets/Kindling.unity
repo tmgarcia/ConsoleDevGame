@@ -1415,7 +1415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: s
+  m_Text: 
 --- !u!222 &74420089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11391,7 +11391,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 603028380}
-  - {fileID: 1428119042}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_AnchorMin: {x: 0, y: 0}
@@ -25030,39 +25029,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &1428119041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 133908, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
-  m_PrefabInternal: {fileID: 767357417}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 1428119042}
-  m_Layer: 5
-  m_Name: Options
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1428119042
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 22433908, guid: f4e5eee1c0c67974eb655382e1e1bc98,
-    type: 2}
-  m_PrefabInternal: {fileID: 767357417}
-  m_GameObject: {fileID: 1428119041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 634245697}
-  m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: .5, y: .5}
 --- !u!1001 &1428627955
 Prefab:
   m_ObjectHideFlags: 0
@@ -28555,6 +28521,10 @@ Prefab:
     - target: {fileID: 22421846, guid: 09a0ae038b896d84b8e7497dd5d2fd64, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421842, guid: 09a0ae038b896d84b8e7497dd5d2fd64, type: 2}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a0ae038b896d84b8e7497dd5d2fd64, type: 2}

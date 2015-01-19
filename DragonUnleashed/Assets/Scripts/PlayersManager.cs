@@ -139,6 +139,7 @@ public class PlayersManager : MonoBehaviour
         //    p.GetComponent<BasePlayerScript>().InitializeGame();
         //}
         GetPlayer(localPlayerID).GetComponent<BasePlayerScript>().InitializeGame();
+		GameObject.Find("DebugHud").GetComponent<Canvas>().enabled = false;
         GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
         GameObject.Find("GameSetupUI").SetActive(false);
 		GameObject.Find("TimerText").GetComponent<Timer>().ResetTimer();
