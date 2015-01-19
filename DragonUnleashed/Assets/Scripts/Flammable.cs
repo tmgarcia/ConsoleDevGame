@@ -57,8 +57,12 @@ public class Flammable : Damageable
         else if(personalFire.enableEmission)
         {
             DisableFlameParticles();
-
         }
+
+		if (damageRole == DamageRole.Villager)
+		{
+			base.Update();
+		}
 	}
 
     private void AdjustFlameParticles()

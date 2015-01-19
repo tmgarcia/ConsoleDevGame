@@ -34,11 +34,6 @@ public class Player : MonoBehaviour
 		{
 			RespawnManager.instance.Respawn(gameObject);
 			damageable.CurrentIntegrity = damageable.StartingIntegrity;
-			if (--RespawnManager.instance.remainingVillagerLives == 0)
-			{
-				GameOverManager.instance.ShowDragonWin();
-			}
-			print("Current Live Pool: " + --RespawnManager.instance.remainingVillagerLives);
 		}
 		else if (Role == PlayerRole.Dragon)
 		{

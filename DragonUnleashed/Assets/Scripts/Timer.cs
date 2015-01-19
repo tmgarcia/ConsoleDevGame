@@ -94,7 +94,7 @@ public class Timer : MonoBehaviour
 		localPlayerID = PlayersManager.instance.localPlayerID;
 		localPlayerRole = PlayersManager.instance.GetPlayerRole(localPlayerID);
 
-		switch(localPlayerRole)
+		switch (localPlayerRole)
 		{
 			case PlayerRole.Villager:
 				localTimerText = VillagerTimerText;
