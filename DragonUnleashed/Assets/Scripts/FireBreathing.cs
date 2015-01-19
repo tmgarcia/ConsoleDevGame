@@ -3,8 +3,9 @@ using System.Collections;
 
 public class FireBreathing : Photon.MonoBehaviour
 {
-    public ParticleEmitter FireInside;
-    public ParticleEmitter FireOutside;
+    public ParticleSystem Fire;
+    //public ParticleEmitter FireInside;
+    //public ParticleEmitter FireOutside;
     private static PhotonView photonView;
 	private NetworkAgent na;
 	// Use this for initialization
@@ -43,14 +44,16 @@ public class FireBreathing : Photon.MonoBehaviour
 	[RPC]
     private void RPCDisableFire()
     {
-        FireInside.emit = false;
-        FireOutside.emit = false;
+        Fire.enableEmission = false;
+        //FireInside.emit = false;
+        //FireOutside.emit = false;
     }
 
 	[RPC]
     private void RPCEnableFire()
     {
-        FireInside.emit = true;
-        FireOutside.emit = true;
+        Fire.enableEmission = true;
+        //FireInside.emit = true;
+        //FireOutside.emit = true;
     }
 }
