@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CamTetherPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 92: {fileID: 9280758}
   - 124: {fileID: 12480758}
   - 81: {fileID: 8180758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VillagerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - 114: {fileID: 11401146}
   - 114: {fileID: 11425188}
   - 114: {fileID: 11479900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Villager
   m_TagString: Untagged
   m_Icon: {fileID: 0}

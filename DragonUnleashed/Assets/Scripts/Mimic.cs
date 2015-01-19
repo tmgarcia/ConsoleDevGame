@@ -20,16 +20,15 @@ public class Mimic : MonoBehaviour {
         GameObject cam = transform.FindChild("CamTetherPoint").FindChild("VillagerCamera").gameObject;
         Debug.DrawLine(cam.transform.position, cam.transform.position+cam.transform.forward*20, Color.yellow, 1.0f);
         RaycastHit hit = new RaycastHit();
-        if (Physics.Linecast(cam.transform.position, cam.transform.position + cam.transform.forward * 20, out hit))
+        int layermask = 1<<8;
+        layermask = ~layermask;
+        if (Physics.Linecast(cam.transform.position, cam.transform.position + cam.transform.forward * 20, out hit,layermask))
         {
-            if (hit.collider != collider)
+            if (hit.collider.tag == "Prop")
             {
-                if (hit.collider.tag == "Prop")
-                {
-                    GameObject temp = (GameObject)Instantiate(hit.collider.gameObject, new Vector3(0, -50, 0), new Quaternion());
-                    CopyObject(temp);
-                    Destroy(temp);
-                }
+                GameObject temp = (GameObject)Instantiate(hit.collider.gameObject, new Vector3(0, -50, 0), new Quaternion());
+                CopyObject(temp);
+                Destroy(temp);
             }
         }
     }

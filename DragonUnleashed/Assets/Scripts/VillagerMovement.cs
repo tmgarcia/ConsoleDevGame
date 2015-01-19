@@ -146,11 +146,14 @@ public class VillagerMovement : MonoBehaviour {
         bool ithit = false;
         int closest = 0;
 
+        int layermask = 1 << 8;
+        layermask = ~layermask;
+
         for (int i = 0; i < hit.Length; i++)
         {
-            if (Physics.Linecast(target, camPos + (camRot * (points[i])), out hit[i]))
+            if (Physics.Linecast(target, camPos + (camRot * (points[i])), out hit[i],layermask))
             {
-                if (!hit[i].collider.isTrigger && hit[i].collider.gameObject != gameObject)
+                if (!hit[i].collider.isTrigger)
                 {
                     ithit = true;
                     if (Vector3.Distance(target, new Vector3(hit[i].point.x, hit[i].point.y, hit[i].point.z)) < Vector3.Distance(target, new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z)))
