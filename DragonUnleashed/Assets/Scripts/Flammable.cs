@@ -23,17 +23,11 @@ public class Flammable : Damageable
             longSideLength = Mathf.Max(gameObject.collider.bounds.size.x, gameObject.collider.bounds.size.z);
 
         }
-        //else if (gameObject.transform.GetChild(0) != null && gameObject.transform.GetChild(0).gameObject.GetComponent<Collider>() != null)
-        //{
-        //    Collider theCollider = gameObject.transform.GetChild(0).gameObject.GetComponent<Collider>();
-        //    firePosition = theCollider.bounds.center + new Vector3(0, theCollider.bounds.size.y / 2, 0);      // Places fire on top of object
-        //    //firePosition = theCollider.bounds.center;                                                                   // Places fire in center of object
-        //    longSideLength = Mathf.Max(theCollider.bounds.size.x, theCollider.bounds.size.z);
-        //}
-
+       
         //reposition fire
         personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
         personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);
+        personalFire.transform.parent = transform;//////////////////////////////////////////////////////////////////Create as child //////////////UNTESTED
 
         //resize fire 
        
