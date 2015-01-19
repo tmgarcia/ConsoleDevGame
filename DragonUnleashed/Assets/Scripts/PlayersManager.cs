@@ -158,5 +158,7 @@ public class PlayersManager : MonoBehaviour
 		{
 			GameObject.Find("DragonHealthContainer").SetActive(false);
 		}
+
+		RespawnManager.instance.FindVillagerText();
 	}
 }

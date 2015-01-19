@@ -12,6 +12,7 @@ public class RespawnManager : MonoBehaviour
 	public List<GameObject> DragonRespawnPoints;
 	private static PhotonView ScenePhotonView;
 	public int numVillagerAlive;
+	public Text VillagerLivePool;
 
 	void Start()
 	{
@@ -21,6 +22,18 @@ public class RespawnManager : MonoBehaviour
 		}
 		remainingVillagerLives = maxVillagerLives;
 		ScenePhotonView = this.GetComponent<PhotonView>();
+	}
+
+	public void FindVillagerText()
+	{
+		VillagerLivePool = GameObject.Find("VillagerLiveText").GetComponent<Text>();
+		UpdateVillagerLiveText();
+	}
+
+	private void UpdateVillagerLiveText()
+	{
+		var VillagerTextParts = VillagerLivePool.text.Split(':');
+		VillagerLivePool.text = VillagerTextParts[0] + ": " + remainingVillagerLives;
 	}
 
 	public Vector3 GetRandomSpawn(PlayerRole role)
@@ -49,8 +62,8 @@ public class RespawnManager : MonoBehaviour
 		{
 			if (remainingVillagerLives > 0)
 			{
-				print("Current Live Pool: " + --RespawnManager.instance.remainingVillagerLives);
-				remainingVillagerLives--;
+				--remainingVillagerLives;
+				UpdateVillagerLiveText();
 				character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
 			}
 			else
