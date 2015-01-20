@@ -13,7 +13,6 @@ public class Damageable : MonoBehaviour
 	void Start()
 	{
 		CurrentIntegrity = StartingIntegrity;
-		lastIntegrityUpdate = CurrentIntegrity;
 	}
 
 	void Update()
@@ -31,7 +30,7 @@ public class Damageable : MonoBehaviour
 				GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
 			}
 
-			if (PlayersManager.instance.dragonPlayer == gameObject && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
+			if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
 			{
 				GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
 				GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
