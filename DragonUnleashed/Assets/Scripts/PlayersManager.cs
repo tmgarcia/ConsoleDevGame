@@ -23,8 +23,6 @@ public class PlayersManager : MonoBehaviour
 
 	public GameObject HUDManager;
 
-	public GameObject dragonPlayer;
-
 	void Start()
 	{
 		if (instance == null)
@@ -150,10 +148,7 @@ public class PlayersManager : MonoBehaviour
 		GameObject.Find("TimerText").GetComponent<Timer>().StartTimer();
 		RespawnManager.instance.numVillagerAlive = currentNumSeekers;
 
-		print("Dragon Player: " + dragonPlayer);
-		print("Am I a dragon? " + (GetPlayerRole(localPlayerID) == PlayerRole.Dragon));
-
-		if (dragonPlayer == null || GetPlayerRole(localPlayerID) == PlayerRole.Dragon)
+		if (GetPlayerRole(localPlayerID) == PlayerRole.Dragon)
 		{
 			GameObject.Find("DragonHealthContainer").SetActive(false);
 		}
