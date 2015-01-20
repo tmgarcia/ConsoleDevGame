@@ -70,7 +70,6 @@ public class BasePlayerScript : MonoBehaviour
 			playerCharacter.GetComponent<NetworkAgent>().playerID = playerID;
 			playerCharacter = playerCharacter.GetComponentInChildren<Damageable>().gameObject;
 			Screen.lockCursor = true;
-			PlayersManager.instance.dragonPlayer = gameObject;
 		}
 	}
 
