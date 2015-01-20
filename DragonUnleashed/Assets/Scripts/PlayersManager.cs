@@ -79,10 +79,6 @@ public class PlayersManager : MonoBehaviour
 	{
 		GameObject player = playerObjects.FirstOrDefault(p => p.GetComponent<BasePlayerScript>().playerID == playerID);
 		player.GetComponent<BasePlayerScript>().Role = role;
-		if (role == PlayerRole.Dragon)
-		{
-			dragonPlayer = player;
-		}
 	}
 
 	[RPC]

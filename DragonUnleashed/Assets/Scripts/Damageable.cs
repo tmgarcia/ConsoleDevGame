@@ -5,7 +5,7 @@ using System.Collections;
 public class Damageable : MonoBehaviour
 {
 	public float StartingIntegrity = 100.0f;
-	public float CurrentIntegrity { get; set; }
+	public float CurrentIntegrity;
 	private float lastIntegrityUpdate = -1.0f;
 	public DamageRole damageRole = DamageRole.Villager;
 	//protected

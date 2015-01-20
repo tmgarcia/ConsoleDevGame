@@ -64,7 +64,10 @@ public class RespawnManager : MonoBehaviour
 			{
 				--remainingVillagerLives;
 				UpdateVillagerLiveText();
-				character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+				if(PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == character)
+				{
+					character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+				}
 			}
 			else
 			{
