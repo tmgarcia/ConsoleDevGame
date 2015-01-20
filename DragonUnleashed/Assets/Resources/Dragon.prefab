@@ -154,6 +154,7 @@ GameObject:
   - 54: {fileID: 5439686}
   - 114: {fileID: 11466100}
   - 114: {fileID: 11466102}
+  - 114: {fileID: 11415744}
   m_Layer: 0
   m_Name: DragonHead
   m_TagString: Untagged
@@ -993,6 +994,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlameIntensity: 1
+--- !u!114 &11415744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 3
+  onSerializeTransformOption: 4
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 439698}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
 --- !u!114 &11434774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1167,6 +1192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 1000
+  CurrentIntegrity: 0
   damageRole: 0
 --- !u!114 &11466102
 MonoBehaviour:
@@ -1180,7 +1206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Role: 2
-  StartingLivePool: 15
 --- !u!114 &11470048
 MonoBehaviour:
   m_ObjectHideFlags: 1

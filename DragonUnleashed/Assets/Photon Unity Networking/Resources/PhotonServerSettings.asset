@@ -50,4 +50,6 @@ MonoBehaviour:
   - RPCDisableFire
   - RPCEnableFire
   - RPCFireArrow
+  - SetIntegrity
+  - SetDragonIntegrity
   DisableAutoOpenWizard: 0
