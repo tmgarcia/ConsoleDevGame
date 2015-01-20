@@ -106,8 +106,9 @@ public class Flammable : Damageable
 		if (damageRole == DamageRole.Scenery)
 		{
 			Destroy(this.gameObject);
+			Destroy(personalFire, 2.0f);
 		}
-		Destroy(personalFire, 2.0f);
+
 		BurninationLevel = 0;
 
 	}
