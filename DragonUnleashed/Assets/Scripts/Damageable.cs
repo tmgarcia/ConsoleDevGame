@@ -22,21 +22,27 @@ public class Damageable : MonoBehaviour
 
 	protected void DamageUpdate()
 	{
-		if (lastIntegrityUpdate != CurrentIntegrity)
+		if (lastIntegrityUpdate != CurrentIntegrity && PhotonNetwork.isMasterClient)
 		{
-			if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == gameObject)
-			{
-				GameObject.Find("LocalPlayerHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-				GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
-			}
-
-			if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
-			{
-				GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-				GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
-			}
-
-			lastIntegrityUpdate = CurrentIntegrity;
+			GetComponent<PhotonView>().RPC("SetIntegrity", PhotonTargets.AllBuffered);
 		}
+	}
+
+	[RPC]
+	public void SetIntegrity()
+	{
+		if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == gameObject)
+		{
+			GameObject.Find("LocalPlayerHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
+			GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+		}
+
+		if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
+		{
+			GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
+			GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+		}
+
+		lastIntegrityUpdate = CurrentIntegrity;
 	}
 }
