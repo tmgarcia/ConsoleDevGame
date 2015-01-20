@@ -27,13 +27,13 @@ public class Damageable : MonoBehaviour
 			if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == gameObject)
 			{
 				GameObject.Find("LocalPlayerHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-				GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+				GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = Mathf.Round(CurrentIntegrity) + " / " + StartingIntegrity;
 			}
 
 			if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
 			{
 				GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-				GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+				GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = Mathf.Round(CurrentIntegrity) + " / " + StartingIntegrity;
 			}
 
 			if (lastIntegrityUpdate != CurrentIntegrity && PhotonNetwork.isMasterClient)
@@ -46,7 +46,7 @@ public class Damageable : MonoBehaviour
 	}
 
 	[RPC]
-	public void SetDragonIntegrity(int newInt)
+	public void SetDragonIntegrity(float newInt)
 	{
 		CurrentIntegrity = newInt;
 	}
