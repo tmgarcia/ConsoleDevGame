@@ -22,27 +22,32 @@ public class Damageable : MonoBehaviour
 
 	protected void DamageUpdate()
 	{
-		if (lastIntegrityUpdate != CurrentIntegrity && PhotonNetwork.isMasterClient)
+		if (lastIntegrityUpdate != CurrentIntegrity)
 		{
-			GetComponent<PhotonView>().RPC("SetIntegrity", PhotonTargets.AllBuffered);
+			if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == gameObject)
+			{
+				GameObject.Find("LocalPlayerHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
+				GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+			}
+
+			if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
+			{
+				GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
+				GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
+			}
+
+			if (lastIntegrityUpdate != CurrentIntegrity && PhotonNetwork.isMasterClient)
+			{
+				GetComponent<PhotonView>().RPC("SetDragonIntegrity", PhotonTargets.AllBuffered, CurrentIntegrity);
+			}
+
+			lastIntegrityUpdate = CurrentIntegrity;
 		}
 	}
 
 	[RPC]
-	public void SetIntegrity()
+	public void SetDragonIntegrity(int newInt)
 	{
-		if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == gameObject)
-		{
-			GameObject.Find("LocalPlayerHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-			GameObject.Find("LocalPlayerHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
-		}
-
-		if (damageRole == DamageRole.Dragon && PlayersManager.instance.GetPlayerRole(PlayersManager.instance.localPlayerID) != PlayerRole.Dragon)
-		{
-			GameObject.Find("DragonHealthGraphic").GetComponent<Image>().fillAmount = CurrentIntegrity / StartingIntegrity;
-			GameObject.Find("DragonHealthInfo").GetComponent<Text>().text = CurrentIntegrity + " / " + StartingIntegrity;
-		}
-
-		lastIntegrityUpdate = CurrentIntegrity;
+		CurrentIntegrity = newInt;
 	}
 }
