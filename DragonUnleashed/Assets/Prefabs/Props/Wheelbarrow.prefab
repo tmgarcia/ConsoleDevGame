@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495836}
-  - 95: {fileID: 9595838}
   m_Layer: 0
   m_Name: Wheelbarrow
   m_TagString: Prop
@@ -99,21 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.55561805, y: 1.611009, z: 1.16277206}
   m_Center: {x: 0, y: .808507502, z: 0}
---- !u!95 &9595838
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195836}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 68114b3e497cfdf4f922c74edcd8e8d4, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11416934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
+  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!1001 &100100000

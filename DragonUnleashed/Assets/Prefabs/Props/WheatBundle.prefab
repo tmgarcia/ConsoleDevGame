@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409388}
-  - 95: {fileID: 9509390}
   m_Layer: 0
   m_Name: WheatBundle
   m_TagString: Prop
@@ -87,21 +86,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109390}
   m_Mesh: {fileID: 4300000, guid: 8e748bda66267204b84feaa18a5f4013, type: 3}
---- !u!95 &9509390
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109388}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8e748bda66267204b84feaa18a5f4013, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11476272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
+  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!136 &13662262

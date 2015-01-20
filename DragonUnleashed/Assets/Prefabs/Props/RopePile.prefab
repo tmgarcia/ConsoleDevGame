@@ -27,7 +27,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490744}
-  - 95: {fileID: 9590742}
   m_Layer: 0
   m_Name: RopePile
   m_TagString: Prop
@@ -99,21 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.17887199, y: .389297009, z: 1.16129601}
   m_Center: {x: .0210930109, y: .191100508, z: 0}
---- !u!95 &9590742
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190744}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: dedbf4a0a4262a0419b3d1604e7aae85, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11459666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
+  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!1001 &100100000

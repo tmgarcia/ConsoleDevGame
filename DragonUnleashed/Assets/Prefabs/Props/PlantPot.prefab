@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489638}
-  - 95: {fileID: 9589640}
   m_Layer: 0
   m_Name: PlantPot
   m_TagString: Prop
@@ -98,21 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .360659987, y: .304717004, z: .360659987}
   m_Center: {x: 0, y: .152764499, z: 0}
---- !u!95 &9589640
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189638}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 39200cbc2ccf2dc4592dcbadd76bfc84, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455318}
-  - 95: {fileID: 9555320}
   m_Layer: 0
   m_Name: Planter
   m_TagString: Prop
@@ -87,21 +86,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155320}
   m_Mesh: {fileID: 4300000, guid: ed9ad77793866f145869ca799d3f522f, type: 3}
---- !u!95 &9555320
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155318}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 892f02b791c91904dbd703c0bb55b14d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11427512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
+  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
 --- !u!136 &13680528

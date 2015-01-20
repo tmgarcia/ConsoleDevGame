@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498568}
-  - 95: {fileID: 9598570}
   m_Layer: 0
   m_Name: Anvil
   m_TagString: Prop
@@ -98,21 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.10045004, y: .669785023, z: .510285974}
   m_Center: {x: 0, y: .334892511, z: 0}
---- !u!95 &9598570
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198568}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e621916f39258ef4f985d19610adab5b, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
