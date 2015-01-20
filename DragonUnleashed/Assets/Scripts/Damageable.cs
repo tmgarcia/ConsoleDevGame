@@ -16,7 +16,12 @@ public class Damageable : MonoBehaviour
 		lastIntegrityUpdate = CurrentIntegrity;
 	}
 
-	protected void Update()
+	void Update()
+	{
+		DamageUpdate();
+	}
+
+	protected void DamageUpdate()
 	{
 		if (lastIntegrityUpdate != CurrentIntegrity)
 		{

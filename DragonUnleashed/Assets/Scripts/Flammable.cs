@@ -50,9 +50,9 @@ public class Flammable : Damageable
 			DisableFlameParticles();
 		}
 
-		if (damageRole == DamageRole.Villager)
+		if (damageRole != DamageRole.Scenery)
 		{
-			base.Update();
+			base.DamageUpdate();
 		}
 	}
 
