@@ -413,7 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   airPlaneControls: 0
   speed: 6
-  isLocal: 0
+  isLocal: 1
 --- !u!114 &11429930
 MonoBehaviour:
   m_ObjectHideFlags: 1
