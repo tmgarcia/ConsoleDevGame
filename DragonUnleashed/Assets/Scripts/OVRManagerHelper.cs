@@ -6,21 +6,21 @@ public class OVRManagerHelper : MonoBehaviour
 	public bool IsLocalPlayerUsingOVR;
 	public static OVRManagerHelper instance;
 
-	void Awake()
-	{
-		if (instance == null)
-		{
-			instance = this;
-		}
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
 
-		IsLocalPlayerUsingOVR = IsOculusConnected();
-		print("Found OVR? " + IsLocalPlayerUsingOVR);
+        IsLocalPlayerUsingOVR = IsOculusConnected();
+        print("Found OVR? " + IsLocalPlayerUsingOVR);
 
-		if (!IsLocalPlayerUsingOVR)
-		{
-			gameObject.SetActive(false);
-		}
-	}
+        if (!IsLocalPlayerUsingOVR)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
 	void Start ()
 	{

@@ -11,20 +11,31 @@ public class DragonMovement : MonoBehaviour {
     public bool isLocal = false;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
-        //cam = transform.FindChild("OVRCameraRig").gameObject;
-        cam = transform.FindChild("DragonCamera").gameObject;
+        if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
+        {
+            setUpOVR();
+        }
+        else
+        {
+            cam = transform.FindChild("DragonCamera").gameObject;
+        }
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
         if (isLocal)
         {
-            if (!cam.GetComponent<Camera>().enabled)
+            if (!OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
-                cam.GetComponent<Camera>().enabled=true;
+                if (!cam.GetComponent<Camera>().enabled)
+                {
+                    cam.GetComponent<Camera>().enabled = true;
+                }
             }
             Vector3 forward = gameObject.transform.forward;
             Vector3 right = gameObject.transform.right;
@@ -57,4 +68,17 @@ public class DragonMovement : MonoBehaviour {
             transform.rotation = Quaternion.Lerp(transform.rotation, transform.parent.gameObject.GetComponent<NetworkAgent>().GetNetworkRotation(), Time.deltaTime * 5);
         }
 	}
+
+    void setUpOVR()
+    {
+        cam = transform.FindChild("OVRCameraRig").gameObject;
+        GameObject head = transform.FindChild("DragonHead").gameObject;
+        cam.transform.position = head.transform.position;
+        cam.transform.parent = head.transform;
+        cam.transform.localPosition += new Vector3(0.0f, 0.23f, 0.0f);
+
+        GameObject fire = (GameObject)PhotonNetwork.Instantiate("CustomFire2", head.transform.position, head.transform.rotation, 0);
+        fire.transform.parent = cam.transform.FindChild("CenterEyeAnchor").transform;
+        fire.transform.localPosition += new Vector3(0.0f, -0.49f, 0.34f);
+    }
 }
