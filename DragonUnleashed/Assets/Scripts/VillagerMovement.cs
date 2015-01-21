@@ -103,12 +103,12 @@ public class VillagerMovement : MonoBehaviour {
         return result;
     }
 
-    private void CamCollide()
+    private bool CamCollide()
     {
         if (cam.transform.localPosition.z > -cameraRestingDistance)
         {
             Vector3 newPos = cam.transform.localPosition;
-            newPos.z = -5;
+            newPos.z = -cameraRestingDistance;
             cam.transform.localPosition = newPos;
         }
 
@@ -134,14 +134,14 @@ public class VillagerMovement : MonoBehaviour {
         points[6] = new Vector3(0.3f, -0.2f, 0.0f);
         points[7] = new Vector3(-0.3f, -0.2f, 0.0f);
 
-        //Debug.DrawLine(target, camPos + (camRot * (points[0])), Color.blue);
-        //Debug.DrawLine(target, camPos + (camRot * (points[1])), Color.red);
-        //Debug.DrawLine(target, camPos + (camRot * (points[2])), Color.gray);
-        //Debug.DrawLine(target, camPos + (camRot * (points[3])), Color.green);
-        //Debug.DrawLine(target, camPos + (camRot * (points[4])), Color.magenta);
-        //Debug.DrawLine(target, camPos + (camRot * (points[5])), Color.cyan);
-        //Debug.DrawLine(target, camPos + (camRot * (points[6])), Color.black);
-        //Debug.DrawLine(target, camPos + (camRot * (points[7])), Color.white);
+        Debug.DrawLine(target, camPos + (camRot * (points[0])), Color.blue);
+        Debug.DrawLine(target, camPos + (camRot * (points[1])), Color.red);
+        Debug.DrawLine(target, camPos + (camRot * (points[2])), Color.gray);
+        Debug.DrawLine(target, camPos + (camRot * (points[3])), Color.green);
+        Debug.DrawLine(target, camPos + (camRot * (points[4])), Color.magenta);
+        Debug.DrawLine(target, camPos + (camRot * (points[5])), Color.cyan);
+        Debug.DrawLine(target, camPos + (camRot * (points[6])), Color.black);
+        Debug.DrawLine(target, camPos + (camRot * (points[7])), Color.white);
 
         bool ithit = false;
         int closest = 0;
@@ -165,8 +165,9 @@ public class VillagerMovement : MonoBehaviour {
         }
         if (ithit)
         {
-            //Debug.DrawLine(target, target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f)), Color.yellow, 1);
+            Debug.DrawLine(target, target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f)), Color.yellow, 1);
             cam.transform.position = target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f));
         }
+        return ithit;
     }
 }
