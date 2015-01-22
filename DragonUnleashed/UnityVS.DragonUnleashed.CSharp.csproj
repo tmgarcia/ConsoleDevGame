@@ -216,6 +216,7 @@
     <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\TestDragonSpawn.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\VillagerMovement.cs" />
     <Compile Include="Assets\Unity Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
   </ItemGroup>

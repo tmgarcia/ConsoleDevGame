@@ -6,6 +6,11 @@ public class OVRManagerHelper : MonoBehaviour
 	public bool IsLocalPlayerUsingOVR;
 	public static OVRManagerHelper instance;
 
+    public GameSetupManager gameSetupManager;
+    public bool readyToPlay { get; set; }
+    private bool dragonSet;
+    private bool gameStarted;
+
     void Awake()
     {
         if (instance == null)
@@ -21,6 +26,9 @@ public class OVRManagerHelper : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        readyToPlay = false;
+        dragonSet = false;
+        gameStarted = false;
     }
 
 	void Start ()
@@ -30,7 +38,23 @@ public class OVRManagerHelper : MonoBehaviour
 
 	void Update ()
 	{
-	
+        if (IsLocalPlayerUsingOVR && readyToPlay && !dragonSet)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                gameSetupManager.MoveSelfToSeekers();
+                gameSetupManager.SetSelfToReady();
+                dragonSet = true;
+            }
+        }
+        else if (dragonSet && !gameStarted)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                gameStarted = true;
+                gameSetupManager.StartGame();
+            }
+        }
 	}
 
 	private bool IsOculusConnected()

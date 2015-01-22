@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     {
         if (isBillboarding)
         {
-            Transform cameraTransform = OVRCameraRig.transform;
+            Transform cameraTransform = OVRCameraRig.transform.FindChild("CenterEyeAnchor").transform;
             dummyObject.transform.position = cameraTransform.position;
             dummyObject.transform.rotation = cameraTransform.rotation;
             dummyObject.transform.position = cameraTransform.position + cameraTransform.forward * UISpacingFromCamera;
@@ -79,6 +79,10 @@ public class UIManager : MonoBehaviour
 
     public void SetUIToBillboard()
     {
+        isBillboarding = true;
+        dummyObject = new GameObject();
+        OVRCameraRig = GameObject.Find("OVRCameraRig");
+
         if (HudUI != null)
         {
             HudUI.GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
@@ -99,9 +103,7 @@ public class UIManager : MonoBehaviour
         {
             GameOverUI.GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
         }
-        isBillboarding = true;
-        dummyObject = new GameObject();
-        OVRCameraRig = GameObject.Find("OVRCameraRig");
+        
         //OVRCameraRig = Camera.main.gameObject;
     }
 }

@@ -59,6 +59,11 @@ public class RoomManager : Photon.MonoBehaviour
         GetComponent<PlayersManager>().localPlayerID = PhotonNetwork.player.ID;
         PlayersManager.NewPlayer(PhotonNetwork.player.ID);
         //gameObject.GetComponent<GameSetupManager>().MoveSelfToHiders();
+        if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
+        {
+            OVRManagerHelper.instance.readyToPlay = true;
+            print("Room created and instance ready");
+        }
     }
     public void OnPhotonPlayerDisconnected(PhotonPlayer other)
     {

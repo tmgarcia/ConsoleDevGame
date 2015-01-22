@@ -67,7 +67,7 @@ public class BasePlayerScript : MonoBehaviour
 		{
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
-                playerCharacter = (GameObject)PhotonNetwork.Instantiate("DragonOVR", GameObject.Find("RespawnManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
+                playerCharacter = (GameObject)PhotonNetwork.Instantiate("DragonOVR", GameObject.Find("GameManager").GetComponent<RespawnManager>().GetRandomSpawn(Role), Quaternion.identity, 0);
             }
             else
             {
