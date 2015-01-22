@@ -26,9 +26,9 @@ public class Mimic : MonoBehaviour {
         {
             if (hit.collider.tag == "Prop")
             {
-                GameObject temp = (GameObject)Instantiate(hit.collider.gameObject, new Vector3(0, -50, 0), new Quaternion());
-                CopyObject(temp);
-                Destroy(temp);
+                //GameObject temp = (GameObject)Instantiate(hit.collider.gameObject, new Vector3(0, -50, 0), new Quaternion());
+                gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, hit.collider.gameObject.name);
+                //Destroy(temp);
             }
         }
     }
@@ -45,8 +45,10 @@ public class Mimic : MonoBehaviour {
     }
 
     [RPC]
-    public void CopyObject(GameObject other)
+    public void CopyObject(string otherName)
     {
+        print(otherName);
+        GameObject other = (GameObject)Instantiate(GameObject.Find(otherName), new Vector3(0, -50, 0), new Quaternion());
         gameObject.GetComponent<MeshFilter>().mesh = other.GetComponent<MeshFilter>().mesh;
 
         gameObject.renderer.material = other.renderer.material;
@@ -64,5 +66,6 @@ public class Mimic : MonoBehaviour {
         {
             gameObject.AddComponent<SphereCollider>();
         }
+        Destroy(other);
     }
 }
