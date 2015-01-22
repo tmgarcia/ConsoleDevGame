@@ -55,12 +55,29 @@ public class OVRManagerHelper : MonoBehaviour
                 gameSetupManager.StartGame();
             }
         }
+
+        if (gameStarted && Input.GetKeyDown(KeyCode.A))
+        {
+            Calibrate();
+        }
 	}
 
 	private bool IsOculusConnected()
 	{
 		return Ovr.Hmd.Detect() > 0;
 	}
+
+    private void Calibrate()
+    {
+        if (transform.parent != null)
+        {
+            Transform parentObject = transform.parent;
+            transform.rotation = parentObject.rotation;
+            transform.GetChild(0).transform.rotation = parentObject.rotation;
+            transform.GetChild(1).transform.rotation = parentObject.rotation;
+            transform.GetChild(2).transform.rotation = parentObject.rotation;
+        }
+    }
 
 	////////////FUTURE IMPLEMENTATION/////////////
 	//public boolCheckOculusConnection();
