@@ -46,6 +46,8 @@ public class DragonMovement : MonoBehaviour {
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
             gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter,Time.deltaTime);
 
+            GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+
             float deltaX = Input.GetAxis("Mouse X");
             float deltaY = Input.GetAxis("Mouse Y");
 
