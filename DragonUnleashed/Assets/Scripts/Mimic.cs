@@ -39,12 +39,13 @@ public class Mimic : MonoBehaviour {
         {
             int i = Random.Range(0, disguises.Length);
             GameObject temp = (GameObject)Instantiate(disguises[i],new Vector3(0,-50,0), new Quaternion());
-            CopyObject(temp.transform.GetChild(0).gameObject);
+            gameObject.GetComponent<PhotonView>().RPC("CopyObject",PhotonTargets.All,temp.transform.GetChild(0).gameObject);
             Destroy(temp);
         }
     }
 
-    private void CopyObject(GameObject other)
+    [RPC]
+    public void CopyObject(GameObject other)
     {
         gameObject.GetComponent<MeshFilter>().mesh = other.GetComponent<MeshFilter>().mesh;
 
