@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11429922}
   - 114: {fileID: 11429924}
   - 114: {fileID: 11429926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonOVR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   - 114: {fileID: 11429930}
   - 114: {fileID: 11429932}
   - 114: {fileID: 11499140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 114: {fileID: 11456982}
   - 114: {fileID: 11456976}
   - 114: {fileID: 11456988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - 114: {fileID: 11457538}
   - 114: {fileID: 11457536}
   - 114: {fileID: 11457534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - 114: {fileID: 11457544}
   - 114: {fileID: 11457542}
   - 114: {fileID: 11457540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - 114: {fileID: 11457550}
   - 114: {fileID: 11457548}
   - 114: {fileID: 11457546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - 198: {fileID: 19899160}
   - 199: {fileID: 19999160}
   - 114: {fileID: 11499142}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CustomFire2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

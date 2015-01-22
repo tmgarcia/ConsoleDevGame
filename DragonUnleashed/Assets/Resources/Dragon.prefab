@@ -11,7 +11,7 @@ GameObject:
   - 198: {fileID: 19807868}
   - 199: {fileID: 19907868}
   - 114: {fileID: 11407868}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CustomFire2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 114: {fileID: 11447188}
   - 114: {fileID: 11458768}
   - 114: {fileID: 11496390}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - 114: {fileID: 11439704}
   - 114: {fileID: 11440094}
   - 114: {fileID: 11441432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - 124: {fileID: 12439686}
   - 92: {fileID: 9239686}
   - 81: {fileID: 8139686}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - 114: {fileID: 11439702}
   - 114: {fileID: 11470048}
   - 114: {fileID: 11434774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - 114: {fileID: 11439706}
   - 114: {fileID: 11404196}
   - 114: {fileID: 11488012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - 114: {fileID: 11439708}
   - 114: {fileID: 11414638}
   - 114: {fileID: 11444826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 114: {fileID: 11483810}
   - 114: {fileID: 11483812}
   - 114: {fileID: 11483814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DragonHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - 15: {fileID: 1594690}
   - 12: {fileID: 1294690}
   - 26: {fileID: 2694690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 494698}
   - 108: {fileID: 10894690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lightsource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - 15: {fileID: 1594692}
   - 12: {fileID: 1294694}
   - 26: {fileID: 2694694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OuterCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - 26: {fileID: 2694692}
   - 114: {fileID: 11414950}
   - 76: {fileID: 7690152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InnerCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireBreathPE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
