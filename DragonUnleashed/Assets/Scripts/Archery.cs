@@ -35,9 +35,10 @@ public class Archery : Photon.MonoBehaviour
 			}
 			if (aiming && Input.GetMouseButtonDown(0)) //Left mouse down
 			{
-                Vector3 arrowForce = Camera.main.transform.forward * 1000;
-                Vector3 launchLocation = gameObject.transform.position + (0.75f * (gameObject.transform.up + gameObject.transform.right)); 
-                FireArrow(launchLocation, transform.rotation, arrowForce);
+                Vector3 launchLocation = gameObject.transform.position + (0.75f * (gameObject.transform.up + gameObject.transform.right));
+                Vector3 arrowForce = (launchLocation - Camera.main.transform.position) + (Camera.main.transform.forward * 1500);
+                //Vector3 launchLocation = Camera.main.transform.position - 0.5f * Vector3.up;
+                FireArrow(launchLocation, Quaternion.LookRotation(arrowForce), arrowForce);
 			}
 		}
 	}
@@ -52,6 +53,8 @@ public class Archery : Photon.MonoBehaviour
 	{
         GameObject launchedArrow = Instantiate(arrow, position , rotation) as GameObject;
         launchedArrow.rigidbody.AddForce(force);
+        //launchedArrow.transform.forward = launchedArrow.rigidbody.velocity.normalized; 
+
 	}
 
 	public bool GetAiming()
