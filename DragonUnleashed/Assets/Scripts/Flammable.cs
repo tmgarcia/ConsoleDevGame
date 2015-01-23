@@ -44,6 +44,9 @@ public class Flammable : Damageable
 			AdjustFlameParticles();
 			ReduceIntegrity();
 			ReduceBurnination();
+            float percentHealth = (CurrentIntegrity / StartingIntegrity);
+           // float percentBlackened = (1.0f - percentHealth);
+            renderer.material.color = percentHealth * Color.white;
 		}
 		else if (personalFire.enableEmission)
 		{
@@ -105,11 +108,15 @@ public class Flammable : Damageable
 
 		if (damageRole == DamageRole.Scenery)
 		{
-			Destroy(this.gameObject);
+            Destroy(gameObject.collider);
+            gameObject.AddComponent<Rigidbody>();
+            Destroy(gameObject, 2.0f);
 			Destroy(personalFire, 2.0f);
 		}
 
 		BurninationLevel = 0;
 
 	}
+
+    
 }
