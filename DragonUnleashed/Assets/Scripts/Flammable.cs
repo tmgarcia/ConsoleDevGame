@@ -5,15 +5,21 @@ public class Flammable : Damageable
 {
 	private float BurninationLevel;
 	public ParticleSystem fire;
+    public ParticleSystem dustCloud;
+    public ParticleSystem dustPoof;
 	private ParticleSystem personalFire;
-	private float ignitionThreshold = 0.15f;
-
+    private ParticleSystem personalDust;
+    private Vector3 firePosition;
+	private float ignitionThreshold = 0.15f; // Arbitrary value entered, could possibly be lower. Must not be zero.
+    private float volume;
+    private float structureMinVolume = 20; // Just guessing. Needs further testing.
 
 	void Start()
 	{
 		CurrentIntegrity = StartingIntegrity;
+        volume = calculateVolume();
 
-		Vector3 firePosition = transform.position;
+		firePosition = transform.position;
 		float longSideLength = 1;
 
 		if (gameObject.GetComponent<Collider>() != null)
@@ -24,16 +30,11 @@ public class Flammable : Damageable
 
 		}
 
-		//reposition fire
 		personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
-		personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);
+        personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
 		personalFire.transform.parent = transform;
+        personalFire.transform.localScale *= longSideLength;		//resize fire 
 
-		//resize fire 
-
-		personalFire.transform.localScale *= longSideLength;
-
-		//personalFire.emissionRate = 20 * longSideLength;
 	}
 
 	void Update()
@@ -108,15 +109,55 @@ public class Flammable : Damageable
 
 		if (damageRole == DamageRole.Scenery)
 		{
-            Destroy(gameObject.collider);
-            gameObject.AddComponent<Rigidbody>();
-            Destroy(gameObject, 2.0f);
-			Destroy(personalFire, 2.0f);
+            if (volume < structureMinVolume) // Check size to determine if building or prop
+            {
+                poof();
+            }
+            else
+            {
+                collapse();
+            }
 		}
 
 		BurninationLevel = 0;
 
 	}
 
+    private void collapse() // Disposes of large structures by sinking and raising dust
+    {
+        //raise dust
+        personalDust = Instantiate(dustCloud, firePosition, Quaternion.identity) as ParticleSystem;
+        personalDust.transform.Rotate(new Vector3(1, 0, 0), -90);
+
+        personalDust.transform.parent = transform;
+
+        //sink
+        Destroy(gameObject.collider);
+        gameObject.AddComponent<Rigidbody>();
+        Destroy(rigidbody, 1.5f);
+        Destroy(gameObject, 5.0f);
+        Destroy(personalFire, 5.0f);
+        Destroy(personalDust, 5.0f);
+    }
+
+    private void poof() // Disposes of small objects with a poof of smoke
+    {
+        //create poof
+        personalDust = Instantiate(dustPoof, firePosition, Quaternion.identity) as ParticleSystem;
+        personalDust.transform.parent = transform;
+        personalDust.transform.localScale *= volume;
+        personalDust.emissionRate = 40.0f * volume;
+        renderer.enabled = false;
+        Destroy(collider);
+        Destroy(gameObject, 10);
+        Destroy(personalFire, 10.0f);
+        Destroy(personalDust, 10.0f);
+
+    }
+
+    private float calculateVolume()
+    {
+        return (collider.bounds.size.x * collider.bounds.size.y * collider.bounds.size.z);
+    }
     
 }

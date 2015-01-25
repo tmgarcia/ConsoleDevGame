@@ -29,6 +29,7 @@ GameObject:
   - 4: {fileID: 458778}
   - 33: {fileID: 3358778}
   - 23: {fileID: 2358778}
+  - 114: {fileID: 11403168}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -130,6 +131,23 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11403168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 10
+  CurrentIntegrity: 0
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
+  dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
+  dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
 --- !u!114 &11458778
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -101,6 +101,8 @@ MonoBehaviour:
   CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
+  dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
+  dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
 --- !u!136 &13645186
 CapsuleCollider:
   m_ObjectHideFlags: 1

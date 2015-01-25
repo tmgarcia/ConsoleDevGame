@@ -20,11 +20,11 @@ public class FireBreathing : Photon.MonoBehaviour
 	{
 		if (na.IsLocalCharacter())
 		{
-			if (Input.GetKeyDown(KeyCode.Space))
+			if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
 			{
                 EnableFire();
 			}
-			else if (Input.GetKeyUp(KeyCode.Space))
+            else if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
 			{
                 DisableFire();
 			}
