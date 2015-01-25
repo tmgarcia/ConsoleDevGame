@@ -52,7 +52,7 @@ public class Archery : Photon.MonoBehaviour
 	private void RPCFireArrow(Vector3 position, Quaternion rotation, Vector3 force)
 	{
         GameObject launchedArrow = Instantiate(arrow, position , rotation) as GameObject;
-        launchedArrow.rigidbody.AddForce(force);
+        launchedArrow.transform.GetChild(0).rigidbody.AddForce(force);
         //launchedArrow.transform.forward = launchedArrow.rigidbody.velocity.normalized; 
 
 	}
