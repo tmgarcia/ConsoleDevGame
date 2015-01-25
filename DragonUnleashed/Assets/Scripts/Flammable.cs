@@ -17,23 +17,24 @@ public class Flammable : Damageable
 	void Start()
 	{
 		CurrentIntegrity = StartingIntegrity;
-        volume = calculateVolume();
+        volume = (collider.bounds.size.x * collider.bounds.size.y * collider.bounds.size.z);
 
 		firePosition = transform.position;
-		float longSideLength = 1;
+		float longSideLength = 1.0f;
 
 		if (gameObject.GetComponent<Collider>() != null)
 		{
 			firePosition = gameObject.collider.bounds.center + new Vector3(0, gameObject.collider.bounds.size.y / 2, 0);      // Places fire on top of object
 			//firePosition = gameObject.renderer.bounds.center;                                                                   // Places fire in center of object
-			longSideLength = Mathf.Max(gameObject.collider.bounds.size.x, gameObject.collider.bounds.size.z);
+			longSideLength = Mathf.Max(gameObject.collider.bounds.size.x, gameObject.collider.bounds.size.z, gameObject.collider.bounds.size.y);
 
 		}
 
 		personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
         personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
 		personalFire.transform.parent = transform;
-        personalFire.transform.localScale *= longSideLength;		//resize fire 
+        personalFire.transform.localScale *= (2.0f*longSideLength);		//resize fire 
+        personalFire.startSize = longSideLength;
 
 	}
 
@@ -143,7 +144,7 @@ public class Flammable : Damageable
     private void poof() // Disposes of small objects with a poof of smoke
     {
         //create poof
-        personalDust = Instantiate(dustPoof, firePosition, Quaternion.identity) as ParticleSystem;
+        personalDust = Instantiate(dustPoof, collider.bounds.center, Quaternion.identity) as ParticleSystem;
         personalDust.transform.parent = transform;
         personalDust.transform.localScale *= volume;
         personalDust.emissionRate = 40.0f * volume;
@@ -155,9 +156,6 @@ public class Flammable : Damageable
 
     }
 
-    private float calculateVolume()
-    {
-        return (collider.bounds.size.x * collider.bounds.size.y * collider.bounds.size.z);
-    }
+   
     
 }
