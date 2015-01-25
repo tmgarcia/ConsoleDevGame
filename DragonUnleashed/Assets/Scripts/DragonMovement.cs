@@ -73,16 +73,16 @@ public class DragonMovement : MonoBehaviour {
 
     void setUpOVR()
     {
-        GameObject head = gameObject;
+        Transform camPosition = transform.FindChild("CameraPosition").gameObject.transform;
         cam = GameObject.Find("OVRCameraRig").gameObject;
-        GameObject fire = head.transform.FindChild("CustomFire2").gameObject;
+        GameObject fire = this.transform.FindChild("CustomFire2").gameObject;
 
-        cam.transform.position = head.transform.position;
-        cam.transform.rotation = head.transform.rotation;
-        cam.transform.GetChild(0).transform.rotation = head.transform.rotation;
-        cam.transform.GetChild(1).transform.rotation = head.transform.rotation;
-        cam.transform.GetChild(2).transform.rotation = head.transform.rotation;
-        cam.transform.parent = head.transform;
+        cam.transform.position = camPosition.position;
+        cam.transform.rotation = camPosition.rotation;
+        cam.transform.GetChild(0).transform.rotation = camPosition.rotation;
+        cam.transform.GetChild(1).transform.rotation = camPosition.rotation;
+        cam.transform.GetChild(2).transform.rotation = camPosition.rotation;
+        cam.transform.parent = this.transform;
         cam.transform.localPosition += new Vector3(0.0f, 0.23f, 0.0f);
         cam.SetActive(true);
 

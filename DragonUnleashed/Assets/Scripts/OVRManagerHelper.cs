@@ -9,6 +9,7 @@ public class OVRManagerHelper : MonoBehaviour
     public GameSetupManager gameSetupManager;
     public bool readyToPlay { get; set; }
     private bool dragonSet;
+    private bool dragonReady;
     private bool gameStarted;
 
     void Awake()
@@ -28,6 +29,7 @@ public class OVRManagerHelper : MonoBehaviour
         }
         readyToPlay = false;
         dragonSet = false;
+        dragonReady = false;
         gameStarted = false;
     }
 
@@ -38,18 +40,25 @@ public class OVRManagerHelper : MonoBehaviour
 
 	void Update ()
 	{
-        if (IsLocalPlayerUsingOVR && readyToPlay && !dragonSet)
+        if (IsLocalPlayerUsingOVR && readyToPlay && !dragonSet && !dragonReady)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 gameSetupManager.MoveSelfToSeekers();
-                gameSetupManager.SetSelfToReady();
                 dragonSet = true;
             }
         }
-        else if (dragonSet && !gameStarted)
+        else if (dragonSet && !dragonReady)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                gameSetupManager.SetSelfToReady();
+                dragonReady = true;
+            }
+        }
+        else if (dragonSet && dragonReady && !gameStarted)
+        {
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 gameStarted = true;
                 gameSetupManager.StartGame();
