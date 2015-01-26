@@ -10,8 +10,7 @@ public class DragonMovement : MonoBehaviour
     private float speedLimiter = 0.1f;
     public bool isLocal = false;
 
-    private Vector3 forwardOVR;
-    private Transform transformOVR;
+    private GameObject transformOVR;
     private Transform camPosition;
 
     // Use this for initialization
@@ -36,8 +35,8 @@ public class DragonMovement : MonoBehaviour
         {
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
-                Vector3 forward = transformOVR.forward;
-                Vector3 right = transformOVR.right;
+                Vector3 forward = transformOVR.transform.forward;
+                Vector3 right = transformOVR.transform.right;
                 Vector3 accelaration = forward * speed;
                 if (Input.GetKey(KeyCode.W)) accelaration *= 3;
                 if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
@@ -52,18 +51,18 @@ public class DragonMovement : MonoBehaviour
 
                 if (airPlaneControls)
                 {
-                    transformOVR.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
-                    transformOVR.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
+                    transformOVR.transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
+                    transformOVR.transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
                 }
                 else
                 {
-                    Vector3 newEuler = transformOVR.rotation.eulerAngles;
+                    Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
                     newEuler.x -= deltaY;
                     newEuler.y += deltaX;
-                    transformOVR.rotation = Quaternion.Euler(newEuler);
+                    transformOVR.transform.rotation = Quaternion.Euler(newEuler);
                 }
                 cam.transform.position = camPosition.position;
-                cam.transform.rotation = transformOVR.rotation;
+                cam.transform.rotation = transformOVR.transform.rotation;
                 transform.rotation = cam.transform.GetChild(1).transform.rotation;
             }
             else
@@ -110,19 +109,26 @@ public class DragonMovement : MonoBehaviour
 
     void setUpOVR()
     {
-        transformOVR = GameObject.Find("DragonOVR_Rotation").transform;
+        transformOVR = GameObject.Find("DragonOVR_Rotation");
         camPosition = transform.FindChild("CameraPosition").gameObject.transform;
         cam = GameObject.Find("OVRCameraRig").gameObject;
-        GameObject fire = this.transform.FindChild("CustomFire2").gameObject;
 
-        transformOVR.rotation = camPosition.rotation;
+        Quaternion startingRotation = cam.transform.GetChild(0).transform.rotation;
+        transform.rotation = startingRotation;
+        transformOVR.transform.rotation = startingRotation;
         cam.transform.position = camPosition.position;
-        cam.transform.rotation = camPosition.rotation;
-        cam.transform.GetChild(0).transform.rotation = camPosition.rotation;
-        cam.transform.GetChild(1).transform.rotation = camPosition.rotation;
-        cam.transform.GetChild(2).transform.rotation = camPosition.rotation;
         cam.transform.parent = transform;
-        fire.transform.parent = cam.transform.GetChild(1);
+        transform.FindChild("CustomFire2").gameObject.transform.parent = cam.transform.GetChild(1);
+
+        //transform.rotation = Quaternion.identity;
+        //transformOVR.transform.rotation = Quaternion.identity; //camPosition.rotation;
+        //cam.transform.position = transform.FindChild("CameraPosition").gameObject.transform.position; //camPosition.position;
+        //cam.transform.rotation = Quaternion.identity;  //camPosition.rotation;
+        //cam.transform.GetChild(0).transform.rotation = Quaternion.identity; //camPosition.rotation;
+        //cam.transform.GetChild(1).transform.rotation = Quaternion.identity; //camPosition.rotation;
+        //cam.transform.GetChild(2).transform.rotation = Quaternion.identity; //camPosition.rotation;
+        //cam.transform.parent = transform;
+        //fire.transform.parent = cam.transform.GetChild(1);
         //transform.parent = cam.transform.GetChild(1).transform;
     }
 }

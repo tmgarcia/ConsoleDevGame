@@ -206,6 +206,7 @@
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\GameSetupManager.cs" />
     <Compile Include="Assets\Scripts\Mimic.cs" />
+    <Compile Include="Assets\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Scripts\NetworkAgent.cs" />
     <Compile Include="Assets\Scripts\OVRManagerHelper.cs" />
     <Compile Include="Assets\Scripts\Options.cs" />
@@ -215,6 +216,7 @@
     <Compile Include="Assets\Scripts\ResolutionInfo.cs" />
     <Compile Include="Assets\Scripts\RespawnManager.cs" />
     <Compile Include="Assets\Scripts\RoomManager.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\TestDragonSpawn.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
