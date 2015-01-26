@@ -9,6 +9,7 @@ public class DragonMovement : MonoBehaviour {
     public float speed = 6;
     private float speedLimiter = 0.1f;
     public bool isLocal = false;
+    private Transform position;
 
 	// Use this for initialization
 	void Start () 
@@ -45,8 +46,13 @@ public class DragonMovement : MonoBehaviour {
                 float deltaX = Input.GetAxis("Mouse X");
                 float deltaY = Input.GetAxis("Mouse Y");
 
-                cam.transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
-                cam.transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
+                Vector3 newEuler = cam.GetComponent<Rigidbody>().rotation.eulerAngles;
+                newEuler.x -= deltaY;
+                newEuler.y += deltaX;
+                cam.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
+
+                transform.localPosition = position.localPosition;
+                transform.localRotation = position.localRotation;
             }
             else
             {
@@ -103,9 +109,21 @@ public class DragonMovement : MonoBehaviour {
         cam.transform.GetChild(2).transform.rotation = camPosition.rotation;
 
         //Set oculus as parent
-        GameObject.Find("DragonOVR").transform.GetChild(1).GetComponent<DragonSegment>().parent = cam.transform;
-        cam.transform.parent = GameObject.Find("DragonOVR").transform;
-        fire.transform.parent = cam.transform.GetChild(1);
-        this.transform.parent = cam.transform.GetChild(1);
+        GameObject dragon = GameObject.Find("DragonOVR(Clone)").gameObject;
+        GameObject dragonBody = dragon.transform.FindChild("DragonBody_One").gameObject;
+        if (dragonBody != null)
+        {
+            dragonBody.GetComponent<DragonSegment>().parent = cam.transform;
+            cam.transform.parent = dragon.transform;
+            fire.transform.parent = cam.transform.GetChild(1);
+            transform.parent = cam.transform.GetChild(1);
+            Physics.IgnoreCollision(this.GetComponent<BoxCollider>(), dragonBody.GetComponent<SphereCollider>());
+            position = cam.transform.FindChild("DragonHeadPosition").transform;
+            transform.localPosition = position.localPosition;
+        }
+        else
+        {
+            Debug.Log("Dragon Body not found");
+        }
     }
 }
