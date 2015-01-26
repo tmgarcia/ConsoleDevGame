@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 439688}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11439704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1043,6 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 439694}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11439706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1055,6 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 439696}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11439708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1067,6 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 483814}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11440094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1238,7 +1242,7 @@ MonoBehaviour:
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 483814}
+  - {fileID: 0}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
