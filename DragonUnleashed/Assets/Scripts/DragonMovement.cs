@@ -23,7 +23,7 @@ public class DragonMovement : MonoBehaviour
         {
             setUpOVR();
         }
-        else
+        else if (isLocal)
         {
             cam = transform.FindChild("DragonCamera").gameObject;
         }
