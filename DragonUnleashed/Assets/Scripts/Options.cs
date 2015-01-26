@@ -26,7 +26,7 @@ public class Options : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Q))
 		{
 			optionsCanvas.enabled = !optionsCanvas.enabled;
             Screen.lockCursor = !optionsCanvas.enabled;

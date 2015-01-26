@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
 		dingo = GameObject.Find("jcDingo");
 		for (int i = 0; i < maxSpawned; i++)
 		{
-			Instantiate(dingo, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, 30)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, 30))), Quaternion.identity);
+			Instantiate(dingo, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, spawnRadius)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, spawnRadius))), Quaternion.identity);
 			currentSpawned++;
 		}
 		dingo.SetActive(false);
