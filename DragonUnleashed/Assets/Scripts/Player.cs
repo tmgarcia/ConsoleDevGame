@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 		}
 		else if (Role == PlayerRole.Dragon)
 		{
-			print("You killed the dragon yay.");
+			//print("You killed the dragon yay.");
 			IsAlive = false;
 			GameOverManager.instance.ShowVillagerWin();
 		}

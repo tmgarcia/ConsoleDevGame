@@ -52,4 +52,5 @@ MonoBehaviour:
   - RPCFireArrow
   - SetIntegrity
   - SetDragonIntegrity
+  - CopyObject
   DisableAutoOpenWizard: 0

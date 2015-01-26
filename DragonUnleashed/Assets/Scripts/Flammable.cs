@@ -68,7 +68,7 @@ public class Flammable : Damageable
 			EnableFlameParticles();
 		}
 		personalFire.emissionRate = BurninationLevel; // *multiplier?
-		print(personalFire.emissionRate);
+		//print(personalFire.emissionRate);
 	}
 
 	private void EnableFlameParticles()

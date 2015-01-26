@@ -58,7 +58,7 @@ public class PlayersManager : MonoBehaviour
 	public static void NewPlayer(int playerID)
 	{
 		ScenePhotonView.RPC("AddNewPlayer", PhotonTargets.AllBuffered, playerID);
-		print("NewPlayer");
+		//print("NewPlayer");
 	}
 
 	public GameObject GetPlayer(int playerID)
@@ -82,7 +82,7 @@ public class PlayersManager : MonoBehaviour
 	[RPC]
 	public void AddNewPlayer(int playerID)
 	{
-		print("AddNewPlayer");
+		//print("AddNewPlayer");
 		var newPlayer = (GameObject)Instantiate(PlayerCharacterPrefab);
 		BasePlayerScript newPlayerBase = newPlayer.GetComponent<BasePlayerScript>();
 		newPlayerBase.playerID = playerID;

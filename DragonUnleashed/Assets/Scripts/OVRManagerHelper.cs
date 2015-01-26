@@ -17,11 +17,11 @@ public class OVRManagerHelper : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("OVRManagerHelper is instantiated");
+            //print("OVRManagerHelper is instantiated");
         }
 
         IsLocalPlayerUsingOVR = IsOculusConnected();
-        print("Found OVR? " + IsLocalPlayerUsingOVR);
+        //print("Found OVR? " + IsLocalPlayerUsingOVR);
 
         if (!IsLocalPlayerUsingOVR)
         {
