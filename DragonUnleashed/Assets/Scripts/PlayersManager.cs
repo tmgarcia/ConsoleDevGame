@@ -144,8 +144,8 @@ public class PlayersManager : MonoBehaviour
 		GameObject.Find("DebugHud").GetComponent<Canvas>().enabled = false;
 		GameObject.Find("GameSetupUI").GetComponent<Canvas>().enabled = false;
 		GameObject.Find("GameSetupUI").SetActive(false);
-		GameObject.Find("TimerText").GetComponent<Timer>().ResetTimer();
-		GameObject.Find("TimerText").GetComponent<Timer>().StartTimer();
+		GameObject.Find("TimerText").GetComponent<GameTimer>().ResetTimer();
+		GameObject.Find("TimerText").GetComponent<GameTimer>().StartTimer();
 		RespawnManager.instance.numVillagerAlive = currentNumSeekers;
 
 		if (GetPlayerRole(localPlayerID) == PlayerRole.Dragon)

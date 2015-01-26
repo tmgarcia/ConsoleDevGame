@@ -10,6 +10,8 @@ public class Damageable : MonoBehaviour
 	public DamageRole damageRole = DamageRole.Villager;
 	//protected
 
+
+
 	void Start()
 	{
 		CurrentIntegrity = StartingIntegrity;

@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Timer : MonoBehaviour
+public class GameTimer : MonoBehaviour
 {
 	public string VillagerTimerText = "Survive the Dragon: ";
 	public string DragonTimerText = "Kill Them All: ";

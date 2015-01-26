@@ -15,7 +15,7 @@ public class GameOverManager : MonoBehaviour
 			VillagerWin = GameObject.Find("VillagerWin");
 			DragonWin = GameObject.Find("DragonWin");
 			HideGameOver();
-			GameObject.Find("TimerText").GetComponent<Timer>().TimerFinishEvent += ShowVillagerWin;
+			GameObject.Find("TimerText").GetComponent<GameTimer>().TimerFinishEvent += ShowVillagerWin;
 		}
 	}
 
