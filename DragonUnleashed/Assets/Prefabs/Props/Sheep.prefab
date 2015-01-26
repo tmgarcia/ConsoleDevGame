@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11438140}
   m_Layer: 0
   m_Name: pSphere6
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ GameObject:
   - 4: {fileID: 438142}
   m_Layer: 0
   m_Name: Sheep
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
