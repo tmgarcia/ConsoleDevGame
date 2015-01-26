@@ -47,7 +47,7 @@ public class Mimic : MonoBehaviour {
     [RPC]
     public void CopyObject(string otherName)
     {
-        print(otherName);
+        //print(otherName);
         GameObject other = (GameObject)Instantiate(GameObject.Find(otherName), new Vector3(0, -50, 0), new Quaternion());
         gameObject.GetComponent<MeshFilter>().mesh = other.GetComponent<MeshFilter>().mesh;
 

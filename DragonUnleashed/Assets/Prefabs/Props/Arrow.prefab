@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &136722
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 436722}
   - 198: {fileID: 19836722}
   - 199: {fileID: 19936722}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 458776}
   - 114: {fileID: 11458778}
   - 65: {fileID: 6558778}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 65: {fileID: 6587230}
   - 114: {fileID: 11490668}
   - 54: {fileID: 5465428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,8 +65,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -.500976562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 458776}
-  m_RootOrder: 1
+  m_Father: {fileID: 458778}
+  m_RootOrder: 0
 --- !u!4 &458776
 Transform:
   m_ObjectHideFlags: 1
@@ -78,7 +78,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458778}
-  - {fileID: 436722}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &458778
@@ -90,7 +89,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 436722}
   m_Father: {fileID: 458776}
   m_RootOrder: 0
 --- !u!23 &2358778

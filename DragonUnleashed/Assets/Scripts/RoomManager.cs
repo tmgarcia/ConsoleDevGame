@@ -62,7 +62,7 @@ public class RoomManager : Photon.MonoBehaviour
         if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
         {
             OVRManagerHelper.instance.readyToPlay = true;
-            print("Room created and instance ready");
+            //print("Room created and instance ready");
         }
     }
     public void OnPhotonPlayerDisconnected(PhotonPlayer other)

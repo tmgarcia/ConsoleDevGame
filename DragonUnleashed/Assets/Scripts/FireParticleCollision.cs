@@ -15,7 +15,7 @@ public class FireParticleCollision : MonoBehaviour {
 
     void OnParticleCollision(GameObject other)
     {
-        print("Collision with " + other.name);
+        //print("Collision with " + other.name);
         
 
         if (other.gameObject.GetComponents<Flammable>().Length != 0)

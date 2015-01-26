@@ -18,10 +18,8 @@ public class DragonSegment : MonoBehaviour {
         if (movement == null) movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
         if (movement.isLocal)
         {
-            if (Vector3.Distance(transform.position, parent.position) > 3.5f)
-            {
-                transform.position = Vector3.Lerp(transform.position, parent.position, Time.deltaTime * movement.speed);
-            }
+            transform.rotation = Quaternion.Lerp(transform.rotation,Quaternion.LookRotation(Vector3.Normalize(parent.position-transform.position)),Time.deltaTime *5);
+            transform.position = Vector3.Lerp(transform.position, parent.position+parent.forward*-2, Time.deltaTime * movement.speed);
         }
         else
         {
