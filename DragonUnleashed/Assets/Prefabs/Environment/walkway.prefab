@@ -12,7 +12,7 @@ GameObject:
   m_Name: walkway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &105378
@@ -31,7 +31,7 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &405376
@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105376}
   m_LocalRotation: {x: 0, y: -.689514041, z: 0, w: .72427243}
-  m_LocalPosition: {x: 572.530029, y: .25, z: 1119.18994}
+  m_LocalPosition: {x: 591.907837, y: 2.94482112, z: 1059.43481}
   m_LocalScale: {x: 1.79969883, y: 2.57224751, z: 2.57224751}
   m_Children:
   - {fileID: 405378}

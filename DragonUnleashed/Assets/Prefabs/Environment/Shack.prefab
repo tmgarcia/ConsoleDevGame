@@ -16,8 +16,8 @@ GameObject:
   m_Name: Shack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &447820
 Transform:
@@ -25,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 221.048996, y: 2.56800008, z: 253.070007}
+  m_LocalRotation: {x: 0, y: .342109233, z: 0, w: .939660192}
+  m_LocalPosition: {x: -347.420044, y: 815.909973, z: -1209.51001}
   m_LocalScale: {x: 1.08000004, y: 1.08000004, z: 1.08000004}
   m_Children: []
   m_Father: {fileID: 0}

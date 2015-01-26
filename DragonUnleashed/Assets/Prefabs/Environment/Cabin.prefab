@@ -16,8 +16,8 @@ GameObject:
   m_Name: Cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &493572
 Transform:
@@ -25,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 221.050003, y: 2.56999993, z: 237.960007}
-  m_LocalScale: {x: .779999971, y: .779999971, z: .779999971}
+  m_LocalRotation: {x: 0, y: .597088575, z: 0, w: -.802175343}
+  m_LocalPosition: {x: -293.570007, y: 817.789978, z: -1190.69995}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

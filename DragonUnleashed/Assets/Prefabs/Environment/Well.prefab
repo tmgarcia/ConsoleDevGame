@@ -16,8 +16,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &131376
 GameObject:
@@ -31,7 +31,7 @@ GameObject:
   m_Name: Well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &431374
@@ -52,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131376}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 660.059998, y: 2.6400001, z: 1163.04004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -326.548096, y: 816.309875, z: -1170.24512}
   m_LocalScale: {x: 10.5564289, y: 10.5564318, z: 10.5564318}
   m_Children:
   - {fileID: 431374}

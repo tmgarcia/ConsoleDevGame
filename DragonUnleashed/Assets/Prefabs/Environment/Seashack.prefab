@@ -16,8 +16,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &178850
 GameObject:
@@ -31,7 +31,7 @@ GameObject:
   m_Name: Seashack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &478848
@@ -52,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178850}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 572.820007, y: .0500000007, z: 1113.46997}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: -276.200012, y: 827.049988, z: -1243.19995}
   m_LocalScale: {x: .0175953247, y: .0175953247, z: .0175953247}
   m_Children:
   - {fileID: 478848}
