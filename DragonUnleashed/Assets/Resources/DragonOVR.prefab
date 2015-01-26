@@ -548,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 457534}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11456988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -610,6 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 457536}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11457540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,6 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 457538}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11457546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -708,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 429936}
+  parentRotationOVR: {fileID: 0}
 --- !u!114 &11499140
 MonoBehaviour:
   m_ObjectHideFlags: 1

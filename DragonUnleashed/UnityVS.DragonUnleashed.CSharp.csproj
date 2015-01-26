@@ -197,6 +197,7 @@
     <Compile Include="Assets\Scripts\DamageRole.cs" />
     <Compile Include="Assets\Scripts\Damageable.cs" />
     <Compile Include="Assets\Scripts\DragonMovement.cs" />
+    <Compile Include="Assets\Scripts\DragonMovementOVR.cs" />
     <Compile Include="Assets\Scripts\DragonSegment.cs" />
     <Compile Include="Assets\Scripts\DropdownScript.cs" />
     <Compile Include="Assets\Scripts\FireBreathing.cs" />

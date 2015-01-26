@@ -5,11 +5,13 @@ public class DragonSegment : MonoBehaviour {
 
     private PhotonView photonView;
     public Transform parent;
+    public Transform parentRotationOVR;
     private DragonMovement movement;
 
 	// Use this for initialization
 	void Start () {
         photonView = gameObject.GetComponent<PhotonView>();
+        parentRotationOVR = GameObject.Find("DragonOVR_Rotation").transform;
 	}
 	
 	// Update is called once per frame
@@ -18,8 +20,17 @@ public class DragonSegment : MonoBehaviour {
         if (movement == null) movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
         if (movement.isLocal)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation,Quaternion.LookRotation(Vector3.Normalize(parent.position-transform.position)),Time.deltaTime *5);
-            transform.position = Vector3.Lerp(transform.position, parent.position+parent.forward*-2, Time.deltaTime * movement.speed);
+            transform.position = Vector3.Lerp(transform.position, parent.position + parent.forward * -2, Time.deltaTime * movement.speed);
+
+            if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(parentRotationOVR.forward), Time.deltaTime * 5);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(Vector3.Normalize(parent.position - transform.position)), Time.deltaTime * 5);
+            }
+
         }
         else
         {
