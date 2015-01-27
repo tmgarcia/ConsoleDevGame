@@ -11,6 +11,7 @@ public class OVRManagerHelper : MonoBehaviour
     private bool dragonSet;
     private bool dragonReady;
     private bool gameStarted;
+    private OVRManager ovrManager;
 
     void Awake()
     {
@@ -23,14 +24,15 @@ public class OVRManagerHelper : MonoBehaviour
         IsLocalPlayerUsingOVR = IsOculusConnected();
         //print("Found OVR? " + IsLocalPlayerUsingOVR);
 
-        if (!IsLocalPlayerUsingOVR)
-        {
-            gameObject.SetActive(false);
-        }
+        //if (!IsLocalPlayerUsingOVR)
+        //{
+        //    gameObject.SetActive(false);
+        //}
         readyToPlay = false;
         dragonSet = false;
         dragonReady = false;
         gameStarted = false;
+        ovrManager = GetComponent<OVRManager>();
     }
 
 	void Start ()
@@ -65,7 +67,7 @@ public class OVRManagerHelper : MonoBehaviour
             }
         }
 
-        if (gameStarted && Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             Calibrate();
         }
@@ -78,14 +80,7 @@ public class OVRManagerHelper : MonoBehaviour
 
     private void Calibrate()
     {
-        if (transform.parent != null)
-        {
-            Transform parentObject = transform.parent;
-            transform.rotation = parentObject.rotation;
-            transform.GetChild(0).transform.rotation = parentObject.rotation;
-            transform.GetChild(1).transform.rotation = parentObject.rotation;
-            transform.GetChild(2).transform.rotation = parentObject.rotation;
-        }
+        OVRManager.capiHmd.RecenterPose();
     }
 
 	////////////FUTURE IMPLEMENTATION/////////////
