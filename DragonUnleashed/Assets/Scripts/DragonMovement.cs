@@ -119,38 +119,6 @@ public class DragonMovement : MonoBehaviour
         cam.transform.position = camPosition.position;
         cam.transform.parent = transform;
         transform.FindChild("CustomFire2").gameObject.transform.parent = cam.transform.GetChild(1);
-
-        //transform.rotation = Quaternion.identity;
-        //transformOVR.transform.rotation = Quaternion.identity; //camPosition.rotation;
-        //cam.transform.position = transform.FindChild("CameraPosition").gameObject.transform.position; //camPosition.position;
-        //cam.transform.rotation = Quaternion.identity;  //camPosition.rotation;
-        //cam.transform.GetChild(0).transform.rotation = Quaternion.identity; //camPosition.rotation;
-        //cam.transform.GetChild(1).transform.rotation = Quaternion.identity; //camPosition.rotation;
-        //cam.transform.GetChild(2).transform.rotation = Quaternion.identity; //camPosition.rotation;
-        //cam.transform.parent = transform;
-        //fire.transform.parent = cam.transform.GetChild(1);
-        //transform.parent = cam.transform.GetChild(1).transform;
+        OVRManagerHelper.instance.CalibrateOVR();
     }
 }
-
-
-
-////Set oculus as parent
-//GameObject dragon = GameObject.Find("DragonOVR(Clone)").gameObject;
-//GameObject dragonBody = dragon.transform.FindChild("DragonBody_One").gameObject;
-//if (dragonBody != null)
-//{
-//    dragonBody.GetComponent<DragonSegment>().parent = cam.transform;
-//    cam.transform.parent = dragon.transform;
-//    
-//    transform.parent = cam.transform.GetChild(1);
-//    Destroy(GetComponent<Rigidbody>());
-//    Physics.IgnoreCollision(this.GetComponent<BoxCollider>(), dragonBody.GetComponent<SphereCollider>());
-//    position = cam.transform.FindChild("DragonHeadPosition").transform;
-//    transform.localPosition = position.localPosition;
-//    transform.localRotation = position.localRotation;
-//}
-//else
-//{
-//    Debug.Log("Dragon Body not found");
-//}

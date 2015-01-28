@@ -24,10 +24,10 @@ public class OVRManagerHelper : MonoBehaviour
         IsLocalPlayerUsingOVR = IsOculusConnected();
         //print("Found OVR? " + IsLocalPlayerUsingOVR);
 
-        //if (!IsLocalPlayerUsingOVR)
-        //{
-        //    gameObject.SetActive(false);
-        //}
+        if (!IsLocalPlayerUsingOVR)
+        {
+            gameObject.SetActive(false);
+        }
         readyToPlay = false;
         dragonSet = false;
         dragonReady = false;
@@ -69,7 +69,7 @@ public class OVRManagerHelper : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Calibrate();
+            CalibrateOVR();
         }
 	}
 
@@ -78,7 +78,7 @@ public class OVRManagerHelper : MonoBehaviour
 		return Ovr.Hmd.Detect() > 0;
 	}
 
-    private void Calibrate()
+    public void CalibrateOVR()
     {
         OVRManager.capiHmd.RecenterPose();
     }
