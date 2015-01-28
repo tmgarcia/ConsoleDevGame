@@ -2,21 +2,12 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class GameTimer : MonoBehaviour
+public class GameTimer : Timer
 {
 	public string VillagerTimerText = "Survive the Dragon: ";
 	public string DragonTimerText = "Kill Them All: ";
 	private string localTimerText = "";
-	public int StartingMinutes = 5;
-	public int StartingSeconds = 0;
-	private float currentSeconds;
-	private bool isRunning = false;
 	private Text timerText;
-	private int currentDisplayMinutes;
-	private int currentDisplaySeconds;
-
-	public delegate void TimerDelegate();
-	public event TimerDelegate TimerFinishEvent;
 
 	public bool StartOnStart = true;
 
@@ -52,19 +43,14 @@ public class GameTimer : MonoBehaviour
 
 	public void StartTimer()
 	{
-		isRunning = true;
+		base.StartTimer();
 		timerText.enabled = true;
 	}
 
 	public void StopTimer()
 	{
-		isRunning = false;
+		base.StopTimer();
 		timerText.enabled = false;
-	}
-
-	public void ResetTimer()
-	{
-		currentSeconds = StartingMinutes * 60 + StartingSeconds;
 	}
 
 	private void UpdateDisplay()
@@ -106,14 +92,6 @@ public class GameTimer : MonoBehaviour
 				localTimerText = "Unknown Player Role: ";
 				Debug.LogException(new UnityException("Timer's local player role set to unhandled type."));
 				break;
-		}
-	}
-
-	public void OnTimerFinishEvent()
-	{
-		if (TimerFinishEvent != null)
-		{
-			TimerFinishEvent();
 		}
 	}
 }
