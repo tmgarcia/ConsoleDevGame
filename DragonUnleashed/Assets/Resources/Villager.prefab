@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingIntegrity: 100
+  StartingIntegrity: 50
   CurrentIntegrity: 0
   damageRole: 1
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
