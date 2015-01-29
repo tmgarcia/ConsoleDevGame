@@ -28,7 +28,7 @@ public class DragonSegment : MonoBehaviour {
             }
             else
             {
-                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(Vector3.Normalize(parent.position - transform.position)), Time.deltaTime * 5);
+                transform.rotation = Quaternion.Lerp(transform.rotation, parent.rotation, Time.deltaTime * 5);
             }
 
         }
