@@ -268,7 +268,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 625.736328, y: 3.97450209, z: 1160.91772}
+  m_LocalPosition: {x: 636.400024, y: 34.7999992, z: 1185.90002}
   m_LocalScale: {x: 3.05707979, y: 3.05708122, z: 3.05708122}
   m_Children:
   - {fileID: 483814}
@@ -323,8 +323,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.00001383}
-  m_LocalScale: {x: .670569718, y: .670569777, z: .670569777}
+  m_LocalPosition: {x: 0, y: -0, z: -6}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
   m_Children: []
   m_Father: {fileID: 439686}
   m_RootOrder: 2
@@ -336,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 139696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3.00000691}
-  m_LocalScale: {x: .803132534, y: .803132534, z: .803132534}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
   m_Children: []
   m_Father: {fileID: 439686}
   m_RootOrder: 1
@@ -672,7 +672,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a1fb1b8a6a9f7aa479e1a69dee5edcb5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -830,14 +830,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139694}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 9a3c524059a5a0049817693ef96349d4, type: 3}
 --- !u!33 &3339692
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139696}
-  m_Mesh: {fileID: 4300000, guid: 04991d18cec7a9648abf8b7fa520461f, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 04991d18cec7a9648abf8b7fa520461f, type: 3}
 --- !u!33 &3383814
 MeshFilter:
   m_ObjectHideFlags: 1
