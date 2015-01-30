@@ -6,7 +6,8 @@ public class DragonMovement : MonoBehaviour
     public bool airPlaneControls = true;
     private PhotonView photonView;
     private GameObject cam;
-    public float speed = 6;
+    public float glideSpeed = 40;
+    public float hoverSpeed = 20;
     private float speedLimiter = 0.1f;
     public bool isLocal = false;
 
@@ -39,11 +40,11 @@ public class DragonMovement : MonoBehaviour
             {
                 Vector3 forward = transformOVR.transform.forward;
                 Vector3 right = transformOVR.transform.right;
-                Vector3 accelaration = forward * speed;
+                Vector3 accelaration = forward * glideSpeed;
                 if (Input.GetKey(KeyCode.W)) accelaration *= 3;
                 if (Input.GetMouseButton(1)) accelaration *= 0.0f;
 
-                gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
+                gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                 gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
                 GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
@@ -70,10 +71,10 @@ public class DragonMovement : MonoBehaviour
                 {
                     Vector3 forward = gameObject.transform.forward;
                     Vector3 right = gameObject.transform.right;
-                    Vector3 accelaration = forward * speed;
+                    Vector3 accelaration = forward * glideSpeed;
                     if (Input.GetKey(KeyCode.W)) accelaration *= 3;
                     if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
-                    gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
+                    gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
                     GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
@@ -97,13 +98,22 @@ public class DragonMovement : MonoBehaviour
                 else
                 {
                     Vector3 direction = new Vector3(0, 0, 0);
-                    if (Input.GetKey(KeyCode.W)) direction += transform.forward;
-                    if (Input.GetKey(KeyCode.A)) direction -= transform.right;
-                    if (Input.GetKey(KeyCode.S)) direction -= transform.forward;
-                    if (Input.GetKey(KeyCode.D)) direction += transform.right;
+
+                    Vector3 forward = gameObject.transform.forward;
+                    forward.y = 0;
+                    forward = Vector3.Normalize(forward);
+
+                    Vector3 right = Vector3.Cross(forward,Vector3.up);
+
+                    if (Input.GetKey(KeyCode.W)) direction += forward;
+                    if (Input.GetKey(KeyCode.A)) direction += right;
+                    if (Input.GetKey(KeyCode.S)) direction -= forward;
+                    if (Input.GetKey(KeyCode.D)) direction -= right;
+                    if (Input.GetKey(KeyCode.E)) direction += Vector3.up;
+                    if (Input.GetKey(KeyCode.Q)) direction -= Vector3.up;
                     if(direction.magnitude>0)direction = Vector3.Normalize(direction);
 
-                    Vector3 accelaration = direction * speed;
+                    Vector3 accelaration = direction * hoverSpeed;
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 

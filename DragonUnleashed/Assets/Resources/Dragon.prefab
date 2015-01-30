@@ -1194,7 +1194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   airPlaneControls: 0
-  speed: 6
+  glideSpeed: 40
+  hoverSpeed: 20
   isLocal: 0
 --- !u!114 &11483810
 MonoBehaviour:

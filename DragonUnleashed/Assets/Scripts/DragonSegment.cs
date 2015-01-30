@@ -20,7 +20,7 @@ public class DragonSegment : MonoBehaviour {
         if (movement == null) movement = GameObject.Find("DragonHead").GetComponent<DragonMovement>();
         if (movement.isLocal)
         {
-            transform.position = Vector3.Lerp(transform.position, parent.position + parent.forward * -2, Time.deltaTime * movement.speed);
+            transform.position = Vector3.Lerp(transform.position, parent.position + parent.forward * -2, Time.deltaTime * movement.glideSpeed);
 
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
