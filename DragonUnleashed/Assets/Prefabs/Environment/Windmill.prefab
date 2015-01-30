@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3390708}
   - 23: {fileID: 2390708}
   - 64: {fileID: 6490710}
+  - 114: {fileID: 11465386}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MeshCollider:
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 4cff6baef0913ff4088fcc310771d207, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 11a7fcad6e9738b4bbd3590084179630, type: 3}
 --- !u!64 &6490710
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -169,7 +170,24 @@ MeshCollider:
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 4ae84983b5f9f4a4ab3240251243e245, type: 3}
+  m_Mesh: {fileID: 4300000, guid: ff90d0a0080fdc34793683810e019490, type: 3}
+--- !u!114 &11465386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  CurrentIntegrity: 0
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
+  dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
+  dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
 --- !u!114 &11490710
 MonoBehaviour:
   m_ObjectHideFlags: 1
