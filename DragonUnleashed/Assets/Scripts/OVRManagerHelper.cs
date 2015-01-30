@@ -67,7 +67,7 @@ public class OVRManagerHelper : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             CalibrateOVR();
         }

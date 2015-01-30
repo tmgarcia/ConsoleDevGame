@@ -39,8 +39,7 @@ public class DragonMovement : MonoBehaviour
                 Vector3 right = transformOVR.transform.right;
                 Vector3 accelaration = forward * speed;
                 if (Input.GetKey(KeyCode.W)) accelaration *= 3;
-                if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
-                if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
+                if (Input.GetMouseButton(1)) accelaration *= 0.0f;
                 gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
                 gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
@@ -49,18 +48,11 @@ public class DragonMovement : MonoBehaviour
                 float deltaX = Input.GetAxis("Mouse X");
                 float deltaY = Input.GetAxis("Mouse Y");
 
-                if (airPlaneControls)
-                {
-                    transformOVR.transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
-                    transformOVR.transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
-                }
-                else
-                {
-                    Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
-                    newEuler.x -= deltaY;
-                    newEuler.y += deltaX;
-                    transformOVR.transform.rotation = Quaternion.Euler(newEuler);
-                }
+                Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
+                newEuler.x -= deltaY;
+                newEuler.y += deltaX;
+                transformOVR.transform.rotation = Quaternion.Euler(newEuler);
+                
                 cam.transform.position = camPosition.position;
                 cam.transform.rotation = transformOVR.transform.rotation;
                 transform.rotation = cam.transform.GetChild(1).transform.rotation;
