@@ -20,14 +20,28 @@ public class FireBreathing : Photon.MonoBehaviour
 	{
 		if (na.IsLocalCharacter())
 		{
-			if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-			{
-                EnableFire();
-			}
-            else if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
-			{
-                DisableFire();
-			}
+            if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    EnableFire();
+                }
+                else if (Input.GetMouseButtonUp(0))
+                {
+                    DisableFire();
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                {
+                    EnableFire();
+                }
+                else if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
+                {
+                    DisableFire();
+                }
+            }
 		}
 	}
 
