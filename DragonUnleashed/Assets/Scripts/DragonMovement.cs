@@ -33,6 +33,8 @@ public class DragonMovement : MonoBehaviour
     {
         if (isLocal)
         {
+            if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
+
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
                 Vector3 forward = transformOVR.transform.forward;
@@ -40,7 +42,6 @@ public class DragonMovement : MonoBehaviour
                 Vector3 accelaration = forward * speed;
                 if (Input.GetKey(KeyCode.W)) accelaration *= 3;
                 if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
-                if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
                 gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
                 gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
@@ -71,27 +72,51 @@ public class DragonMovement : MonoBehaviour
                 {
                     cam.GetComponent<Camera>().enabled = true;
                 }
-                Vector3 forward = gameObject.transform.forward;
-                Vector3 right = gameObject.transform.right;
-                Vector3 accelaration = forward * speed;
-                if (Input.GetKey(KeyCode.W)) accelaration *= 3;
-                if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
-                if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
-                gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
-                gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
-
-                GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
-
-                float deltaX = Input.GetAxis("Mouse X");
-                float deltaY = Input.GetAxis("Mouse Y");
-
-                if (airPlaneControls)
+                if (Input.GetKey(KeyCode.LeftShift))
                 {
-                    transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
-                    transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
+                    Vector3 forward = gameObject.transform.forward;
+                    Vector3 right = gameObject.transform.right;
+                    Vector3 accelaration = forward * speed;
+                    if (Input.GetKey(KeyCode.W)) accelaration *= 3;
+                    if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
+                    gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
+                    gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
+
+                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+
+                    float deltaX = Input.GetAxis("Mouse X");
+                    float deltaY = Input.GetAxis("Mouse Y");
+
+                    if (airPlaneControls)
+                    {
+                        transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
+                        transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
+                    }
+                    else
+                    {
+                        Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
+                        newEuler.x -= deltaY;
+                        newEuler.y += deltaX;
+                        gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
+                    }
                 }
                 else
                 {
+                    Vector3 direction = new Vector3(0, 0, 0);
+                    if (Input.GetKey(KeyCode.W)) direction += transform.forward;
+                    if (Input.GetKey(KeyCode.A)) direction -= transform.right;
+                    if (Input.GetKey(KeyCode.S)) direction -= transform.forward;
+                    if (Input.GetKey(KeyCode.D)) direction += transform.right;
+                    if(direction.magnitude>0)direction = Vector3.Normalize(direction);
+
+                    Vector3 accelaration = direction * speed;
+                    gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
+                    gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
+
+                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+
+                    float deltaX = Input.GetAxis("Mouse X");
+                    float deltaY = Input.GetAxis("Mouse Y");
                     Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
                     newEuler.x -= deltaY;
                     newEuler.y += deltaX;
