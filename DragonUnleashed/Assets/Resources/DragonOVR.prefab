@@ -484,8 +484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   airPlaneControls: 0
-  speed: 6
+  glideSpeed: 40
+  hoverSpeed: 30
   isLocal: 0
+  UIHelper: {fileID: 178400, guid: c9d7c1ff899ed8d4dbaec6dcba576099, type: 2}
 --- !u!114 &11429930
 MonoBehaviour:
   m_ObjectHideFlags: 1

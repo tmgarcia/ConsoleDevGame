@@ -7,9 +7,10 @@ public class DragonMovement : MonoBehaviour
     private PhotonView photonView;
     private GameObject cam;
     public float glideSpeed = 40;
-    public float hoverSpeed = 20;
+    public float hoverSpeed = 30;
     private float speedLimiter = 0.1f;
     public bool isLocal = false;
+    public GameObject UIHelper;
 
     private GameObject transformOVR;
     private Transform camPosition;
@@ -67,15 +68,42 @@ public class DragonMovement : MonoBehaviour
                         newEuler.y += deltaX;
                         transformOVR.transform.rotation = Quaternion.Euler(newEuler);
                     }
-
-                    cam.transform.position = camPosition.position;
-                    cam.transform.rotation = transformOVR.transform.rotation;
-                    transform.rotation = cam.transform.GetChild(1).transform.rotation;
                 }
                 else
                 {
+                    Vector3 direction = new Vector3(0, 0, 0);
 
+                    Vector3 forward = transformOVR.transform.forward;
+                    forward.y = 0;
+                    forward = Vector3.Normalize(forward);
+
+                    Vector3 right = transformOVR.transform.right;
+
+                    if (Input.GetKey(KeyCode.W)) direction += forward;
+                    if (Input.GetKey(KeyCode.A)) direction -= right;
+                    if (Input.GetKey(KeyCode.S)) direction -= forward;
+                    if (Input.GetKey(KeyCode.D)) direction += right;
+                    if (Input.GetKey(KeyCode.E)) direction += Vector3.up;
+                    if (Input.GetKey(KeyCode.Q)) direction -= Vector3.up;
+                    if (direction.magnitude > 0) direction = Vector3.Normalize(direction);
+
+                    Vector3 accelaration = direction * hoverSpeed;
+                    gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
+                    gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
+
+                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+
+                    float deltaX = Input.GetAxis("Mouse X");
+                    float deltaY = Input.GetAxis("Mouse Y");
+                    Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
+                    newEuler.x -= deltaY;
+                    newEuler.y += deltaX;
+                    transformOVR.transform.rotation = Quaternion.Euler(newEuler);
                 }
+
+                cam.transform.position = camPosition.position;
+                cam.transform.rotation = transformOVR.transform.rotation;
+                transform.rotation = cam.transform.GetChild(1).rotation;
 #endregion
             }
             else
@@ -157,6 +185,7 @@ public class DragonMovement : MonoBehaviour
 
     void setUpOVR()
     {
+        GameObject directionHelper = GameObject.Instantiate(UIHelper) as GameObject;
         transformOVR = GameObject.Find("DragonOVR_Rotation");
         camPosition = transform.FindChild("CameraPosition").gameObject.transform;
         cam = GameObject.Find("OVRCameraRig").gameObject;
