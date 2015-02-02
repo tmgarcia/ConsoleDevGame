@@ -19,7 +19,7 @@ public class DragonMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        mouseControls = true;
+        mouseControls = false;
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
         if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
@@ -172,8 +172,14 @@ public class DragonMovement : MonoBehaviour
                     float deltaY = Input.GetAxis("Mouse Y");
                     Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
                     newEuler.x -= deltaY;
+                    if (newEuler.x > 88 && newEuler.x < 268)
+                    {
+                        if (newEuler.x > 180) { newEuler.x = 268; }
+                        if (newEuler.x < 180) { newEuler.x = 88; }
+                    }
                     newEuler.y += deltaX;
                     gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
+                    print(newEuler.x);
                 }
 #endregion
             }
