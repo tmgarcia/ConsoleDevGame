@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 478400}
   - 33: {fileID: 3378400}
-  - 136: {fileID: 13678400}
   - 23: {fileID: 2378400}
   - 114: {fileID: 11447650}
   m_Layer: 0
@@ -27,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 178400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 649.48999, y: 21, z: 1108.30005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d70602cf97f2727459887f7e06d875c8, type: 2}
+  - {fileID: 2100000, guid: 5245abac7b4c07541809a3888b8e5f0e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -69,19 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e7ad8b6e69627429855206895f707f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &13678400
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178400}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

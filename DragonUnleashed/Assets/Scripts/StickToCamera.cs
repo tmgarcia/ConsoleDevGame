@@ -17,7 +17,7 @@ public class StickToCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        transform.position = OVRCamera.transform.position + (OVRCamera.transform.forward * 5.0f);
+        transform.position = OVRCamera.transform.position + ((OVRCamera.transform.forward * 0.55f) + (OVRCamera.transform.right * 0.15f) + (-OVRCamera.transform.up * 0.1f));
         transform.rotation = TransformOVR.transform.rotation;
 	}
 }

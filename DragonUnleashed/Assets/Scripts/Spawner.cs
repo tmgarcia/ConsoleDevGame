@@ -55,9 +55,6 @@ public class Spawner : MonoBehaviour
 #if UNITY_EDITOR
 	void OnValidate()
 	{
-
-		print("RING RING");
-
 		if (GetComponent<Spawner>().spawnRadius != lastSpawnerRadius)
 		{
 			GetComponent<SphereCollider>().radius = GetComponent<Spawner>().spawnRadius;
