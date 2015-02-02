@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class MonsterMovement : MonoBehaviour
 {
-	GameObject anchor;
+	public GameObject anchor;
 	GameObject player;
 	NavMeshAgent monsterMesh;
 	public float minMoveDisance = 1.0f;
@@ -21,23 +21,23 @@ public class MonsterMovement : MonoBehaviour
 	void Start()
 	{
 		monsterMesh = GetComponent<NavMeshAgent>();
-		anchor = GameObject.Find("DingoSpawner");
-		player = GameObject.Find("Player");
+		//anchor = GameObject.Find("DingoSpawner");
+		//player = GameObject.Find("Player");
 	}
 
 	void Update()
 	{
-		if (inRange)
-		{
-			SeekPlayer();
-		}
-		else
-		{
+		//if (inRange)
+		//{
+		//	SeekPlayer();
+		//}
+		//else
+		//{
 			if (monsterMesh.remainingDistance <= float.Epsilon)
 			{
 				PickTarget();
 			}
-		}
+		//}
 	}
 
 	void PickTarget()
@@ -56,13 +56,13 @@ public class MonsterMovement : MonoBehaviour
 		}
 	}
 
-	void SeekPlayer()
-	{
-		if (Vector3.Distance(player.transform.position, anchor.transform.position) <= maxAnchorDistance)
-		{
-			monsterMesh.SetDestination(player.transform.position);
-		}
-	}
+	//void SeekPlayer()
+	//{
+	//	if (Vector3.Distance(player.transform.position, anchor.transform.position) <= maxAnchorDistance)
+	//	{
+	//		monsterMesh.SetDestination(player.transform.position);
+	//	}
+	//}
 
 	void OnTriggerEnter(Collider c)
 	{

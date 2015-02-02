@@ -53,6 +53,7 @@ GameObject:
   - 114: {fileID: 11401146}
   - 114: {fileID: 11425188}
   - 114: {fileID: 11479900}
+  - 81: {fileID: 8118162}
   m_Layer: 8
   m_Name: Villager
   m_TagString: Untagged
@@ -172,6 +173,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!81 &8118162
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180758}
+  m_Enabled: 1
 --- !u!81 &8180758
 AudioListener:
   m_ObjectHideFlags: 1
