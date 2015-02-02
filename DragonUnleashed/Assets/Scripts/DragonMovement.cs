@@ -14,10 +14,12 @@ public class DragonMovement : MonoBehaviour
 
     private GameObject transformOVR;
     private Transform camPosition;
+    private bool mouseControls;
 
     // Use this for initialization
     void Start()
     {
+        mouseControls = true;
         photonView = transform.parent.gameObject.GetComponent<PhotonView>();
         isLocal = transform.parent.GetComponent<NetworkAgent>().IsLocalCharacter();
         if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
@@ -36,11 +38,12 @@ public class DragonMovement : MonoBehaviour
         if (isLocal)
         {
 #region Oculs Controls
-            if (Input.GetKeyDown(KeyCode.C)) airPlaneControls = !airPlaneControls;
+            if (Input.GetKeyDown(KeyCode.C)) { airPlaneControls = !airPlaneControls; }
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) { mouseControls = !mouseControls; }
 
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
-                if (Input.GetKey(KeyCode.LeftShift))
+                if (mouseControls)
                 {
                     Vector3 forward = transformOVR.transform.forward;
                     Vector3 right = transformOVR.transform.right;
@@ -93,9 +96,9 @@ public class DragonMovement : MonoBehaviour
                     GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
-                    float deltaY = Input.GetAxis("Mouse Y");
+                    //float deltaY = Input.GetAxis("Mouse Y");
                     Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
-                    newEuler.x -= deltaY;
+                    //newEuler.x -= deltaY;
                     newEuler.y += deltaX;
                     transformOVR.transform.rotation = Quaternion.Euler(newEuler);
                 }
@@ -112,7 +115,7 @@ public class DragonMovement : MonoBehaviour
                 {
                     cam.GetComponent<Camera>().enabled = true;
                 }
-                if (Input.GetKey(KeyCode.LeftShift))
+                if (mouseControls)
                 {
                     Vector3 forward = gameObject.transform.forward;
                     Vector3 right = gameObject.transform.right;
