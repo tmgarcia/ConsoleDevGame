@@ -17795,17 +17795,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8100000, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
   m_RootGameObject: {fileID: 1859909187}
   m_IsPrefabParent: 0
@@ -31682,7 +31683,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 810703420}
-  - 81: {fileID: 810703421}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: Untagged
@@ -31702,14 +31702,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1859909188}
   m_RootOrder: 1
---- !u!81 &810703421
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 9f745d58751eac14dac2b7c941dd28b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 441515019}
-  m_GameObject: {fileID: 810703419}
-  m_Enabled: 1
 --- !u!1 &813991959
 GameObject:
   m_ObjectHideFlags: 0
