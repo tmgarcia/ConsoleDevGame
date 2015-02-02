@@ -24,10 +24,10 @@ public class Flammable : Damageable
 
 		//print(gameObject.name);
 
-		if (transform.parent.gameObject.name != null && transform.parent.gameObject.name == "NewSheep(Clone)")
-		{
-			print(transform.parent.gameObject.name);
-		}
+		//if (transform.parent.gameObject.name != null && transform.parent.gameObject.name == "NewSheep(Clone)")
+		//{
+		//	print(transform.parent.gameObject.name);
+		//}
 
 		CurrentIntegrity = StartingIntegrity;
         volume = (collider.bounds.size.x * collider.bounds.size.y * collider.bounds.size.z);
@@ -43,14 +43,14 @@ public class Flammable : Damageable
 
 		}
 
-		if (personalFire == null && (transform.childCount == 0 || transform.GetChild(0).name != "CustomFire1(Clone)"))
-		{
-			personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
-			personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
-			personalFire.transform.parent = transform;
-			personalFire.transform.localScale *= (2.0f * longSideLength);		//resize fire 
-			personalFire.startSize = longSideLength;
-		}
+		//if (personalFire == null && (transform.childCount == 0 || transform.GetChild(0).name != "CustomFire1(Clone)"))
+		//{
+		personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
+		personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
+		personalFire.transform.parent = transform;
+		personalFire.transform.localScale *= (2.0f * longSideLength);		//resize fire 
+		personalFire.startSize = longSideLength;
+		//}
 
 	}
 
