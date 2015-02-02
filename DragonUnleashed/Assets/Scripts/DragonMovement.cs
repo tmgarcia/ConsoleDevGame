@@ -6,7 +6,7 @@ public class DragonMovement : MonoBehaviour
     public bool airPlaneControls = true;
     private PhotonView photonView;
     private GameObject cam;
-    public float glideSpeed = 40;
+    public float glideSpeed = 120;
     public float hoverSpeed = 30;
     private float speedLimiter = 0.1f;
     public bool isLocal = false;
@@ -45,8 +45,7 @@ public class DragonMovement : MonoBehaviour
                     Vector3 forward = transformOVR.transform.forward;
                     Vector3 right = transformOVR.transform.right;
                     Vector3 accelaration = forward * glideSpeed;
-                    if (Input.GetKey(KeyCode.W)) accelaration *= 3;
-                    if (Input.GetMouseButton(1)) accelaration *= 0.0f;
+                    if (Input.GetMouseButton(1)) accelaration *= 0.3f;
                     if (Input.GetKey(KeyCode.C)) airPlaneControls = !airPlaneControls;
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
@@ -118,13 +117,12 @@ public class DragonMovement : MonoBehaviour
                     Vector3 forward = gameObject.transform.forward;
                     Vector3 right = gameObject.transform.right;
                     Vector3 accelaration = forward * glideSpeed;
-                    if (Input.GetKey(KeyCode.W)) accelaration *= 3;
-                    if (Input.GetKey(KeyCode.S)) accelaration *= 0.0f;
+                    if (Input.GetKey(KeyCode.Mouse1)) accelaration *= 0.3f;
                     if (Input.GetKey(KeyCode.C)) airPlaneControls = !airPlaneControls;
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
@@ -144,6 +142,7 @@ public class DragonMovement : MonoBehaviour
                 }
                 else
                 {
+                    //if (transform.rotation.z > 5.0f || transform.rotation.z<355.0f) transform.rotation = Quaternion.Lerp(transform.rotation, new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, 1.0f), Time.deltaTime * 5);
                     Vector3 direction = new Vector3(0, 0, 0);
 
                     Vector3 forward = gameObject.transform.forward;
@@ -164,7 +163,7 @@ public class DragonMovement : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
@@ -195,7 +194,7 @@ public class DragonMovement : MonoBehaviour
         transformOVR.transform.rotation = startingRotation;
         cam.transform.position = camPosition.position;
         cam.transform.parent = transform;
-        transform.FindChild("CustomFire2").gameObject.transform.parent = cam.transform.GetChild(1);
+        transform.parent.GetComponent<FireBreathing>().Fire.gameObject.transform.parent = cam.transform.GetChild(1);
         OVRManagerHelper.instance.CalibrateOVR();
     }
 }

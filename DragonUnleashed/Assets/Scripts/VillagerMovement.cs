@@ -4,8 +4,9 @@ using System.Collections;
 public class VillagerMovement : MonoBehaviour {
 
     private PhotonView photonView;
-    private float speed = 30;
-    private float jumpheight = 0.3f;
+    public float speed = 30;
+    public float aimSpeed = 15;
+    public float jumpheight = 0.3f;
     private float speedLimiter = 0.1f;
     private float cameraSwitchSpeed = 30;
     private float cameraRestingDistance = 5;
@@ -43,7 +44,7 @@ public class VillagerMovement : MonoBehaviour {
             accelaration.Normalize();
             if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight*(1/Time.deltaTime);
 
-            gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * speed;
+            gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * ((gameObject.GetComponent<Archery>().GetAiming())? aimSpeed:speed);
             float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
             gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter,Time.deltaTime);
 
