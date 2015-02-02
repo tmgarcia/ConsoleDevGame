@@ -18,17 +18,21 @@ public class Mimic : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E)&&!Input.GetKey(KeyCode.Mouse1)) MimicProp();
         if (hasDisguise&&Input.GetKeyDown(KeyCode.Mouse1))
         {
-            GetComponent<MeshRenderer>().enabled = false;
-            collider.enabled = false;
-            transform.FindChild("Villager").gameObject.SetActive(true);
+            gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
         }
         if (hasDisguise&&Input.GetKeyUp(KeyCode.Mouse1))
         {
-            GetComponent<MeshRenderer>().enabled = true;
-            collider.enabled = true;
-            transform.FindChild("Villager").gameObject.SetActive(false);
+            gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
         }
 	}
+
+    [RPC]
+    public void SwitchModels()
+    {
+        GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
+        collider.enabled = !collider.enabled;
+        transform.FindChild("Villager").gameObject.SetActive(!transform.FindChild("Villager").gameObject.GetActive());
+    }
 
     void MimicProp()
     {
@@ -42,9 +46,7 @@ public class Mimic : MonoBehaviour {
             if (hit.collider.tag == "Prop")
             {
                 if (!hasDisguise) hasDisguise = true;
-                GetComponent<MeshRenderer>().enabled = true;
-                collider.enabled = true;
-                transform.FindChild("Villager").gameObject.SetActive(false);
+                if(transform.FindChild("Villager").gameObject.GetActive())gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
                 gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, hit.collider.gameObject.name);
             }
         }
