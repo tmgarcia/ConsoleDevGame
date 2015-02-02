@@ -33,7 +33,7 @@ public class MonsterMovement : MonoBehaviour
 		//}
 		//else
 		//{
-			if (monsterMesh.remainingDistance <= float.Epsilon)
+		if (monsterMesh.enabled && monsterMesh.remainingDistance <= float.Epsilon)
 			{
 				PickTarget();
 			}

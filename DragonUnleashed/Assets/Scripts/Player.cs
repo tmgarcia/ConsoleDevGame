@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 	public PlayerRole Role = PlayerRole.Villager;
 	private Damageable damageable;
 	public bool IsAlive { get; set; }
+	public bool IsLocal = false;
+	public bool InitialSetup = false;
 
 	void Start()
 	{
@@ -18,6 +20,8 @@ public class Player : MonoBehaviour
 			Debug.LogException(new UnityException("Player GameObject must contain Damageable script."));
 			Destroy(this);
 		}
+
+		GetComponent<AudioListener>().enabled = false;
 	}
 
 	void Update()
@@ -25,6 +29,12 @@ public class Player : MonoBehaviour
 		if (damageable.CurrentIntegrity <= float.Epsilon && IsAlive)
 		{
 			OnDeath();
+		}
+
+		if (!InitialSetup && IsLocal)
+		{
+			GetComponent<AudioListener>().enabled = true;
+			InitialSetup = true;
 		}
 	}
 
