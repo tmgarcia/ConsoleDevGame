@@ -77,6 +77,7 @@ public class BasePlayerScript : MonoBehaviour
 			playerCharacter = playerCharacter.GetComponentInChildren<Damageable>().gameObject;
 			Screen.lockCursor = true;
 		}
+		playerCharacter.GetComponent<Player>().IsLocal = true;
 	}
 
 	public PlayerRole Role

@@ -24,7 +24,7 @@ public class RoomManager : Photon.MonoBehaviour
     {
 	    if (!hasConnected && !PhotonNetwork.connected)
         {
-            Debug.Log("Update() was called by Unity. Scene is loaded. Let's connect to the Photon Master Server. Calling: PhotonNetwork.ConnectUsingSettings();");
+            //Debug.Log("Update() was called by Unity. Scene is loaded. Let's connect to the Photon Master Server. Calling: PhotonNetwork.ConnectUsingSettings();");
             
             hasConnected = true;
             PhotonNetwork.ConnectUsingSettings(Version + "."+Application.loadedLevel);

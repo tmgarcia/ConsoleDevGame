@@ -147,6 +147,7 @@ public class PlayersManager : MonoBehaviour
 		GameObject.Find("TimerText").GetComponent<GameTimer>().ResetTimer();
 		GameObject.Find("TimerText").GetComponent<GameTimer>().StartTimer();
 		RespawnManager.instance.numVillagerAlive = currentNumSeekers;
+		GameObject.Find("TempListener").SetActive(false);
 
 		if (GetPlayerRole(localPlayerID) == PlayerRole.Dragon)
 		{
