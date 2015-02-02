@@ -95,11 +95,16 @@ public class VillagerMovement : MonoBehaviour {
     private bool canJump()
     {
         bool result = false;
-        Debug.DrawLine(collider.bounds.center, collider.bounds.center - new Vector3(0.0f, collider.bounds.size.y * 0.5f + 0.05f, 0.0f), Color.yellow,1.0f);
+        int layermask = 1 << 8;
+        layermask = ~layermask;
+
+        Collider theCollider = transform.FindChild("Villager").gameObject.GetActive()? transform.FindChild("Villager").transform.FindChild("default").collider : collider;
+
+        Debug.DrawLine(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), Color.yellow, 1.0f);
         RaycastHit hit = new RaycastHit();
-        if (Physics.Linecast(collider.bounds.center, collider.bounds.center - new Vector3(0.0f, collider.bounds.size.y * 0.5f + 0.05f, 0.0f), out hit))
+        if (Physics.Linecast(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), out hit, layermask))
         {
-            if (hit.collider != collider) result = true;
+            if (hit.collider != theCollider) result = true;
         }
         return result;
     }
@@ -135,15 +140,6 @@ public class VillagerMovement : MonoBehaviour {
         points[6] = new Vector3(0.3f, -0.2f, 0.0f);
         points[7] = new Vector3(-0.3f, -0.2f, 0.0f);
 
-        Debug.DrawLine(target, camPos + (camRot * (points[0])), Color.blue);
-        Debug.DrawLine(target, camPos + (camRot * (points[1])), Color.red);
-        Debug.DrawLine(target, camPos + (camRot * (points[2])), Color.gray);
-        Debug.DrawLine(target, camPos + (camRot * (points[3])), Color.green);
-        Debug.DrawLine(target, camPos + (camRot * (points[4])), Color.magenta);
-        Debug.DrawLine(target, camPos + (camRot * (points[5])), Color.cyan);
-        Debug.DrawLine(target, camPos + (camRot * (points[6])), Color.black);
-        Debug.DrawLine(target, camPos + (camRot * (points[7])), Color.white);
-
         bool ithit = false;
         int closest = 0;
 
@@ -166,7 +162,6 @@ public class VillagerMovement : MonoBehaviour {
         }
         if (ithit)
         {
-            Debug.DrawLine(target, target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f)), Color.yellow, 1);
             cam.transform.position = target + Vector3.Project(new Vector3(hit[closest].point.x, hit[closest].point.y, hit[closest].point.z) - target, camRot * new Vector3(0.0f, 0.0f, -1.0f));
         }
         return ithit;
