@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401506}
   - 108: {fileID: 10801506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 401508}
   - 33: {fileID: 3301506}
   - 23: {fileID: 2301506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401510}
   - 95: {fileID: 9501506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - 4: {fileID: 401512}
   - 33: {fileID: 3301508}
   - 23: {fileID: 2301508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401514}
   - 95: {fileID: 9501508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: QuiverRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,8 @@ GameObject:
   - 4: {fileID: 401516}
   - 33: {fileID: 3301510}
   - 23: {fileID: 2301510}
-  m_Layer: 0
+  - 136: {fileID: 13630964}
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +109,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401518}
   - 95: {fileID: 9501510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Villager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +299,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 607.63501, y: 2.53200006, z: 1126.33801}
+  m_LocalPosition: {x: 675.237915, y: 3.31352139, z: 1216.35706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 401518}
@@ -686,6 +687,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180756}
   m_Enabled: 1
+--- !u!136 &13630964
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.2929287
+  m_Height: 8.5921936
+  m_Direction: 1
+  m_Center: {x: .000682473183, y: -.46193862, z: -.246962011}
 --- !u!136 &13631618
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -694,7 +708,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 180758}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: .500000119
   m_Height: 2
   m_Direction: 1
