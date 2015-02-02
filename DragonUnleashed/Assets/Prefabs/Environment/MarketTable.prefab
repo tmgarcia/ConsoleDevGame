@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3359094}
   - 23: {fileID: 2359094}
   - 64: {fileID: 6418410}
+  - 114: {fileID: 11454584}
   m_Layer: 0
   m_Name: MarketTable
   m_TagString: Untagged
@@ -42,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 17905e79226ee5148a1c45af2631d1f2, type: 2}
+  - {fileID: 2100000, guid: 3bf020323590df947b24ec53c3e5cde6, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -70,6 +71,23 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 59ba68f3f0e804a47b3adaf462fd59e7, type: 3}
+--- !u!114 &11454584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingIntegrity: 100
+  CurrentIntegrity: 0
+  damageRole: 2
+  fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
+  dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
+  dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

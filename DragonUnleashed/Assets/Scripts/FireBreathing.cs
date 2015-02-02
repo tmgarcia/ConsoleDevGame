@@ -22,11 +22,11 @@ public class FireBreathing : Photon.MonoBehaviour
 		{
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     EnableFire();
                 }
-                else if (Input.GetMouseButtonUp(0))
+                else if (Input.GetKeyUp(KeyCode.Space))
                 {
                     DisableFire();
                 }
