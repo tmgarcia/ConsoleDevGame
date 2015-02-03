@@ -45,8 +45,11 @@ public class Spawner : MonoBehaviour
 				currentSpawnInterval = 0.0f;
 				NPCSpawnInstance.SetActive(true);
 
-				Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, 30)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, 30))), Quaternion.identity);
-
+				var spawnedAnimal = (GameObject)Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, 30)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, 30))), Quaternion.identity);
+				if (Random.value <= BurnChance)
+				{
+					spawnedAnimal.GetComponentInChildren<Flammable>().BurninationLevel = 300.0f;
+				}
 				currentSpawned++;
 
 				NPCSpawnInstance.SetActive(false);

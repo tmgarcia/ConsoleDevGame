@@ -101,4 +101,10 @@ public class MonsterMovement : MonoBehaviour
 			inRange = false;
 		}
 	}
+
+	void OnDestroy()
+	{
+		anchor.GetComponent<Spawner>().currentSpawned--;
+		Destroy(transform.parent.gameObject);
+	}
 }
