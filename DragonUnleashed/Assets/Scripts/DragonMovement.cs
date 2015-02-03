@@ -71,6 +71,11 @@ public class DragonMovement : MonoBehaviour
                         Vector3 newEuler = transformOVR.transform.rotation.eulerAngles;
                         newEuler.x -= deltaY;
                         newEuler.y += deltaX;
+                        if (newEuler.x > 88 && newEuler.x < 268)
+                        {
+                            if (newEuler.x > 180) { newEuler.x = 268; }
+                            if (newEuler.x < 180) { newEuler.x = 88; }
+                        }
                         transformOVR.transform.rotation = Quaternion.Euler(newEuler);
                     }
                 }
@@ -142,12 +147,22 @@ public class DragonMovement : MonoBehaviour
                         Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
                         newEuler.x -= deltaY;
                         newEuler.y += deltaX;
+                        if (newEuler.x > 88 && newEuler.x < 268)
+                        {
+                            if (newEuler.x > 180) { newEuler.x = 268; }
+                            if (newEuler.x < 180) { newEuler.x = 88; }
+                        }
                         gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
                     }
                 }
                 else
                 {
-                    //if (transform.rotation.z > 5.0f || transform.rotation.z<355.0f) transform.rotation = Quaternion.Lerp(transform.rotation, new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, 1.0f), Time.deltaTime * 5);
+                    if (Options.instance.airplaneMode)
+                    {
+                        if (transform.rotation.eulerAngles.z > 5.0f || transform.rotation.eulerAngles.z < 355.0f) 
+                            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,0.0f), Time.deltaTime * 5);
+                    }
+                    
                     Vector3 direction = new Vector3(0, 0, 0);
 
                     Vector3 forward = gameObject.transform.forward;
@@ -174,12 +189,12 @@ public class DragonMovement : MonoBehaviour
                     float deltaY = Input.GetAxis("Mouse Y");
                     Vector3 newEuler = gameObject.GetComponent<Rigidbody>().rotation.eulerAngles;
                     newEuler.x -= deltaY;
+                    newEuler.y += deltaX;
                     if (newEuler.x > 88 && newEuler.x < 268)
                     {
                         if (newEuler.x > 180) { newEuler.x = 268; }
                         if (newEuler.x < 180) { newEuler.x = 88; }
                     }
-                    newEuler.y += deltaX;
                     gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
                 }
 #endregion
