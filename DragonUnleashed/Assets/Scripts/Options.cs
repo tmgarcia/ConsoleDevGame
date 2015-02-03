@@ -9,9 +9,14 @@ public class Options : MonoBehaviour
 	public List<Resolution> resolutionOptions;
 	public Resolution current;
 	private Canvas optionsCanvas;
+    public bool airplaneMode = false;
+    public bool toggleShift = false;
+
+    public static Options instance;
 
 	void Start()
 	{
+        instance = this;
 		resolutionOptions = new List<Resolution>();
 
 		foreach (var importedResolution in ResolutionsWH)
@@ -64,4 +69,14 @@ public class Options : MonoBehaviour
 	{
 		Screen.fullScreen = !Screen.fullScreen;
 	}
+
+    public void ToggleFlightmode()
+    {
+        airplaneMode = !airplaneMode;
+    }
+
+    public void ToggleShiftStyle()
+    {
+        toggleShift = !toggleShift;
+    }
 }

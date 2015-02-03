@@ -3,7 +3,6 @@ using System.Collections;
 
 public class DragonMovement : MonoBehaviour
 {
-    public bool airPlaneControls = true;
     private PhotonView photonView;
     private GameObject cam;
     public float glideSpeed = 120;
@@ -37,10 +36,15 @@ public class DragonMovement : MonoBehaviour
     {
         if (isLocal)
         {
+            if (Options.instance.toggleShift)
+            {
+                if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) { mouseControls = !mouseControls; }
+            }
+            else
+            {
+                mouseControls = Input.GetKey(KeyCode.LeftShift);
+            }
 #region Oculs Controls
-            if (Input.GetKeyDown(KeyCode.C)) { airPlaneControls = !airPlaneControls; }
-            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) { mouseControls = !mouseControls; }
-
             if (OVRManagerHelper.instance.IsLocalPlayerUsingOVR)
             {
                 if (mouseControls)
@@ -49,7 +53,6 @@ public class DragonMovement : MonoBehaviour
                     Vector3 right = transformOVR.transform.right;
                     Vector3 accelaration = forward * glideSpeed;
                     if (Input.GetMouseButton(1)) accelaration *= 0.3f;
-                    if (Input.GetKey(KeyCode.C)) airPlaneControls = !airPlaneControls;
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
@@ -58,7 +61,7 @@ public class DragonMovement : MonoBehaviour
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
 
-                    if (airPlaneControls)
+                    if (Options.instance.airplaneMode)
                     {
                         transformOVR.transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
                         transformOVR.transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
@@ -121,7 +124,6 @@ public class DragonMovement : MonoBehaviour
                     Vector3 right = gameObject.transform.right;
                     Vector3 accelaration = forward * glideSpeed;
                     if (Input.GetKey(KeyCode.Mouse1)) accelaration *= 0.3f;
-                    if (Input.GetKey(KeyCode.C)) airPlaneControls = !airPlaneControls;
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
@@ -130,7 +132,7 @@ public class DragonMovement : MonoBehaviour
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
 
-                    if (airPlaneControls)
+                    if (Options.instance.airplaneMode)
                     {
                         transform.Rotate(new Vector3(0, 0, 1), -deltaX, Space.Self);
                         transform.Rotate(new Vector3(1, 0, 0), deltaY, Space.Self);
@@ -179,7 +181,6 @@ public class DragonMovement : MonoBehaviour
                     }
                     newEuler.y += deltaX;
                     gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
-                    //print(newEuler.x);
                 }
 #endregion
             }
