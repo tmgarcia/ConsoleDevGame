@@ -56,7 +56,8 @@ public class DragonMovement : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().SetFireSpeed(15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude);
+                    //GameObject.Find("CustomBLEGHFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
@@ -101,7 +102,8 @@ public class DragonMovement : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    GameObject.Find("CustomFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().SetFireSpeed(15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude);
+                    //GameObject.Find("CustomBLEGHFire2").GetComponent<ParticleSystem>().startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
                     //float deltaY = Input.GetAxis("Mouse Y");
@@ -132,7 +134,8 @@ public class DragonMovement : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    //transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().SetFireSpeed(15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude);
 
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
@@ -183,7 +186,8 @@ public class DragonMovement : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime;
                     gameObject.GetComponent<Rigidbody>().velocity *= Mathf.Pow(speedLimiter, Time.deltaTime);
 
-                    transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                    transform.parent.GetComponent<FireBreathing>().SetFireSpeed(15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude);
+                    //transform.parent.GetComponent<FireBreathing>().Fire.startSpeed = 15.52f + gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
                     float deltaX = Input.GetAxis("Mouse X");
                     float deltaY = Input.GetAxis("Mouse Y");
@@ -219,7 +223,8 @@ public class DragonMovement : MonoBehaviour
         transformOVR.transform.rotation = startingRotation;
         cam.transform.position = camPosition.position;
         cam.transform.parent = transform;
-        transform.parent.GetComponent<FireBreathing>().Fire.gameObject.transform.parent = cam.transform.GetChild(1);
+        //transform.parent.GetComponent<FireBreathing>().Fire.gameObject.transform.parent = cam.transform.GetChild(1);
+        transform.parent.GetComponent<FireBreathing>().SetFireParent(cam.transform.GetChild(1));
         OVRManagerHelper.instance.CalibrateOVR();
     }
 }

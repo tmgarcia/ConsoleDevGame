@@ -28,7 +28,6 @@ GameObject:
   - 4: {fileID: 474204}
   - 198: {fileID: 19874204}
   - 199: {fileID: 19974204}
-  - 114: {fileID: 11461106}
   m_Layer: 0
   m_Name: FireAdditive
   m_TagString: Untagged
@@ -43,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .0179999992, y: -.421999991, z: .282999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 474204}
@@ -56,23 +55,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .0289999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 468586}
   m_RootOrder: 0
---- !u!114 &11461106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ee8ccfcaebecb448e5200f03604aa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FlameIntensity: 0
 --- !u!114 &11468586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ee8ccfcaebecb448e5200f03604aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlameIntensity: 0
+  FlameIntensity: 1
 --- !u!198 &19868586
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1104,7 +1091,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .550000012
+      scalar: 2.08999991
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1119,7 +1106,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .127272725
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -1241,10 +1228,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 671088639
+        rgba: 352321535
       minMaxState: 0
     startSize:
-      scalar: 2.71000004
+      scalar: 10.4899998
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1259,7 +1246,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .21402213
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -1439,7 +1426,7 @@ ParticleSystem:
           serializedVersion: 2
           rgba: 0
         ctime0: 9252
-        ctime1: 48188
+        ctime1: 48766
         ctime2: 37586
         ctime3: 0
         ctime4: 0
@@ -1447,7 +1434,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 25443
+        atime1: 25058
         atime2: 65535
         atime3: 65535
         atime4: 0

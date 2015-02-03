@@ -3,7 +3,8 @@ using System.Collections;
 
 public class FireBreathing : Photon.MonoBehaviour
 {
-    public ParticleSystem Fire;
+    //public ParticleSystem Fire;
+    public ParticleSystem[] fireEffects;
     //public ParticleEmitter FireInside;
     //public ParticleEmitter FireOutside;
     private static PhotonView photonView;
@@ -45,6 +46,18 @@ public class FireBreathing : Photon.MonoBehaviour
 		}
 	}
 
+    public void SetFireSpeed(float speed)
+    {
+        foreach (ParticleSystem fire in fireEffects)
+        {
+            fire.startSpeed = speed;
+        }
+    }
+    public void SetFireParent(Transform parent)
+    {
+        fireEffects[0].transform.SetParent(parent, true);
+    }
+
     public static void EnableFire()
     {
         photonView.RPC("RPCEnableFire", PhotonTargets.All);
@@ -58,7 +71,11 @@ public class FireBreathing : Photon.MonoBehaviour
 	[RPC]
     private void RPCDisableFire()
     {
-        Fire.enableEmission = false;
+        //Fire.enableEmission = false;
+        foreach (ParticleSystem fire in fireEffects)
+        {
+            fire.enableEmission = false;
+        }
         //FireInside.emit = false;
         //FireOutside.emit = false;
     }
@@ -66,7 +83,11 @@ public class FireBreathing : Photon.MonoBehaviour
 	[RPC]
     private void RPCEnableFire()
     {
-        Fire.enableEmission = true;
+        //Fire.enableEmission = true;
+        foreach (ParticleSystem fire in fireEffects)
+        {
+            fire.enableEmission = true;
+        }
         //FireInside.emit = true;
         //FireOutside.emit = true;
     }
