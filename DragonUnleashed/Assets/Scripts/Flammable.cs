@@ -12,7 +12,7 @@ public class Flammable : Damageable
     private Vector3 firePosition;
 	public float ignitionThreshold = 0.15f; // Arbitrary value entered, could possibly be lower. Must not be zero.
     private float volume;
-    private float structureMinVolume = 20; // Just guessing. Needs further testing.
+    private float structureMinVolume = 35; // Just guessing. Needs further testing.
 
 	void Start()
 	{
@@ -155,7 +155,7 @@ public class Flammable : Damageable
         //sink
         Destroy(gameObject.collider);
         gameObject.AddComponent<Rigidbody>();
-        Destroy(rigidbody, 1.5f);
+        Destroy(rigidbody, 3.5f);
         Destroy(gameObject, 5.0f);
         Destroy(personalFire, 5.0f);
         Destroy(personalDust, 5.0f);
@@ -166,7 +166,7 @@ public class Flammable : Damageable
         //create poof
         personalDust = Instantiate(dustPoof, collider.bounds.center, Quaternion.identity) as ParticleSystem;
         personalDust.transform.parent = transform;
-        personalDust.transform.localScale *= volume;
+        personalDust.transform.localScale *= (0.5f*volume);
         personalDust.emissionRate = 40.0f * volume;
         renderer.enabled = false;
         Destroy(collider);
