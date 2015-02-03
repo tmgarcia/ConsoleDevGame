@@ -29,7 +29,7 @@ public class Flammable : Damageable
 		//	print(transform.parent.gameObject.name);
 		//}
 
-		CurrentIntegrity = StartingIntegrity;
+		CurrentLocalIntegrity = StartingIntegrity;
         volume = (collider.bounds.size.x * collider.bounds.size.y * collider.bounds.size.z);
 
 		firePosition = transform.position;
@@ -75,10 +75,10 @@ public class Flammable : Damageable
 			DisableFlameParticles();
 		}
 
-		if (damageRole != DamageRole.Scenery)
-		{
+		//if (damageRole != DamageRole.Scenery)
+		//{
 			base.DamageUpdate();
-		}
+		//}
 	}
 
 	private void AdjustFlameParticles()
@@ -109,7 +109,7 @@ public class Flammable : Damageable
 
 	private void ReduceIntegrity()
 	{
-		CurrentIntegrity -= (BurninationLevel * Time.deltaTime);
+		CurrentLocalIntegrity -= (BurninationLevel * Time.deltaTime);
 		//print("CurrentIntegrity: " + CurrentIntegrity);
 		if (CurrentIntegrity <= 0)
 		{

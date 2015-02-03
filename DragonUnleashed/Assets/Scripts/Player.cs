@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 		if (Role == PlayerRole.Villager)
 		{
 			RespawnManager.instance.Respawn(gameObject);
-			damageable.CurrentIntegrity = damageable.StartingIntegrity;
+			damageable.CurrentLocalIntegrity = damageable.StartingIntegrity;
 		}
 		else if (Role == PlayerRole.Dragon)
 		{

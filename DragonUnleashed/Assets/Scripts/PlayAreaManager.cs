@@ -67,7 +67,7 @@ public class PlayAreaManager : MonoBehaviour
 	{
 		foreach(Damageable player in removalQueue)
 		{
-			player.CurrentIntegrity = 0.0f;
+			player.CurrentLocalIntegrity = 0.0f;
 		}
 
 		removalQueue.Clear();

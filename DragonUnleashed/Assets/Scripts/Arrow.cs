@@ -40,7 +40,7 @@ public class Arrow : MonoBehaviour {
                  Destroy(rigidbody);
                  if (damcom != null && damcom.damageRole == DamageRole.Dragon)////////////Damage check //inflict damage with damageable
                  {
-                     damcom.CurrentIntegrity -= 10;
+                     damcom.CurrentLocalIntegrity -= 10;
 
                  }
              }
