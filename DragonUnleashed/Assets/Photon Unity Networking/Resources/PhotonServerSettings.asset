@@ -53,4 +53,5 @@ MonoBehaviour:
   - SetIntegrity
   - SetDragonIntegrity
   - CopyObject
+  - SwitchModels
   DisableAutoOpenWizard: 0

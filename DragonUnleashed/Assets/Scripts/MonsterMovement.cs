@@ -10,6 +10,8 @@ public class MonsterMovement : MonoBehaviour
 	public float minMoveDisance = 1.0f;
 	public float maxMoveDistance = 5.0f;
 	public float maxAnchorDistance = 5.0f;
+	public float NormalSpeed = 3.5f;
+	public float BurningSpeed = 100.0f;
 	bool inRange = false;
 
 	//for dragon
@@ -33,6 +35,26 @@ public class MonsterMovement : MonoBehaviour
 		//}
 		//else
 		//{
+
+		if (GetComponent<Flammable>().BurninationLevel <= GetComponent<Flammable>().ignitionThreshold)
+		{
+			GetComponent<NavMeshAgent>().speed = NormalSpeed;
+			if (GetComponent<AudioSource>().isPlaying)
+			{
+				GetComponent<AudioSource>().Stop();
+			}
+		}
+		else
+		{
+			GetComponent<NavMeshAgent>().speed = BurningSpeed;
+			if (!GetComponent<AudioSource>().isPlaying)
+			{
+				GetComponent<AudioSource>().Play();
+			}
+		}
+
+
+
 		if (monsterMesh.enabled && monsterMesh.remainingDistance <= float.Epsilon)
 			{
 				PickTarget();

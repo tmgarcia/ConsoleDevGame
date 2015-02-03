@@ -179,7 +179,7 @@ public class DragonMovement : MonoBehaviour
                     }
                     newEuler.y += deltaX;
                     gameObject.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(newEuler));
-                    print(newEuler.x);
+                    //print(newEuler.x);
                 }
 #endregion
             }

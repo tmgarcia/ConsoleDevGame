@@ -3,14 +3,14 @@ using System.Collections;
 
 public class Flammable : Damageable
 {
-	private float BurninationLevel;
+	public float BurninationLevel { get; set; }
 	public ParticleSystem fire;
     public ParticleSystem dustCloud;
     public ParticleSystem dustPoof;
 	private ParticleSystem personalFire;
     private ParticleSystem personalDust;
     private Vector3 firePosition;
-	private float ignitionThreshold = 0.15f; // Arbitrary value entered, could possibly be lower. Must not be zero.
+	public float ignitionThreshold = 0.15f; // Arbitrary value entered, could possibly be lower. Must not be zero.
     private float volume;
     private float structureMinVolume = 20; // Just guessing. Needs further testing.
 
@@ -43,14 +43,18 @@ public class Flammable : Damageable
 
 		}
 
-		//if (personalFire == null && (transform.childCount == 0 || transform.GetChild(0).name != "CustomFire1(Clone)"))
-		//{
-		personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
-		personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
-		personalFire.transform.parent = transform;
-		personalFire.transform.localScale *= (2.0f * longSideLength);		//resize fire 
-		personalFire.startSize = longSideLength;
-		//}
+		if (transform.childCount == 0 || transform.GetChild(0).name != "CustomFire1(Clone)")
+		{
+			personalFire = Instantiate(fire, firePosition, Quaternion.identity) as ParticleSystem;
+			personalFire.transform.Rotate(new Vector3(1, 0, 0), -90);		//reposition fire
+			personalFire.transform.parent = transform;
+			personalFire.transform.localScale *= (2.0f * longSideLength);		//resize fire 
+			personalFire.startSize = longSideLength;
+		}
+		else
+		{
+			personalFire = GetComponentInChildren<ParticleSystem>();
+		}
 
 	}
 

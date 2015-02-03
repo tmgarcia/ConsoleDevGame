@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 	public float spawnInterval = 1.0f;
 	private float currentSpawnInterval = 0.0f;
 	public GameObject NPCSpawnInstance;
+	public float BurnChance = 0.05f;
 
 	void Start()
 	{
@@ -18,14 +19,18 @@ public class Spawner : MonoBehaviour
 		{
 			for (int i = 0; i < maxSpawned; i++)
 			{
-				Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, spawnRadius)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, spawnRadius))), Quaternion.identity);
+				var spawnedAnimal = (GameObject)Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, spawnRadius)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, spawnRadius))), Quaternion.identity);
+				if (Random.value <= BurnChance)
+				{
+					spawnedAnimal.GetComponentInChildren<Flammable>().BurninationLevel = 300.0f;
+				}
 				currentSpawned++;
 			}
 			NPCSpawnInstance.SetActive(false);
 		}
 		else
 		{
-			Debug.LogException(new UnityException("NPCSpawnInstance is null or does not contain Actor script. Fuck you."));
+			Debug.LogException(new UnityException("NPCSpawnInstance is null or does not contain Actor script."));
 		}
 	}
 
