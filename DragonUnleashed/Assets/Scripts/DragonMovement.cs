@@ -82,6 +82,12 @@ public class DragonMovement : MonoBehaviour
                 }
                 else
                 {
+                    if (Options.instance.airplaneMode)
+                    {
+                        if (transform.rotation.eulerAngles.z > 5.0f || transform.rotation.eulerAngles.z < 355.0f)
+                            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0.0f), Time.deltaTime * 5);
+                    }
+
                     Vector3 direction = new Vector3(0, 0, 0);
 
                     Vector3 forward = transformOVR.transform.forward;
