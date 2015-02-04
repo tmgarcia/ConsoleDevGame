@@ -1,52 +1,55 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Arrow : MonoBehaviour {
+public class Arrow : MonoBehaviour
+{
 
-    private bool stuck;
+	private bool stuck;
 
 	// Use this for initialization
-	void Start () {
-        stuck = false;
-        Destroy(gameObject, 10.00f);
+	void Start()
+	{
+		stuck = false;
+		Destroy(gameObject, 10.00f);
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-        if (!stuck)
-        {
-            if (rigidbody.velocity.normalized != Vector3.zero)
-            {
-                transform.forward = rigidbody.velocity.normalized;
-            }
-            else
-            {
-                transform.forward = Camera.main.transform.forward;
-            }
-        }
+	void Update()
+	{
+		if (!stuck)
+		{
+			if (rigidbody.velocity.normalized != Vector3.zero)
+			{
+				transform.forward = rigidbody.velocity.normalized;
+			}
+			else
+			{
+				transform.forward = Camera.main.transform.forward;
+			}
+		}
 	}
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (!stuck)
-        {
-            
-             var damcom = collision.gameObject.GetComponent<Damageable>();
+	void OnCollisionEnter(Collision collision)
+	{
+		if (!stuck)
+		{
 
-             if (collision.gameObject.name != "Arrow(Clone)" && collision.gameObject.name != "Villager(Clone)")////////////Sticky check
-             {
-                 stuck = true;
-                 gameObject.transform.parent = collision.gameObject.transform;
-                 Destroy(rigidbody);
-                 if (damcom != null && damcom.damageRole == DamageRole.Dragon)////////////Damage check //inflict damage with damageable
-                 {
-                     damcom.CurrentIntegrity -= 10;
+			var damcom = collision.gameObject.GetComponent<Damageable>();
 
-                 }
-             }
-             
-            
-            
-        }
-    }
+			if (collision.gameObject.name != "Arrow(Clone)" && collision.gameObject.name != "Villager(Clone)")////////////Sticky check
+			{
+				stuck = true;
+				gameObject.transform.parent = collision.gameObject.transform;
+				Destroy(rigidbody);
+				if (damcom != null && damcom.damageRole == DamageRole.Dragon)////////////Damage check //inflict damage with damageable
+				{
+					damcom.CurrentLocalIntegrity -= 10;
+
+				}
+			}
+
+
+
+		}
+	}
 }

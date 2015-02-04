@@ -104,7 +104,10 @@ public class MonsterMovement : MonoBehaviour
 
 	void OnDestroy()
 	{
-		anchor.GetComponent<Spawner>().currentSpawned--;
-		Destroy(transform.parent.gameObject);
+		if (anchor != null && anchor.GetComponent<Spawner>() != null && transform.parent != null)
+		{
+			anchor.GetComponent<Spawner>().currentSpawned--;
+			Destroy(transform.parent.gameObject);
+		}
 	}
 }

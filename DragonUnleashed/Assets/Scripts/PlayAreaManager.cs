@@ -15,7 +15,7 @@ public class PlayAreaManager : MonoBehaviour
 		graceText = GameObject.Find("LeavingPlayArea").GetComponentInChildren<Text>();
 		graceTimer.TimerFinishEvent += HandlePlayerRemoval;
 		removalQueue = new List<Damageable>();
-		
+
 	}
 
 	void OnDisable()
@@ -23,7 +23,7 @@ public class PlayAreaManager : MonoBehaviour
 		graceTimer.TimerFinishEvent -= HandlePlayerRemoval;
 	}
 
-	void Update ()
+	void Update()
 	{
 		renderer.material.mainTextureOffset += new Vector2(Time.deltaTime / 5, Time.deltaTime / 5);
 
@@ -54,7 +54,7 @@ public class PlayAreaManager : MonoBehaviour
 		{
 			if (c.GetComponent<Damageable>().damageRole == DamageRole.Dragon && c.GetComponentInParent<NetworkAgent>().playerID == PlayersManager.instance.localPlayerID || c.GetComponent<Damageable>().damageRole == DamageRole.Villager && c.GetComponent<NetworkAgent>().playerID == PlayersManager.instance.localPlayerID)
 			{
-							isOutsidePlayArea = true;
+				isOutsidePlayArea = true;
 			}
 
 			graceTimer.ResetTimer();
@@ -65,9 +65,9 @@ public class PlayAreaManager : MonoBehaviour
 
 	public void HandlePlayerRemoval()
 	{
-		foreach(Damageable player in removalQueue)
+		foreach (Damageable player in removalQueue)
 		{
-			player.CurrentIntegrity = 0.0f;
+			player.CurrentLocalIntegrity = 0.0f;
 		}
 
 		removalQueue.Clear();
