@@ -4,7 +4,9 @@ using System.Collections.Generic;
 
 public class MonsterMovement : MonoBehaviour
 {
+	//SpawnerObject
 	public GameObject anchor;
+
 	GameObject player;
 	NavMeshAgent monsterMesh;
 	public float minMoveDisance = 1.0f;
@@ -23,8 +25,6 @@ public class MonsterMovement : MonoBehaviour
 	void Start()
 	{
 		monsterMesh = GetComponent<NavMeshAgent>();
-		//anchor = GameObject.Find("DingoSpawner");
-		//player = GameObject.Find("Player");
 	}
 
 	void Update()

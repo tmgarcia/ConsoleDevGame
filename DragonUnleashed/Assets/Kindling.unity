@@ -214,7 +214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -521,7 +520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -703,7 +701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -1943,7 +1940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -2549,7 +2545,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -2599,7 +2594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -3110,7 +3104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -3245,7 +3238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -3338,7 +3330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -3546,7 +3537,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -3826,7 +3816,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -4105,7 +4094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -4331,7 +4319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -4555,7 +4542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -4648,7 +4634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -4784,7 +4769,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -5014,7 +4998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -5227,7 +5210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -5303,7 +5285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -5643,7 +5624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -5737,7 +5717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -6009,7 +5988,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -6202,7 +6180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -6295,7 +6272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -6443,7 +6419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -6986,7 +6961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -7107,7 +7081,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -7243,7 +7216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -7450,7 +7422,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -7542,7 +7513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -7950,7 +7920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8086,7 +8055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8380,7 +8348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8473,7 +8440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8595,7 +8561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8789,7 +8754,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -8905,7 +8869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -9084,7 +9047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -9249,7 +9211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -9394,7 +9355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -9633,7 +9593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -9901,7 +9860,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -10189,7 +10147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -10781,7 +10738,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -10946,7 +10902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -11155,7 +11110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -11351,7 +11305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -11584,7 +11537,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -11677,7 +11629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -12011,7 +11962,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -12104,7 +12054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -12421,7 +12370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -12600,7 +12548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -12961,7 +12908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -13112,7 +13058,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -13331,7 +13276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -13596,7 +13540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -13688,7 +13631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -13911,7 +13853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -14005,7 +13946,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -14195,7 +14135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -14448,7 +14387,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -14569,7 +14507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15130,7 +15067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15278,7 +15214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15328,7 +15263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15421,7 +15355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15715,7 +15648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -15907,7 +15839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -16277,7 +16208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -16369,7 +16299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -16461,7 +16390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -16814,7 +16742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -16984,7 +16911,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17104,7 +17030,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17197,7 +17122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17377,7 +17301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17598,7 +17521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17749,7 +17671,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -17897,7 +17818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -18046,7 +17966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -18096,7 +18015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -18303,7 +18221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -18782,7 +18699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19163,7 +19079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19401,7 +19316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19493,7 +19407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19724,7 +19637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19817,7 +19729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -19910,7 +19821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -20091,7 +20001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 1000
-  CurrentIntegrity: 1000
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -20317,7 +20226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -20770,7 +20678,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -20820,7 +20727,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -21098,7 +21004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -21687,7 +21592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22136,7 +22040,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22273,7 +22176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22493,7 +22395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22543,7 +22444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22722,7 +22622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22847,7 +22746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -22952,7 +22850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -23388,7 +23285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -23438,7 +23334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -23734,7 +23629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24281,7 +24175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24415,7 +24308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24465,7 +24357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24558,7 +24449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24694,7 +24584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -24744,7 +24633,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -25109,7 +24997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -25294,7 +25181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -25487,7 +25373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -25906,7 +25791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -26161,7 +26045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -26474,7 +26357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -26748,7 +26630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27141,7 +27022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27304,7 +27184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27608,7 +27487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27701,7 +27579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27782,7 +27659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -27969,7 +27845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -28176,7 +28051,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -28298,7 +28172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -28617,7 +28490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -28808,7 +28680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -29031,7 +28902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -29151,7 +29021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -29337,7 +29206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -29387,7 +29255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -29924,7 +29791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30088,7 +29954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30238,7 +30103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30330,7 +30194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30607,7 +30470,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30657,7 +30519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30750,7 +30611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30887,7 +30747,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -30979,7 +30838,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -31352,7 +31210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -31662,7 +31519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -31869,7 +31725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -32176,7 +32031,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -32268,7 +32122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -32449,7 +32302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -32924,7 +32776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33233,7 +33084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33370,7 +33220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33495,7 +33344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33643,7 +33491,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33837,7 +33684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -33944,7 +33790,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -34079,7 +33924,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -34278,7 +34122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -34495,7 +34338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -34775,7 +34617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -34869,7 +34710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -35006,7 +34846,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -35712,7 +35551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -35877,7 +35715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36173,7 +36010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36366,7 +36202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36558,7 +36393,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36722,7 +36556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36814,7 +36647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -36912,7 +36744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37004,7 +36835,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37141,7 +36971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37233,7 +37062,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37367,7 +37195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37405,7 +37232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37510,7 +37336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37602,7 +37427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -37738,7 +37562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -38146,7 +37969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -38511,7 +38333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -38676,7 +38497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -38856,7 +38676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -38950,7 +38769,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39183,7 +39001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39279,7 +39096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39384,7 +39200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39564,7 +39379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39714,7 +39528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -39863,7 +39676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -40159,7 +39971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -40294,7 +40105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -40573,7 +40383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -40854,7 +40663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -41020,7 +40828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -41535,7 +41342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -41758,7 +41564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -42082,7 +41887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -42317,7 +42121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -42700,7 +42503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -43132,7 +42934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -43553,7 +43354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -43688,7 +43488,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44235,7 +44034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44285,7 +44083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44493,7 +44290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44645,7 +44441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44781,7 +44576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -44945,7 +44739,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45208,7 +45001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45344,7 +45136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45492,7 +45283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45598,7 +45388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45788,7 +45577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -45921,7 +45709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -46242,7 +46029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -46490,7 +46276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -46582,7 +46367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -46908,7 +46692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -47694,7 +47477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -47987,7 +47769,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -48219,7 +48000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -48311,7 +48091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -48449,7 +48228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -48569,7 +48347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -48918,7 +48695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -49011,7 +48787,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -49491,7 +49266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -49639,7 +49413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -49805,7 +49578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -50178,7 +49950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -50270,7 +50041,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -51330,7 +51100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -51563,7 +51332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -51781,7 +51549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -51916,7 +51683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -52847,7 +52613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -53117,7 +52882,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -53281,7 +53045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -53548,7 +53311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -53640,7 +53402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -53790,7 +53551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54085,7 +53845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54177,7 +53936,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54541,7 +54299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54633,7 +54390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54817,7 +54573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -54925,7 +54680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -55200,7 +54954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -55482,7 +55235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -55660,7 +55412,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -55825,7 +55576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -56136,7 +55886,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -56600,7 +56349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -56721,7 +56469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -56871,7 +56618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -57406,7 +57152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -57789,7 +57534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -57882,7 +57626,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -57975,7 +57718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -58025,7 +57767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -58377,7 +58118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -58730,7 +58470,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -58780,7 +58519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -58916,7 +58654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -59366,7 +59103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -59416,7 +59152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -59584,7 +59319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -59904,7 +59638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60024,7 +59757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60074,7 +59806,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60154,7 +59885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60259,7 +59989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60450,7 +60179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60755,7 +60483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60889,7 +60616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -60982,7 +60708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -61524,7 +61249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -61675,7 +61399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -61880,7 +61603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -62015,7 +61737,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -62167,7 +61888,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -62302,7 +62022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -63048,7 +62767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -63185,7 +62903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -63472,7 +63189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -64451,7 +64167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -64544,7 +64259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -64646,7 +64360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -64739,7 +64452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65058,7 +64770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65207,7 +64918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65257,7 +64967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65393,7 +65102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65514,7 +65222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65564,7 +65271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65727,7 +65433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -65892,7 +65597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -66044,7 +65748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -66257,7 +65960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -66378,7 +66080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -66527,7 +66228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -66747,7 +66447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -67153,7 +66852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -67856,7 +67554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68079,7 +67776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68129,7 +67825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68274,7 +67969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68367,7 +68061,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68647,7 +68340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68797,7 +68489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -68960,7 +68651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -69038,7 +68728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -69203,7 +68892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -69337,7 +69025,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -69430,7 +69117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -69762,7 +69448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -70043,7 +69728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -70149,7 +69833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -70520,7 +70203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -70618,7 +70300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -71401,7 +71082,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -71830,7 +71510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -71980,7 +71659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -72217,7 +71895,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -72350,7 +72027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -72547,7 +72223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73057,7 +72732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73350,7 +73024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73515,7 +73188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73779,7 +73451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73900,7 +73571,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -73978,7 +73648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -74243,7 +73912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -74415,7 +74083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -74579,7 +74246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -74955,7 +74621,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 440084, guid: 9019b6eee62d76f42aa39d169000dad2, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8240086, guid: 9019b6eee62d76f42aa39d169000dad2, type: 2}
       propertyPath: m_PlayOnAwake
@@ -75274,7 +74940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -75412,7 +75077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -75546,7 +75210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -75639,7 +75302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -75868,7 +75530,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -76308,7 +75969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -76444,7 +76104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -76554,7 +76213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77043,7 +76701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77093,7 +76750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77186,7 +76842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77422,7 +77077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77472,7 +77126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77683,7 +77336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77733,7 +77385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -77869,7 +77520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -78062,7 +77712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -78112,7 +77761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -78289,7 +77937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -78425,7 +78072,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -78898,7 +78544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -79215,7 +78860,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -79365,7 +79009,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -79681,7 +79324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -79950,7 +79592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -80158,7 +79799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -80370,7 +80010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -80523,7 +80162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -80843,7 +80481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -81617,7 +81254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82073,7 +81709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82208,7 +81843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82258,7 +81892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82422,7 +82055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82515,7 +82147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -82793,7 +82424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -83035,7 +82665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -83358,7 +82987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -83451,7 +83079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -83501,7 +83128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -84041,7 +83667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -84091,7 +83716,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -84353,7 +83977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -84578,7 +84201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85035,7 +84657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85170,7 +84791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85291,7 +84911,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85383,7 +85002,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85505,7 +85123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85668,7 +85285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -85953,7 +85569,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -86125,7 +85740,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -86175,7 +85789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -86338,7 +85951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -86786,7 +86398,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -86908,7 +86519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87001,7 +86611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87149,7 +86758,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87284,7 +86892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87420,7 +87027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87512,7 +87118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87605,7 +87210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
@@ -87655,7 +87259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
