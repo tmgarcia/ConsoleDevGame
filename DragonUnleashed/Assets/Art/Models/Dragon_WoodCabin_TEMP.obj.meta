@@ -6,15 +6,20 @@ ModelImporter:
     100000: //RootNode
     100002: polySurface20
     100004: Dragon_WoodCabin_TEMP1:polySurface20
+    100006: Dragon_WoodCabin_TEMP:polySurface20
     400000: //RootNode
     400002: polySurface20
     400004: Dragon_WoodCabin_TEMP1:polySurface20
+    400006: Dragon_WoodCabin_TEMP:polySurface20
     2300000: polySurface20
     2300002: Dragon_WoodCabin_TEMP1:polySurface20
+    2300004: Dragon_WoodCabin_TEMP:polySurface20
     3300000: polySurface20
     3300002: Dragon_WoodCabin_TEMP1:polySurface20
+    3300004: Dragon_WoodCabin_TEMP:polySurface20
     4300000: polySurface20
     4300002: Dragon_WoodCabin_TEMP1:polySurface20
+    4300004: Dragon_WoodCabin_TEMP:polySurface20
     9500000: //RootNode
   materials:
     importMaterials: 0

@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 14d6a18c15e5f054d9424af263d7b49e
+guid: fb777cdfdec9fc14895b65870cb452f9
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: polySurface156
-    400000: //RootNode
-    400002: polySurface156
-    2300000: polySurface156
-    3300000: polySurface156
-    4300000: polySurface156
+    100000: Dragon_WoodShack_COLLISION
+    100002: //RootNode
+    400000: Dragon_WoodShack_COLLISION
+    400002: //RootNode
+    2300000: Dragon_WoodShack_COLLISION
+    3300000: Dragon_WoodShack_COLLISION
+    4300000: Dragon_WoodShack_COLLISION
     9500000: //RootNode
   materials:
     importMaterials: 1
