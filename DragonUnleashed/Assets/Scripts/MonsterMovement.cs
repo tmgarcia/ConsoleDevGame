@@ -6,6 +6,8 @@ public class MonsterMovement : MonoBehaviour
 {
 	//SpawnerObject
 	public GameObject anchor;
+	public Vector3 anchorPosition;
+	public AudioSource footstep;
 
 	GameObject player;
 	NavMeshAgent monsterMesh;
@@ -25,6 +27,14 @@ public class MonsterMovement : MonoBehaviour
 	void Start()
 	{
 		monsterMesh = GetComponent<NavMeshAgent>();
+		if (anchor == null)
+		{
+			anchorPosition = transform.position;
+		}
+		else
+		{
+			anchorPosition = anchor.transform.position;
+		}
 	}
 
 	void Update()
@@ -57,6 +67,10 @@ public class MonsterMovement : MonoBehaviour
 
 		if (monsterMesh.enabled && monsterMesh.remainingDistance <= float.Epsilon)
 			{
+				if (footstep != null)
+				{
+					footstep.Stop();
+				}
 				PickTarget();
 			}
 		//}
@@ -68,13 +82,20 @@ public class MonsterMovement : MonoBehaviour
 
 		Vector3 potentialTarget = transform.position + new Vector3(direction.x * Random.Range(minMoveDisance, maxMoveDistance), transform.position.y, direction.y * Random.Range(minMoveDisance, maxMoveDistance));
 
-		if (Vector3.Distance(potentialTarget, anchor.transform.position) > maxAnchorDistance)
+		//print(potentialTarget + " D " + anchorPosition + " = " + Vector3.Distance(potentialTarget, anchorPosition) + " > " + maxAnchorDistance);
+		if (Vector3.Distance(potentialTarget, anchorPosition) > maxAnchorDistance)
 		{
+
+			//Debug.LogException(new UnityException("InvalidTarget"));
 			//print("Failed to pick valid target");
 		}
 		else
 		{
-			monsterMesh.SetDestination(potentialTarget);
+			monsterMesh.SetDestination(new Vector3(potentialTarget.x, transform.position.y, potentialTarget.z));
+			if (monsterMesh.hasPath)
+			{
+				footstep.Play();
+			}
 		}
 	}
 

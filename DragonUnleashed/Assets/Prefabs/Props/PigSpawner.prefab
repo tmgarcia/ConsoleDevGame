@@ -11,9 +11,9 @@ GameObject:
   - 114: {fileID: 11458658}
   - 135: {fileID: 13558658}
   m_Layer: 0
-  m_Name: SheepSpawner
+  m_Name: PigSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: d3b4a5a1c5c63d94b82277c6f149c7f7, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 627.159973, y: 3.36999989, z: 1212.25}
+  m_LocalPosition: {x: 716.5401, y: 6.39434528, z: 1238.00732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,11 +41,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnAfterStart: 1
-  spawnRadius: 100
-  maxSpawned: 5
-  currentSpawned: 1
-  spawnInterval: 1
-  NPCSpawnInstance: {fileID: 0}
+  spawnRadius: 10
+  maxSpawned: 10
+  currentSpawned: 0
+  spawnInterval: 10
+  NPCSpawnInstance: {fileID: 179100, guid: 97b3f952d322cad40a3b5ab86ed81ecb, type: 2}
+  BurnChance: .100000001
 --- !u!135 &13558658
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -56,7 +57,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 100
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
