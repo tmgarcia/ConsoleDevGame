@@ -57,7 +57,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147820}
-  m_Mesh: {fileID: 4300002, guid: 191eca118c14ea042929752a6a537410, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 191eca118c14ea042929752a6a537410, type: 3}
 --- !u!64 &6494748
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -70,7 +70,7 @@ MeshCollider:
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 9e8c45a1d04e95b4e95e9d4566e45a65, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 10a937e2fed78964780edd58304eb595, type: 3}
 --- !u!114 &11453928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,7 +83,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
