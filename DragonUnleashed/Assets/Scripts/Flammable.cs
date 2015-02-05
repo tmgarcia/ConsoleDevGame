@@ -169,10 +169,15 @@ public class Flammable : Damageable
 	private void poof() // Disposes of small objects with a poof of smoke
 	{
 		//create poof
-		personalDust = Instantiate(dustPoof, collider.bounds.center, Quaternion.identity) as ParticleSystem;
-		personalDust.transform.parent = transform;
-		personalDust.transform.localScale *= (0.5f * volume);
-		personalDust.emissionRate = 40.0f * volume;
+
+		if (collider != null)
+		{
+			personalDust = Instantiate(dustPoof, collider.bounds.center, Quaternion.identity) as ParticleSystem;
+			personalDust.transform.parent = transform;
+			personalDust.transform.localScale *= (0.5f * volume);
+			personalDust.emissionRate = 40.0f * volume;
+			Destroy(collider);
+		}
 		renderer.enabled = false;
 		Destroy(collider);
 		Destroy(gameObject, 10);

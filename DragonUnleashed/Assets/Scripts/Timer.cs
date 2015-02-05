@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 	public int StartingMinutes = 5;
 	public int StartingSeconds = 0;
 	protected float currentSeconds;
-	protected bool isRunning = false;
+	public bool isRunning = false;
 	public int currentDisplayMinutes;
 	public int currentDisplaySeconds;
 

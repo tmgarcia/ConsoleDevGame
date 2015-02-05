@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour
 {
+	public bool SpawnAtStart = false;
 	public bool RespawnAfterStart = true;
 	public float spawnRadius = 30.0f;
 	public int maxSpawned = 10;
@@ -17,19 +18,21 @@ public class Spawner : MonoBehaviour
 	{
 		if (NPCSpawnInstance != null || NPCSpawnInstance.GetComponent<MeshCollider>() != null)
 		{
-			for (int i = 0; i < maxSpawned; i++)
+			if (SpawnAtStart)
 			{
-				var spawnedAnimal = (GameObject)Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, spawnRadius)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, spawnRadius))), Quaternion.identity);
-				spawnedAnimal.SetActive(true);
-				spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchor = gameObject;
-				spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchorPosition = transform.position;
-				if (Random.value <= BurnChance)
+				for (int i = 0; i < maxSpawned; i++)
 				{
-					spawnedAnimal.GetComponentInChildren<Flammable>().BurninationLevel = 300.0f;
+					var spawnedAnimal = (GameObject)Instantiate(NPCSpawnInstance, new Vector3(gameObject.transform.position.x + (Random.insideUnitCircle.x * Random.Range(0, spawnRadius)), gameObject.transform.position.y, gameObject.transform.position.z + (Random.insideUnitCircle.y * Random.Range(0, spawnRadius))), Quaternion.identity);
+					spawnedAnimal.SetActive(true);
+					spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchor = gameObject;
+					spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchorPosition = transform.position;
+					if (Random.value <= BurnChance)
+					{
+						spawnedAnimal.GetComponentInChildren<Flammable>().BurninationLevel = 300.0f;
+					}
+					currentSpawned++;
 				}
-				currentSpawned++;
 			}
-			//NPCSpawnInstance.SetActive(false);
 		}
 		else if(NPCSpawnInstance == null)
 		{
@@ -69,7 +72,6 @@ public class Spawner : MonoBehaviour
 	}
 
 	float lastSpawnerRadius;
-	//float lastColliderRadius;
 
 #if UNITY_EDITOR
 	void OnValidate()
@@ -79,13 +81,8 @@ public class Spawner : MonoBehaviour
 			GetComponent<SphereCollider>().radius = GetComponent<Spawner>().spawnRadius;
 
 		}
-		//else if (GetComponent<SphereCollider>().radius != lastColliderRadius)
-		//{
-		//	GetComponent<Spawner>().spawnRadius = GetComponent<SphereCollider>().radius;
-		//}
 
 		lastSpawnerRadius = GetComponent<Spawner>().spawnRadius;
-		//lastColliderRadius = lastSpawnerRadius;
 	}
 #endif
 }

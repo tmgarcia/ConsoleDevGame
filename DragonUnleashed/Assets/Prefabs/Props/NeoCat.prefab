@@ -16,6 +16,7 @@ GameObject:
   - 82: {fileID: 8214742}
   - 82: {fileID: 8214744}
   - 64: {fileID: 6424412}
+  - 114: {fileID: 11430194}
   m_Layer: 0
   m_Name: NeoCat
   m_TagString: Prop
@@ -276,6 +277,22 @@ MonoBehaviour:
   maxAnchorDistance: 100
   NormalSpeed: 15
   BurningSpeed: 120
+--- !u!114 &11430194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81f6b5b6ae0e304882dc1f07265e66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingMinutes: 0
+  StartingSeconds: 6
+  isRunning: 0
+  currentDisplayMinutes: 0
+  currentDisplaySeconds: 0
 --- !u!195 &19514742
 NavMeshAgent:
   m_ObjectHideFlags: 1
