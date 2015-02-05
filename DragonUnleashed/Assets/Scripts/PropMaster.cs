@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -9,10 +10,10 @@ using UnityEditor;
 [System.Serializable]
 public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 {
-    public Dictionary<string, Representation> props;
+    public Representation villager = new Representation();
     public List<string> keys = new List<string>();
     public List<Representation> values = new List<Representation>();
-    public Representation villager;
+    public Dictionary<string, Representation> props = new Dictionary<string, Representation>();
 
     [System.Serializable]
     public class Representation
@@ -34,20 +35,36 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 
     public void OnBeforeSerialize()
     {
-        keys.Clear();
-        values.Clear();
-        foreach (var kvp in props)
-        {
-            keys.Add(kvp.Key);
-            values.Add(kvp.Value);
-        }
+        //print("ON BEFORE SERIALIZE");
+        
+        //keys.Clear();
+        //values.Clear();
+        //foreach (var kvp in props)
+        //{
+        //    keys.Add(kvp.Key);
+        //    values.Add(kvp.Value);
+        //}
     }
     public void OnAfterDeserialize()
     {
         props = new Dictionary<string, Representation>();
         for (int i = 0; i != Mathf.Min(keys.Count, values.Count); i++)
         {
-            props.Add(keys[i], values[i]);
+            if (!string.IsNullOrEmpty(keys[i]))
+            {
+                try
+                {
+                    props.Add(keys[i], values[i]);
+                }
+                catch (System.ArgumentException e)
+                {
+                    Debug.LogError("Two Props with the same Name: " + keys[i] + "\n\t" + e.Message);
+                }
+            }
+            else
+            {
+                Debug.LogError("Prop " + i +" does not have a Name.");
+            }
         }
     }
 }
@@ -77,7 +94,7 @@ public class PropMasterEditor : Editor
         GUILayout.Label("Props");
         if (GUILayout.Button("+", EditorStyles.miniButtonRight))
         {
-            propMaster.keys.Add("");
+            propMaster.keys.Add("PropName" + (propMaster.keys.Count));
             propMaster.values.Add(new PropMaster.Representation());
         }
         EditorGUILayout.EndHorizontal();
@@ -112,6 +129,9 @@ public class PropMasterEditor : Editor
             //EditorGUILayout.EndScrollView();
             EditorGUILayout.EndVertical();
         }
+        //propMaster.OnAfterDeserialize();
+        serializedObject.Update();
+        serializedObject.ApplyModifiedProperties();
     }
 }
 #endif
