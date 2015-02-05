@@ -37,10 +37,12 @@ public class FireBreathing : Photon.MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
                     EnableFire();
+                    transform.GetChild(0).GetComponent<AudioSource>().Play();
                 }
                 else if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
                 {
                     DisableFire();
+                    transform.GetChild(0).GetComponent<AudioSource>().Stop();
                 }
             }
 		}
