@@ -50,8 +50,10 @@ public class Mimic : MonoBehaviour {
             if (hit.collider.tag == "Prop")
             {
                 if(currentDisguise == "Villager")gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
-                currentDisguise = hit.collider.gameObject.name;
-                gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, hit.collider.gameObject.name);
+                string newDigs = hit.collider.gameObject.name;
+                if(newDigs.Contains("(Clone)")) newDigs = newDigs.Remove(newDigs.Length-7);
+                currentDisguise = newDigs;
+                gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, newDigs);
             }
         }
     }
