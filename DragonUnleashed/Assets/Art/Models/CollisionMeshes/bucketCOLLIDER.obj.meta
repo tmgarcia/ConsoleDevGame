@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 49a89df884cb38d4cbae374d9906ddad
+guid: 5d46a9abfa7a50c48b18182ea8b187e4
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: polySurface10
+    100002: pCylinder9
     400000: //RootNode
-    400002: polySurface10
-    2300000: polySurface10
-    3300000: polySurface10
-    4300000: polySurface10
+    400002: pCylinder9
+    2300000: pCylinder9
+    3300000: pCylinder9
+    4300000: pCylinder9
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -62,6 +62,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
