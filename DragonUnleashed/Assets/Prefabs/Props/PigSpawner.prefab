@@ -40,11 +40,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55838fab81ff6e54283ff8b58b4288ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnAtStart: 0
   RespawnAfterStart: 1
   spawnRadius: 10
   maxSpawned: 10
   currentSpawned: 0
-  spawnInterval: 10
+  spawnInterval: 5
   NPCSpawnInstance: {fileID: 179100, guid: 97b3f952d322cad40a3b5ab86ed81ecb, type: 2}
   BurnChance: .100000001
 --- !u!135 &13558658

@@ -288,6 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anchor: {fileID: 0}
   anchorPosition: {x: 0, y: 0, z: 0}
+  footstep: {fileID: 0}
+  screaming: {fileID: 0}
   minMoveDisance: 10
   maxMoveDistance: 100
   maxAnchorDistance: 150
