@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 498570}
   - 33: {fileID: 3398570}
   - 23: {fileID: 2398570}
-  - 65: {fileID: 6540812}
+  - 64: {fileID: 6471312}
   m_Layer: 0
   m_Name: pCube4
   m_TagString: Prop
@@ -85,8 +85,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198570}
   m_Mesh: {fileID: 4300000, guid: e621916f39258ef4f985d19610adab5b, type: 3}
---- !u!65 &6540812
-BoxCollider:
+--- !u!64 &6471312
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -95,8 +95,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.10045004, y: .669785023, z: .510285974}
-  m_Center: {x: 0, y: .334892511, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e621916f39258ef4f985d19610adab5b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

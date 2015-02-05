@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 496634}
   - 33: {fileID: 3396634}
   - 23: {fileID: 2396634}
-  - 136: {fileID: 13633160}
   - 114: {fileID: 11462830}
+  - 64: {fileID: 6462478}
   m_Layer: 0
   m_Name: pCylinder5
   m_TagString: Prop
@@ -86,6 +86,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196634}
   m_Mesh: {fileID: 4300000, guid: d298eda1898621844956447e116531a1, type: 3}
+--- !u!64 &6462478
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 435a0cb18782d4847a2c69cb66dcdef7, type: 3}
 --- !u!114 &11462830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,24 +111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
---- !u!136 &13633160
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .646894991
-  m_Height: 1.37026298
-  m_Direction: 1
-  m_Center: {x: 0, y: .688062489, z: 0}
+  ignitionThreshold: .150000006
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
