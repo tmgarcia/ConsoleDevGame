@@ -98,7 +98,6 @@ public class MonsterMovement : MonoBehaviour
 		else
 		{
 			monsterMesh.SetDestination(new Vector3(potentialTarget.x, transform.position.y, potentialTarget.z));
-			gameObject.transform.position += new Vector3(Random.value, Random.value, 0);
 		}
 	}
 
