@@ -19,7 +19,7 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
     [System.Serializable]
     public class Representation
     {
-        public Collider collider;
+        public MeshCollider collider;
         public MeshRenderer meshRenderer;
         public MeshFilter mesh;
     }
@@ -42,8 +42,8 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 
     public Mesh GetColliderMeshByName(string name)
     {
-        if (name == "Villager") return ((MeshCollider)villager.collider).sharedMesh;
-        return ((MeshCollider)props[name].collider).sharedMesh;
+        if (name == "Villager") return villager.collider.sharedMesh;
+        return props[name].collider.sharedMesh;
     }
 
     public Material GetMaterialByName(string name)
@@ -104,7 +104,7 @@ public class PropMasterEditor : Editor
         EditorGUILayout.BeginVertical();
         EditorGUI.indentLevel++;
         propMaster.villager.mesh = (MeshFilter)EditorGUILayout.ObjectField("Mesh", propMaster.villager.mesh, typeof(MeshFilter), true);
-        propMaster.villager.collider = (Collider)EditorGUILayout.ObjectField("Collider", propMaster.villager.collider, typeof(Collider), true);
+        propMaster.villager.collider = (MeshCollider)EditorGUILayout.ObjectField("Collider", propMaster.villager.collider, typeof(Collider), true);
         propMaster.villager.meshRenderer = (MeshRenderer)EditorGUILayout.ObjectField("MeshRenderer", propMaster.villager.meshRenderer, typeof(MeshRenderer), true);
         EditorGUI.indentLevel--;
         EditorGUILayout.EndVertical();
@@ -137,7 +137,7 @@ public class PropMasterEditor : Editor
                 EditorGUI.indentLevel++;
                 propMaster.keys[i] = EditorGUILayout.TextField("Name", propMaster.keys[i]);
                 propMaster.values[i].mesh = (MeshFilter)EditorGUILayout.ObjectField("Mesh", propMaster.values[i].mesh, typeof(MeshFilter), true);
-                propMaster.values[i].collider = (Collider)EditorGUILayout.ObjectField("Collider", propMaster.values[i].collider, typeof(Collider), true);
+                propMaster.values[i].collider = (MeshCollider)EditorGUILayout.ObjectField("Collider", propMaster.values[i].collider, typeof(Collider), true);
                 propMaster.values[i].meshRenderer = (MeshRenderer)EditorGUILayout.ObjectField("MeshRenderer", propMaster.values[i].meshRenderer, typeof(MeshRenderer), true);
                 EditorGUI.indentLevel--;
             }
