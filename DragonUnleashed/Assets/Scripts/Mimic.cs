@@ -50,6 +50,7 @@ public class Mimic : MonoBehaviour {
             if (hit.collider.tag == "Prop")
             {
                 if(currentDisguise == "Villager")gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
+                currentDisguise = hit.collider.gameObject.name;
                 gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, hit.collider.gameObject.name);
             }
         }
@@ -58,8 +59,6 @@ public class Mimic : MonoBehaviour {
     [RPC]
     public void CopyObject(string otherName)
     {
-        currentDisguise = otherName;
-
         gameObject.GetComponent<MeshFilter>().mesh = PropMaster.instance.GetMeshByName(otherName);
 
         gameObject.renderer.material = PropMaster.instance.GetMaterialByName(otherName);
