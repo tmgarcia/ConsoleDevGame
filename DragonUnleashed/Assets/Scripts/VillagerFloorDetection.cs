@@ -20,14 +20,6 @@ public class VillagerFloorDetection : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider other)
-    {
-        if (other.tag != "Player")
-        {
-            movement.isGrounded = true;
-        }
-    }
-
     void OnTriggerExit(Collider other)
     {
         if (other.tag != "Player")

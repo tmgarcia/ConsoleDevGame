@@ -20,6 +20,7 @@ public class VillagerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
+        isGrounded = true;
         photonView = gameObject.GetComponent<PhotonView>();
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
@@ -85,7 +86,7 @@ public class VillagerMovement : MonoBehaviour {
 
     private bool canJump()
     {
-        return !isGrounded;
+        return isGrounded;
     }
 
     private bool CamCollide()
