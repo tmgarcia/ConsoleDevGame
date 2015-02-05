@@ -8,27 +8,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455318}
+  - 33: {fileID: 3303336}
+  - 23: {fileID: 2303336}
+  - 136: {fileID: 13603336}
+  - 114: {fileID: 11403336}
   m_Layer: 0
   m_Name: Planter
-  m_TagString: Prop
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &155320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 455320}
-  - 33: {fileID: 3355320}
-  - 23: {fileID: 2355320}
-  - 136: {fileID: 13680528}
-  - 114: {fileID: 11427512}
-  m_Layer: 0
-  m_Name: pCylinder2
   m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,31 +25,18 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155318}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 662.047363, y: 2.81999636, z: 1155.66064}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 455320}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &455320
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155320}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 700.360962, y: 4.07367468, z: 1173.99646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 455318}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2355320
+--- !u!23 &2303336
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155320}
+  m_GameObject: {fileID: 155318}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,36 +51,36 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3355320
+--- !u!33 &3303336
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155320}
+  m_GameObject: {fileID: 155318}
   m_Mesh: {fileID: 4300000, guid: ed9ad77793866f145869ca799d3f522f, type: 3}
---- !u!114 &11427512
+--- !u!114 &11403336
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155320}
+  m_GameObject: {fileID: 155318}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b49554a133e34934089ec5edf5885052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
---- !u!136 &13680528
+  ignitionThreshold: .150000006
+--- !u!136 &13603336
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155320}
+  m_GameObject: {fileID: 155318}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

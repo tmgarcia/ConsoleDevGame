@@ -19,12 +19,12 @@ public class Mimic : MonoBehaviour {
 	void Update () {
         
         if (Input.GetKeyDown(KeyCode.E)&&!Input.GetKey(KeyCode.Mouse1)) MimicProp();
-        if (currentDisguise == "Villager" && Input.GetKeyDown(KeyCode.Mouse1))
+        if (currentDisguise != "Villager" && Input.GetKeyDown(KeyCode.Mouse1))
         {
             gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
             gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, "Villager");
         }
-        if (currentDisguise == "Villager" && Input.GetKeyUp(KeyCode.Mouse1))
+        if (currentDisguise != "Villager" && Input.GetKeyUp(KeyCode.Mouse1))
         {
             gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
             gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All,currentDisguise);
@@ -58,6 +58,8 @@ public class Mimic : MonoBehaviour {
     [RPC]
     public void CopyObject(string otherName)
     {
+        currentDisguise = otherName;
+
         gameObject.GetComponent<MeshFilter>().mesh = PropMaster.instance.GetMeshByName(otherName);
 
         gameObject.renderer.material = PropMaster.instance.GetMaterialByName(otherName);
