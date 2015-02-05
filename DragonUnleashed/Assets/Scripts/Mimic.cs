@@ -5,7 +5,7 @@ public class Mimic : MonoBehaviour {
 
     public GameObject[] disguises;
 
-    private bool hasDisguise = false;
+    private string currentDisguise = "Villager";
 
 	// Use this for initialization
 	void Start () {
@@ -16,22 +16,23 @@ public class Mimic : MonoBehaviour {
 	void Update () {
         
         if (Input.GetKeyDown(KeyCode.E)&&!Input.GetKey(KeyCode.Mouse1)) MimicProp();
-        if (hasDisguise&&Input.GetKeyDown(KeyCode.Mouse1))
+        if (currentDisguise == "Villager" && Input.GetKeyDown(KeyCode.Mouse1))
         {
             gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
+            gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, "Villager");
         }
-        if (hasDisguise&&Input.GetKeyUp(KeyCode.Mouse1))
+        if (currentDisguise == "Villager" && Input.GetKeyUp(KeyCode.Mouse1))
         {
             gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
+            gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All,currentDisguise);
         }
 	}
 
     [RPC]
     public void SwitchModels()
     {
-        GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
-        collider.enabled = !collider.enabled;
-        transform.FindChild("Villager").gameObject.SetActive(!transform.FindChild("Villager").gameObject.GetActive());
+        transform.FindChild("Staff").gameObject.SetActive(!transform.FindChild("Staff").gameObject.GetActive());
+        transform.FindChild("QuiverRig").gameObject.SetActive(!transform.FindChild("QuiverRig").gameObject.GetActive());
     }
 
     void MimicProp()
@@ -45,21 +46,9 @@ public class Mimic : MonoBehaviour {
         {
             if (hit.collider.tag == "Prop")
             {
-                if (!hasDisguise) hasDisguise = true;
-                if(transform.FindChild("Villager").gameObject.GetActive())gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
+                if(currentDisguise == "Villager")gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
                 gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, hit.collider.gameObject.name);
             }
-        }
-    }
-
-    void BecomeAnotherPerson()
-    {
-        if (disguises.Length > 0)
-        {
-            int i = Random.Range(0, disguises.Length);
-            GameObject temp = (GameObject)Instantiate(disguises[i],new Vector3(0,-50,0), new Quaternion());
-            gameObject.GetComponent<PhotonView>().RPC("CopyObject",PhotonTargets.All,temp.transform.GetChild(0).gameObject);
-            Destroy(temp);
         }
     }
 
