@@ -14,8 +14,8 @@ GameObject:
   - 23: {fileID: 2340086}
   - 114: {fileID: 11440084}
   - 136: {fileID: 13640086}
-  - 82: {fileID: 8240086}
   - 82: {fileID: 8297488}
+  - 82: {fileID: 8220092}
   m_Layer: 0
   m_Name: SheepInfo
   m_TagString: Prop
@@ -120,7 +120,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140082}
   m_Mesh: {fileID: 4300000, guid: 7f504f060b2d4934b99bea568e6a540c, type: 3}
---- !u!82 &8240086
+--- !u!82 &8220092
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -198,7 +198,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 7d93183d7fa55d34fa5e60699b70656f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 1
   Mute: 0

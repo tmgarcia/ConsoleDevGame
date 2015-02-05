@@ -63,17 +63,22 @@ public class MonsterMovement : MonoBehaviour
 			}
 		}
 
-
-
 		if (monsterMesh.enabled && monsterMesh.remainingDistance <= float.Epsilon)
+		{
+			if(footstep != null && footstep.isPlaying)
 			{
-				if (footstep != null)
-				{
-					footstep.Stop();
-				}
-				PickTarget();
+				footstep.Stop();
 			}
-		//}
+			PickTarget();
+		}
+		else
+		{
+			if(footstep != null && !footstep.isPlaying)
+			{
+				footstep.Play();
+				footstep.pitch = monsterMesh.speed / 2;
+			}
+		}
 	}
 
 	void PickTarget()
@@ -82,7 +87,7 @@ public class MonsterMovement : MonoBehaviour
 
 		Vector3 potentialTarget = transform.position + new Vector3(direction.x * Random.Range(minMoveDisance, maxMoveDistance), transform.position.y, direction.y * Random.Range(minMoveDisance, maxMoveDistance));
 
-		//print(potentialTarget + " D " + anchorPosition + " = " + Vector3.Distance(potentialTarget, anchorPosition) + " > " + maxAnchorDistance);
+//		print(potentialTarget + " D " + anchorPosition + " = " + Vector3.Distance(potentialTarget, anchorPosition) + " > " + maxAnchorDistance);
 		if (Vector3.Distance(potentialTarget, anchorPosition) > maxAnchorDistance)
 		{
 
@@ -92,10 +97,6 @@ public class MonsterMovement : MonoBehaviour
 		else
 		{
 			monsterMesh.SetDestination(new Vector3(potentialTarget.x, transform.position.y, potentialTarget.z));
-			if (monsterMesh.hasPath)
-			{
-				footstep.Play();
-			}
 		}
 	}
 
