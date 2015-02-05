@@ -7,7 +7,8 @@ public class MonsterMovement : MonoBehaviour
 	//SpawnerObject
 	public GameObject anchor;
 	public Vector3 anchorPosition;
-	public AudioSource footstep;
+	//public AudioSource footstep;
+	//public AudioSource screaming;
 
 	GameObject player;
 	NavMeshAgent monsterMesh;
@@ -49,35 +50,35 @@ public class MonsterMovement : MonoBehaviour
 		if (GetComponent<Flammable>().BurninationLevel <= GetComponent<Flammable>().ignitionThreshold)
 		{
 			GetComponent<NavMeshAgent>().speed = NormalSpeed;
-			if (GetComponent<AudioSource>().isPlaying)
-			{
-				GetComponent<AudioSource>().Stop();
-			}
+			//if (screaming.isPlaying)
+			//{
+			//	screaming.Stop();
+			//}
 		}
 		else
 		{
 			GetComponent<NavMeshAgent>().speed = BurningSpeed;
-			if (!GetComponent<AudioSource>().isPlaying)
-			{
-				GetComponent<AudioSource>().Play();
-			}
+			//if (!screaming.isPlaying)
+			//{
+			//	screaming.Play();
+			//}
 		}
 
 		if (monsterMesh.enabled && monsterMesh.remainingDistance <= float.Epsilon)
 		{
-			if(footstep != null && footstep.isPlaying)
-			{
-				footstep.Stop();
-			}
+			//if(footstep != null && footstep.isPlaying)
+			//{
+			//	footstep.Stop();
+			//}
 			PickTarget();
 		}
 		else
 		{
-			if(footstep != null && !footstep.isPlaying)
-			{
-				footstep.Play();
-				footstep.pitch = monsterMesh.speed / 2;
-			}
+		//	if(footstep != null && !footstep.isPlaying)
+		//	{
+		//		footstep.Play();
+		//		footstep.pitch = monsterMesh.speed / 2;
+		//	}
 		}
 	}
 
@@ -97,6 +98,7 @@ public class MonsterMovement : MonoBehaviour
 		else
 		{
 			monsterMesh.SetDestination(new Vector3(potentialTarget.x, transform.position.y, potentialTarget.z));
+			gameObject.transform.position += new Vector3(Random.value, Random.value, 0);
 		}
 	}
 

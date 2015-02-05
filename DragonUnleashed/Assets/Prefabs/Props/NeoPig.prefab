@@ -287,6 +287,7 @@ MonoBehaviour:
   anchor: {fileID: 0}
   anchorPosition: {x: 0, y: 0, z: 0}
   footstep: {fileID: 8297916}
+  screaming: {fileID: 8279096}
   minMoveDisance: 10
   maxMoveDistance: 100
   maxAnchorDistance: 150
