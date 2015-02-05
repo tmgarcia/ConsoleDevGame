@@ -15,7 +15,7 @@ public class VillagerMovement : MonoBehaviour {
     private Vector3 overhead = new Vector3(0.0f,0.9f,0.0f);
     private Vector3 overshoulder = new Vector3(1.2f, 0.45f, 0.0f);
     public bool isLocal = false;
-    private bool grounded;
+    public bool isGrounded { get; set; }
 
 	// Use this for initialization
 	void Start () 
@@ -83,30 +83,9 @@ public class VillagerMovement : MonoBehaviour {
         }
 	}
 
-    void OnCollisionEnter(Collision hit)
-    {
-        grounded = hit.collider.tag == "Ground";
-    }
-    void OnCollisionExit(Collision hit)
-    {
-        grounded = !(hit.collider.tag == "Ground");
-    }
-
     private bool canJump()
     {
-        bool result = false;
-        int layermask = 1 << 8;
-        layermask = ~layermask;
-
-        Collider theCollider = transform.FindChild("Villager").gameObject.GetActive()? transform.FindChild("Villager").transform.FindChild("default").collider : collider;
-
-        Debug.DrawLine(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), Color.yellow, 1.0f);
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Linecast(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), out hit, layermask))
-        {
-            if (hit.collider != theCollider) result = true;
-        }
-        return result;
+        return !isGrounded;
     }
 
     private bool CamCollide()
@@ -167,3 +146,25 @@ public class VillagerMovement : MonoBehaviour {
         return ithit;
     }
 }
+
+
+
+
+
+
+
+
+
+
+//bool result = false;
+//int layermask = 1 << 8;
+//layermask = ~layermask;
+
+//Collider theCollider = transform.FindChild("Villager").gameObject.GetActive()? transform.FindChild("Villager").transform.FindChild("default").collider : collider;
+
+//Debug.DrawLine(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), Color.yellow, 1.0f);
+//RaycastHit hit = new RaycastHit();
+//if (Physics.Linecast(theCollider.bounds.center, theCollider.bounds.center - new Vector3(0.0f, theCollider.bounds.size.y * 0.5f + 0.05f, 0.0f), out hit, layermask))
+//{
+//    if (hit.collider != theCollider) result = true;
+//}
