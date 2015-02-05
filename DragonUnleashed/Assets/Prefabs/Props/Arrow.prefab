@@ -48,6 +48,8 @@ GameObject:
   - 65: {fileID: 6587230}
   - 114: {fileID: 11490668}
   - 54: {fileID: 5465428}
+  - 82: {fileID: 8256060}
+  - 82: {fileID: 8247378}
   m_Layer: 10
   m_Name: default
   m_TagString: Untagged
@@ -159,6 +161,157 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0425079986, y: .0633499995, z: 1.018242}
   m_Center: {x: 0, y: 0, z: .00828498602}
+--- !u!82 &8247378
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f5188537383c7704fac454db2474e4a6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8256060
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 5fffaab59ed65f94aae7bbe83706300c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 2
+  MaxDistance: 50
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00400000019
+      value: 1
+      inSlope: -6.71622372
+      outSlope: -6.71622372
+      tangentMode: 0
+    - time: .168156251
+      value: .52094233
+      inSlope: -2.46202588
+      outSlope: -2.46202588
+      tangentMode: 0
+    - time: .211687505
+      value: .371073276
+      inSlope: -2.22152376
+      outSlope: -2.22152376
+      tangentMode: 0
+    - time: .23587501
+      value: .08344239
+      inSlope: -.976954937
+      outSlope: -.976954937
+      tangentMode: 0
+    - time: .246468753
+      value: .328534007
+      inSlope: -15.631279
+      outSlope: -15.631279
+      tangentMode: 0
+    - time: .288156271
+      value: .05219239
+      inSlope: -.244238734
+      outSlope: -.244238734
+      tangentMode: 0
+    - time: .416156262
+      value: .03656739
+      inSlope: -.000450021704
+      outSlope: -.000450021704
+      tangentMode: 0
+    - time: .672156274
+      value: .02875489
+      inSlope: -.0152649209
+      outSlope: -.0152649209
+      tangentMode: 0
+    - time: 1
+      value: .00400000019
+      inSlope: -.00400159694
+      outSlope: -.00400159694
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .16015625
+      value: .02094239
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11403168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,11 +324,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 10
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
+  ignitionThreshold: .150000006
 --- !u!114 &11458778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,6 +340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea95b0107879474897e2e773fb8272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stickSound: {fileID: 0}
+  dragonStickSound: {fileID: 0}
 --- !u!114 &11490668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea95b0107879474897e2e773fb8272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stickSound: {fileID: 8256060}
+  dragonStickSound: {fileID: 8247378}
 --- !u!198 &19836722
 ParticleSystem:
   m_ObjectHideFlags: 1

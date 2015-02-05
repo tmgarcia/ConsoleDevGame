@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Arrow : MonoBehaviour
 {
-
+    public AudioSource stickSound;
+    public AudioSource dragonStickSound;
     private bool stuck;
 
     // Use this for initialization
@@ -53,6 +54,7 @@ public class Arrow : MonoBehaviour
             Destroy(rigidbody);
             if (collision.gameObject.layer == 9)
             {
+                dragonStickSound.Play();
                 bool damageApplied = false;
                 GameObject currentSegment = collision.gameObject;
                 while (!damageApplied)
@@ -68,6 +70,7 @@ public class Arrow : MonoBehaviour
                     }
                 }
             }
+            else stickSound.Play();
 
 
         }
