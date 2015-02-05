@@ -13,9 +13,9 @@ GameObject:
   - 33: {fileID: 3314742}
   - 23: {fileID: 2314742}
   - 114: {fileID: 11414742}
-  - 136: {fileID: 13614742}
   - 82: {fileID: 8214742}
   - 82: {fileID: 8214744}
+  - 64: {fileID: 6424412}
   m_Layer: 0
   m_Name: NeoCat
   m_TagString: Prop
@@ -92,6 +92,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184026}
   m_Mesh: {fileID: 4300000, guid: bc010c61050228f40abb3c3f734c19d9, type: 3}
+--- !u!64 &6424412
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: f86565f6112a71c49b5e5b0f18b73b81, type: 3}
 --- !u!82 &8214742
 AudioSource:
   m_ObjectHideFlags: 1
@@ -263,19 +276,6 @@ MonoBehaviour:
   maxAnchorDistance: 100
   NormalSpeed: 15
   BurningSpeed: 120
---- !u!136 &13614742
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184026}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .661628962
-  m_Height: .0036805023
-  m_Direction: 1
-  m_Center: {x: .0881955028, y: .681599021, z: 0}
 --- !u!195 &19514742
 NavMeshAgent:
   m_ObjectHideFlags: 1

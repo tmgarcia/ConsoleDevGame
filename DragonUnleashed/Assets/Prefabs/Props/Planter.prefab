@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 455318}
   - 33: {fileID: 3303336}
   - 23: {fileID: 2303336}
-  - 136: {fileID: 13603336}
   - 114: {fileID: 11403336}
+  - 64: {fileID: 6416738}
   m_Layer: 0
   m_Name: Planter
   m_TagString: Prop
@@ -58,6 +58,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155318}
   m_Mesh: {fileID: 4300000, guid: ed9ad77793866f145869ca799d3f522f, type: 3}
+--- !u!64 &6416738
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: ed9ad77793866f145869ca799d3f522f, type: 3}
 --- !u!114 &11403336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,19 +88,6 @@ MonoBehaviour:
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
   ignitionThreshold: .150000006
---- !u!136 &13603336
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .501272023
-  m_Height: .707731009
-  m_Direction: 1
-  m_Center: {x: 0, y: .353865504, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

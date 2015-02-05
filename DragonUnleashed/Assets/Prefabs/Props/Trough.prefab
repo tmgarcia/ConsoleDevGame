@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 490418}
   - 33: {fileID: 3378448}
   - 23: {fileID: 2378448}
-  - 65: {fileID: 6578448}
   - 114: {fileID: 11478448}
+  - 64: {fileID: 6487998}
   m_Layer: 0
   m_Name: Trough
   m_TagString: Prop
@@ -58,8 +58,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190418}
   m_Mesh: {fileID: 4300000, guid: 2bf0ad4fca0bf154cb10b2c75e4d2ce1, type: 3}
---- !u!65 &6578448
-BoxCollider:
+--- !u!64 &6487998
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -68,8 +68,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.05353808, y: .94877696, z: .821995974}
-  m_Center: {x: 0, y: .4738065, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7da0a1df7827cff4db5c741f21462f47, type: 3}
 --- !u!114 &11478448
 MonoBehaviour:
   m_ObjectHideFlags: 1

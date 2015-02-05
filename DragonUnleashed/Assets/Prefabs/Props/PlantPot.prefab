@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 489638}
   - 33: {fileID: 3369498}
   - 23: {fileID: 2369498}
-  - 65: {fileID: 6569498}
+  - 64: {fileID: 6446006}
   m_Layer: 0
   m_Name: PlantPot
   m_TagString: Prop
@@ -57,8 +57,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189638}
   m_Mesh: {fileID: 4300000, guid: cf528b370322fd04db04b29b71a5215a, type: 3}
---- !u!65 &6569498
-BoxCollider:
+--- !u!64 &6446006
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -67,8 +67,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .360659987, y: .304717004, z: .360659987}
-  m_Center: {x: 0, y: .152764499, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: cf528b370322fd04db04b29b71a5215a, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

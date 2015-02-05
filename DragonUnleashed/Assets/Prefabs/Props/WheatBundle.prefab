@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 409388}
   - 33: {fileID: 3329614}
   - 23: {fileID: 2329614}
-  - 136: {fileID: 13629614}
   - 114: {fileID: 11429614}
+  - 64: {fileID: 6448044}
   m_Layer: 0
   m_Name: WheatBundle
   m_TagString: Prop
@@ -58,6 +58,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109388}
   m_Mesh: {fileID: 4300000, guid: 8e748bda66267204b84feaa18a5f4013, type: 3}
+--- !u!64 &6448044
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: d753516663e87fe4bbf270f8c487085d, type: 3}
 --- !u!114 &11429614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,19 +88,6 @@ MonoBehaviour:
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
   ignitionThreshold: .150000006
---- !u!136 &13629614
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109388}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .622309506
-  m_Height: 2.07606006
-  m_Direction: 1
-  m_Center: {x: 4.76837158e-07, y: 1.03803003, z: -4.76837158e-07}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

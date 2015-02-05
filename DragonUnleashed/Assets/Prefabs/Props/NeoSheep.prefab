@@ -13,9 +13,9 @@ GameObject:
   - 33: {fileID: 3356752}
   - 23: {fileID: 2356752}
   - 114: {fileID: 11456750}
-  - 136: {fileID: 13656752}
   - 82: {fileID: 8256752}
   - 82: {fileID: 8256750}
+  - 64: {fileID: 6471434}
   m_Layer: 0
   m_Name: NeoSheep
   m_TagString: Prop
@@ -92,6 +92,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140084}
   m_Mesh: {fileID: 4300000, guid: 7f504f060b2d4934b99bea568e6a540c, type: 3}
+--- !u!64 &6471434
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 4b3ab020d01a5c3458765745989f4061, type: 3}
 --- !u!82 &8256750
 AudioSource:
   m_ObjectHideFlags: 1
@@ -263,19 +276,6 @@ MonoBehaviour:
   maxAnchorDistance: 150
   NormalSpeed: 3.5
   BurningSpeed: 100
---- !u!136 &13656752
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140084}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .661628962
-  m_Height: .0036805023
-  m_Direction: 1
-  m_Center: {x: .0881955028, y: .681599021, z: 0}
 --- !u!195 &19556752
 NavMeshAgent:
   m_ObjectHideFlags: 1
