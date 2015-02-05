@@ -36,8 +36,8 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 
     public Mesh GetMeshByName(string name)
     {
-        if (name == "Villager") return villager.mesh.mesh;
-        return props[name].mesh.mesh;
+        if (name == "Villager") return villager.mesh.sharedMesh;
+        return props[name].mesh.sharedMesh;
     }
 
     public Mesh GetColliderMeshByName(string name)
@@ -48,8 +48,8 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 
     public Material GetMaterialByName(string name)
     {
-        if (name == "Villager") return villager.meshRenderer.material;
-        return props[name].meshRenderer.material;
+        if (name == "Villager") return villager.meshRenderer.sharedMaterial;
+        return props[name].meshRenderer.sharedMaterial;
     }
 
 
