@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Mimic : MonoBehaviour {
 
-    public GameObject[] disguises;
-
     private string currentDisguise = "Villager";
+
+    public void SetCurrentDisguise(string newname)
+    {
+        currentDisguise = newname;
+    }
 
 	// Use this for initialization
 	void Start () {
