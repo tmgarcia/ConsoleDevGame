@@ -61,7 +61,7 @@ public class Mimic : MonoBehaviour {
     {
         gameObject.GetComponent<MeshFilter>().mesh = PropMaster.instance.GetMeshByName(otherName);
 
-        gameObject.renderer.material = PropMaster.instance.GetMaterialByName(otherName);
+        gameObject.GetComponent<MeshRenderer>().material = PropMaster.instance.GetMaterialByName(otherName);
 
         gameObject.GetComponent<MeshCollider>().sharedMesh = PropMaster.instance.GetColliderMeshByName(otherName);
     }
