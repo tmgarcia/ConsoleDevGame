@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
 
 	void Start()
 	{
-		if (NPCSpawnInstance == null || NPCSpawnInstance.GetComponent<MeshCollider>() == null)
+		if (NPCSpawnInstance != null || NPCSpawnInstance.GetComponent<MeshCollider>() != null)
 		{
 			for (int i = 0; i < maxSpawned; i++)
 			{
@@ -31,9 +31,17 @@ public class Spawner : MonoBehaviour
 			}
 			//NPCSpawnInstance.SetActive(false);
 		}
+		else if(NPCSpawnInstance == null)
+		{
+			Debug.LogException(new UnityException("NPCSpawnInstance is null."));
+		}
+		else if(NPCSpawnInstance.GetComponent<MeshCollider>() == null)
+		{
+			Debug.LogException(new UnityException("NPCSpawnInstance.GetComponent<MeshCollider> is null."));
+		}
 		else
 		{
-			Debug.LogException(new UnityException("NPCSpawnInstance is null or does not contain Actor script."));
+			Debug.LogException(new UnityException("An unknown error has occurred."));
 		}
 	}
 
