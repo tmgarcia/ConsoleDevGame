@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 459516}
   - 33: {fileID: 3359516}
   - 23: {fileID: 2359516}
-  - 65: {fileID: 6559516}
+  - 64: {fileID: 6480110}
   m_Layer: 0
   m_Name: Tombstone
   m_TagString: Prop
@@ -57,8 +57,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159516}
   m_Mesh: {fileID: 4300000, guid: bfd522c0d075f7a4b847e299a4115339, type: 3}
---- !u!65 &6559516
-BoxCollider:
+--- !u!64 &6480110
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -67,8 +67,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .180656001, y: .606912017, z: .452583015}
-  m_Center: {x: .00664500147, y: .303456008, z: -.00718250126}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: d43e558eb0a5dae40a33546a956c146b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
