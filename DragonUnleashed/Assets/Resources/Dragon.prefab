@@ -801,7 +801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42316db5d37d0604e82491fa0d6ffacd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  airPlaneControls: 0
   glideSpeed: 120
   hoverSpeed: 20
   isLocal: 0
@@ -818,7 +817,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 1000
-  CurrentIntegrity: 0
   damageRole: 0
 --- !u!114 &11483812
 MonoBehaviour:
@@ -2985,15 +2983,15 @@ ParticleSystem:
     plane3: {fileID: 0}
     plane4: {fileID: 0}
     plane5: {fileID: 0}
-    dampen: 1
+    dampen: 0
     bounce: 0
-    energyLossOnCollision: 0
-    minKillSpeed: .00999999978
+    energyLossOnCollision: 1
+    minKillSpeed: 0
     particleRadius: .00999999978
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294964735
-    quality: 1
+    quality: 0
     voxelSize: .5
     collisionMessages: 1
   SubModule:
