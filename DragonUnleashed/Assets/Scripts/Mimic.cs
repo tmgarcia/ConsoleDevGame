@@ -55,35 +55,10 @@ public class Mimic : MonoBehaviour {
     [RPC]
     public void CopyObject(string otherName)
     {
-        GameObject other = (GameObject)Instantiate(GameObject.Find(otherName), new Vector3(0, -50, 0), new Quaternion());
+        gameObject.GetComponent<MeshFilter>().mesh = PropMaster.instance.GetMeshByName(otherName);
 
-        gameObject.GetComponent<MeshFilter>().mesh = other.GetComponent<MeshFilter>().mesh;
+        gameObject.renderer.material = PropMaster.instance.GetMaterialByName(otherName);
 
-        gameObject.renderer.material = other.renderer.material;
-        
-        DestroyImmediate(gameObject.collider);
-
-        if(other.collider.GetType()==typeof(BoxCollider))
-        {
-            gameObject.AddComponent<BoxCollider>();
-            gameObject.GetComponent<BoxCollider>().center = other.GetComponent<BoxCollider>().center;
-            gameObject.GetComponent<BoxCollider>().size = other.GetComponent<BoxCollider>().size;
-        }
-        else if(other.collider.GetType()==typeof(CapsuleCollider))
-        {
-            gameObject.AddComponent<CapsuleCollider>();
-            gameObject.GetComponent<CapsuleCollider>().center = other.GetComponent<CapsuleCollider>().center;
-            gameObject.GetComponent<CapsuleCollider>().radius = other.GetComponent<CapsuleCollider>().radius;
-            gameObject.GetComponent<CapsuleCollider>().height = other.GetComponent<CapsuleCollider>().height;
-            gameObject.GetComponent<CapsuleCollider>().direction = other.GetComponent<CapsuleCollider>().direction;
-        }
-        else if (other.collider.GetType() == typeof(SphereCollider))
-        {
-            gameObject.AddComponent<SphereCollider>();
-            gameObject.GetComponent<SphereCollider>().center = other.GetComponent<SphereCollider>().center;
-            gameObject.GetComponent<SphereCollider>().radius = other.GetComponent<SphereCollider>().radius;
-        }
-        
-        Destroy(other);
+        gameObject.GetComponent<MeshCollider>().sharedMesh = PropMaster.instance.GetColliderMeshByName(otherName);
     }
 }

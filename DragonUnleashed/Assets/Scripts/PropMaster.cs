@@ -10,6 +10,7 @@ using UnityEditor;
 [System.Serializable]
 public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 {
+    public static PropMaster instance;
     public Representation villager = new Representation();
     public List<string> keys = new List<string>();
     public List<Representation> values = new List<Representation>();
@@ -25,13 +26,29 @@ public class PropMaster : MonoBehaviour, ISerializationCallbackReceiver
 
     void Start() 
     {
-        
+        instance = this;
 	}
 	
 	void Update () 
     {
 	    
 	}
+
+    public Mesh GetMeshByName(string name)
+    {
+        return props[name].mesh.mesh;
+    }
+
+    public Mesh GetColliderMeshByName(string name)
+    {
+        return ((MeshCollider)props[name].collider).sharedMesh;
+    }
+
+    public Material GetMaterialByName(string name)
+    {
+        return props[name].meshRenderer.material;
+    }
+
 
     public void OnBeforeSerialize()
     {
