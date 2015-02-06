@@ -37,12 +37,11 @@ public class FireBreathing : Photon.MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
                     EnableFire();
-                    transform.GetChild(0).GetComponent<AudioSource>().Play();
                 }
                 else if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
                 {
                     DisableFire();
-                    transform.GetChild(0).GetComponent<AudioSource>().Stop();
+                    
                 }
             }
 		}
@@ -73,6 +72,7 @@ public class FireBreathing : Photon.MonoBehaviour
 	[RPC]
     private void RPCDisableFire()
     {
+        transform.GetChild(0).GetComponent<AudioSource>().Stop();
         //Fire.enableEmission = false;
         foreach (ParticleSystem fire in fireEffects)
         {
@@ -85,6 +85,7 @@ public class FireBreathing : Photon.MonoBehaviour
 	[RPC]
     private void RPCEnableFire()
     {
+        transform.GetChild(0).GetComponent<AudioSource>().Play();
         //Fire.enableEmission = true;
         foreach (ParticleSystem fire in fireEffects)
         {
