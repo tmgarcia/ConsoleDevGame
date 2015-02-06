@@ -57,18 +57,23 @@ public class Arrow : MonoBehaviour
                 dragonStickSound.Play();
                 bool damageApplied = false;
                 GameObject currentSegment = collision.gameObject;
-                while (!damageApplied)
-                {
+				//while (!damageApplied)
+				//{
                     if (currentSegment.GetComponent<Damageable>() != null)
                     {
                         currentSegment.GetComponent<Damageable>().CurrentLocalIntegrity -= 10;
                         damageApplied = true;
                     }
-                    else
-                    {
-                        currentSegment = currentSegment.transform.parent.gameObject;
-                    }
-                }
+					else if (currentSegment.GetComponent<DamageableHelper>() != null)
+					{
+						currentSegment.GetComponent<DamageableHelper>().ApplyDamage(10);
+						damageApplied = true;
+					}
+					//else
+					//{
+					//	currentSegment = currentSegment.transform.parent.gameObject;
+					//}
+                //}
             }
             else stickSound.Play();
 

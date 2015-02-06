@@ -187,7 +187,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4393773
 Transform:
@@ -322,8 +322,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &5717472
 MeshCollider:
@@ -485,8 +485,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9272217
 Transform:
@@ -777,8 +777,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &18050505
 Transform:
@@ -869,8 +869,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &18151190
 Transform:
@@ -1005,8 +1005,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &20079533
 Transform:
@@ -1097,8 +1097,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &20614554
 Transform:
@@ -1189,8 +1189,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &22385635
 Transform:
@@ -1281,8 +1281,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &25902769
 Transform:
@@ -1292,7 +1292,7 @@ Transform:
   m_GameObject: {fileID: 25902768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -285.090027, y: 817.459961, z: -1148.50989}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1027376302}
   m_RootOrder: 64
@@ -1446,7 +1446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22442984, guid: eba1209d141abcf40b91b0fe841ff684, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 22442984, guid: eba1209d141abcf40b91b0fe841ff684, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1508,8 +1508,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &26559237
 Transform:
@@ -1612,8 +1612,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &28789751
 Transform:
@@ -1881,8 +1881,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &34787820
 Transform:
@@ -2030,8 +2030,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &35931611
 Transform:
@@ -2189,7 +2189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &40572691
 Transform:
@@ -2324,8 +2324,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &42675079
 Transform:
@@ -2601,8 +2601,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &59292242
 Transform:
@@ -2840,7 +2840,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &67766101
 Transform:
@@ -2850,7 +2850,7 @@ Transform:
   m_GameObject: {fileID: 67766100}
   m_LocalRotation: {x: 0, y: .969471097, z: 0, w: -.245205715}
   m_LocalPosition: {x: -14.8400002, y: -3.9000001, z: -42.2299995}
-  m_LocalScale: {x: .779999971, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999971, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 45
@@ -3115,7 +3115,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &72326514
 Transform:
@@ -3344,7 +3344,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &78922212
 Renderer:
@@ -3383,7 +3383,7 @@ Transform:
   m_GameObject: {fileID: 78922211}
   m_LocalRotation: {x: 0, y: -.419689476, z: 0, w: .907667756}
   m_LocalPosition: {x: -346.579987, y: 816.039978, z: -1165.67004}
-  m_LocalScale: {x: .780000031, y: .779999971, z: 1}
+  m_LocalScale: {x: .780000031, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 1
@@ -3508,7 +3508,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &87673257
 Transform:
@@ -3682,7 +3682,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &96342198
 MonoBehaviour:
@@ -3772,8 +3772,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &96747947
 Transform:
@@ -4012,7 +4012,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &103471620
 Transform:
@@ -4240,7 +4240,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &112062324
 Transform:
@@ -4432,7 +4432,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &114132727
 Transform:
@@ -4524,7 +4524,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &118292831
 Transform:
@@ -4687,8 +4687,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &120502541
 Transform:
@@ -5137,8 +5137,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &137784285
 Transform:
@@ -5229,8 +5229,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &139661261
 Transform:
@@ -5322,7 +5322,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &140220552
 Transform:
@@ -5413,8 +5413,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &140441170
 Transform:
@@ -5778,8 +5778,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &156480298
 Transform:
@@ -5986,8 +5986,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &159438798
 Transform:
@@ -6079,7 +6079,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &160361688
 Transform:
@@ -6171,7 +6171,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &160381014
 Transform:
@@ -6464,7 +6464,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &173169583
 Renderer:
@@ -6614,7 +6614,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &179953769
 Transform:
@@ -6772,7 +6772,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &181193995
 Transform:
@@ -6921,8 +6921,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &185203439
 Transform:
@@ -7014,7 +7014,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &185327386
 Transform:
@@ -7104,8 +7104,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &185642516
 Transform:
@@ -7179,7 +7179,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &186157119
 Transform:
@@ -7323,7 +7323,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &186594921
 Transform:
@@ -7532,8 +7532,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &193426231
 Transform:
@@ -7713,7 +7713,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &196841748
 Transform:
@@ -8043,7 +8043,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &207180291
 Transform:
@@ -8490,8 +8490,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &229804734
 Transform:
@@ -8655,7 +8655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &231510866
 Transform:
@@ -8746,8 +8746,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &232049107
 MeshCollider:
@@ -8839,7 +8839,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &232891226
 Transform:
@@ -8849,7 +8849,7 @@ Transform:
   m_GameObject: {fileID: 232891225}
   m_LocalRotation: {x: 0, y: .611807942, z: 0, w: -.791006446}
   m_LocalPosition: {x: -369.200012, y: 815.200012, z: -1180}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 9
@@ -9077,7 +9077,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &245126777
 Transform:
@@ -9224,8 +9224,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &249806740
 Transform:
@@ -9316,8 +9316,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &251348029
 Transform:
@@ -9409,7 +9409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &255222294
 Transform:
@@ -9501,7 +9501,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &256786209
 Transform:
@@ -9682,8 +9682,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &266651671
 MonoBehaviour:
@@ -10157,7 +10157,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &286750748
 Transform:
@@ -10269,7 +10269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409966, guid: f0ffa5d45c7d26e41af5750f25c91b86, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 11409962, guid: f0ffa5d45c7d26e41af5750f25c91b86, type: 2}
       propertyPath: viewIdField
@@ -10517,8 +10517,8 @@ GameObject:
   m_Name: Cauldron
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &298958842
 Transform:
@@ -10683,7 +10683,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &302579190
 Transform:
@@ -10774,8 +10774,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &304130179
 Transform:
@@ -10865,8 +10865,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &308514285
 Transform:
@@ -10996,7 +10996,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &311677343
 Transform:
@@ -11561,8 +11561,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &330908628
 Transform:
@@ -11759,8 +11759,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &340849421
 Transform:
@@ -11880,7 +11880,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &348608988
 Transform:
@@ -11890,7 +11890,7 @@ Transform:
   m_GameObject: {fileID: 348608987}
   m_LocalRotation: {x: 0, y: .880364001, z: 0, w: -.474298775}
   m_LocalPosition: {x: -335.599976, y: 815.200012, z: -1126.55005}
-  m_LocalScale: {x: .780000091, y: .779999971, z: 1}
+  m_LocalScale: {x: .780000091, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 1136624399}
   m_RootOrder: 0
@@ -12134,8 +12134,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &352000435
 Transform:
@@ -12298,8 +12298,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &353974935
 Transform:
@@ -12568,7 +12568,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &357963377
 Transform:
@@ -12716,7 +12716,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &360967065
 Transform:
@@ -12807,8 +12807,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &362926535
 Transform:
@@ -12899,8 +12899,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &363797769
 Transform:
@@ -12991,8 +12991,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &365465135
 Transform:
@@ -13170,7 +13170,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &374426904
 Transform:
@@ -13180,7 +13180,7 @@ Transform:
   m_GameObject: {fileID: 374426903}
   m_LocalRotation: {x: 0, y: .272568017, z: 0, w: -.962136567}
   m_LocalPosition: {x: -340.309998, y: 815.200012, z: -1133.44995}
-  m_LocalScale: {x: .779999912, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 4
@@ -13521,8 +13521,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &385535249
 Transform:
@@ -13701,8 +13701,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &387663628
 MeshCollider:
@@ -13793,8 +13793,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &389980485
 Transform:
@@ -13886,7 +13886,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &390940323
 Transform:
@@ -14021,8 +14021,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &398187610
 Transform:
@@ -14142,7 +14142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &403213933
 Transform:
@@ -14406,7 +14406,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &408434586
 Transform:
@@ -14556,7 +14556,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &410101282
 Transform:
@@ -14647,8 +14647,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &411097580
 Transform:
@@ -14739,8 +14739,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &415848092
 Transform:
@@ -14831,8 +14831,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &416526175
 Transform:
@@ -14923,8 +14923,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &417270995
 Transform:
@@ -15016,7 +15016,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &417300500
 Transform:
@@ -15264,8 +15264,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &421817524
 Transform:
@@ -15482,8 +15482,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &426762022
 Transform:
@@ -15574,8 +15574,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &430441279
 Transform:
@@ -15783,7 +15783,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &436866758
 Transform:
@@ -15793,7 +15793,7 @@ Transform:
   m_GameObject: {fileID: 436866757}
   m_LocalRotation: {x: 0, y: .869792223, z: 0, w: .493418157}
   m_LocalPosition: {x: 8.69999981, y: -2.8900001, z: -12.6999998}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 5
@@ -15873,8 +15873,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &436966146
 Transform:
@@ -15947,8 +15947,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &439282125
 Transform:
@@ -16176,7 +16176,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9f745d58751eac14dac2b7c941dd28b5, type: 2}
       propertyPath: m_Layer
@@ -16316,8 +16316,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &444893131
 Transform:
@@ -16482,7 +16482,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &448667610
 Transform:
@@ -16492,7 +16492,7 @@ Transform:
   m_GameObject: {fileID: 448667609}
   m_LocalRotation: {x: 0, y: .287212372, z: 0, w: -.957866967}
   m_LocalPosition: {x: -339.05542, y: 815.859985, z: -1158.36731}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 7
@@ -16773,8 +16773,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &454936231
 Transform:
@@ -16866,7 +16866,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &455358642
 Transform:
@@ -17066,7 +17066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 423164, guid: f3cac75844b546345bccce4ea22e5d92, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 423388, guid: f3cac75844b546345bccce4ea22e5d92, type: 2}
       propertyPath: m_LocalPosition.y
@@ -17502,8 +17502,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &476979184
 Transform:
@@ -17594,8 +17594,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &478207732
 Transform:
@@ -17686,8 +17686,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &478742852
 Transform:
@@ -17807,7 +17807,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &483381285
 Transform:
@@ -18095,8 +18095,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &486762812
 Transform:
@@ -18169,8 +18169,8 @@ GameObject:
   m_Name: WheatBundle
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &487267285
 MonoBehaviour:
@@ -18260,8 +18260,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &488512733
 Transform:
@@ -18362,8 +18362,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &489424173
 Transform:
@@ -18454,8 +18454,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &489491153
 Transform:
@@ -19030,7 +19030,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &513134579
 Transform:
@@ -19121,8 +19121,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &513328416
 Transform:
@@ -19132,7 +19132,7 @@ Transform:
   m_GameObject: {fileID: 513328415}
   m_LocalRotation: {x: -.0675133765, y: -.415791541, z: .145360634, w: .895226061}
   m_LocalPosition: {x: -224.244995, y: 848.873535, z: -1262.82166}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1600545068}
   m_RootOrder: 0
@@ -19272,7 +19272,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &516024290
 Transform:
@@ -19575,8 +19575,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &532505897
 Transform:
@@ -19667,8 +19667,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &533211897
 Transform:
@@ -19815,8 +19815,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &534828178
 Transform:
@@ -19908,7 +19908,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &536643962
 Transform:
@@ -20000,7 +20000,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &537383799
 Transform:
@@ -20179,8 +20179,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &543160000
 MeshCollider:
@@ -20272,7 +20272,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &544317529
 Renderer:
@@ -20451,8 +20451,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &548250604
 Transform:
@@ -20744,8 +20744,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &557037517
 Transform:
@@ -20861,8 +20861,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &558801723
 Transform:
@@ -20935,8 +20935,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &558870541
 Transform:
@@ -20946,7 +20946,7 @@ Transform:
   m_GameObject: {fileID: 558870540}
   m_LocalRotation: {x: 0, y: -.421237081, z: 0, w: .906950653}
   m_LocalPosition: {x: -201.450012, y: 859.950012, z: -1255.09985}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1600545068}
   m_RootOrder: 5
@@ -21027,8 +21027,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &559219051
 Transform:
@@ -21187,7 +21187,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &566076970
 Transform:
@@ -21279,7 +21279,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &566802597
 Transform:
@@ -21501,8 +21501,8 @@ GameObject:
   m_Name: Cauldron
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &571344518
 Transform:
@@ -21811,7 +21811,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &582133667
 Transform:
@@ -22285,8 +22285,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &593601557
 Transform:
@@ -22541,8 +22541,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &607186768
 MeshCollider:
@@ -22980,8 +22980,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &626093095
 Transform:
@@ -23504,7 +23504,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &640072095
 Transform:
@@ -23595,8 +23595,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &643672124
 Transform:
@@ -23738,8 +23738,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &648196580
 Transform:
@@ -23812,8 +23812,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &649878254
 Transform:
@@ -23823,7 +23823,7 @@ Transform:
   m_GameObject: {fileID: 649878253}
   m_LocalRotation: {x: .0326245129, y: .318268299, z: .0966122523, w: .942500472}
   m_LocalPosition: {x: -265.799988, y: 819.75, z: -1120.48999}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1536577387}
   m_RootOrder: 7
@@ -24015,7 +24015,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &654150317
 Transform:
@@ -24188,8 +24188,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &663360427
 Transform:
@@ -24325,7 +24325,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &664711628
 Transform:
@@ -24416,8 +24416,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &665959875
 Transform:
@@ -24675,7 +24675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 485934, guid: adfae9fecdc5747428386797cd31c146, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 485934, guid: adfae9fecdc5747428386797cd31c146, type: 2}
       propertyPath: m_LocalScale.x
@@ -24750,8 +24750,8 @@ GameObject:
   m_Name: Cauldron
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &676586912
 Transform:
@@ -24842,8 +24842,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &679510646
 Transform:
@@ -24992,8 +24992,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &684207704
 Transform:
@@ -25129,7 +25129,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &688812091
 Transform:
@@ -25139,7 +25139,7 @@ Transform:
   m_GameObject: {fileID: 688812090}
   m_LocalRotation: {x: 0, y: .532352567, z: 0, w: -.846522748}
   m_LocalPosition: {x: -372.392944, y: 815.279053, z: -1190.77124}
-  m_LocalScale: {x: .779999852, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999852, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 50
@@ -25313,8 +25313,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &694107769
 Transform:
@@ -25406,7 +25406,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &694996142
 Transform:
@@ -25826,8 +25826,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &708444000
 Transform:
@@ -26107,7 +26107,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &720711451
 Transform:
@@ -26256,8 +26256,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &732075916
 Transform:
@@ -26348,8 +26348,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &735535777
 Transform:
@@ -26441,7 +26441,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &737539808
 Transform:
@@ -26533,7 +26533,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &738182247
 Transform:
@@ -26950,7 +26950,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &754329070
 Transform:
@@ -27040,8 +27040,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &754869048
 Transform:
@@ -27269,7 +27269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &758519680
 Transform:
@@ -27656,8 +27656,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &772084864
 Transform:
@@ -27851,7 +27851,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &776982043
 Transform:
@@ -28086,8 +28086,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &787758433
 Transform:
@@ -28205,8 +28205,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &795587368
 Transform:
@@ -28325,8 +28325,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &801854075
 Transform:
@@ -28577,8 +28577,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &804440260
 Transform:
@@ -28734,7 +28734,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22401886, guid: aee494c6589032e49bb42a10efe18f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 22401886, guid: aee494c6589032e49bb42a10efe18f1d, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -28929,7 +28929,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &813991960
 Transform:
@@ -29065,7 +29065,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &817561938
 Transform:
@@ -29263,7 +29263,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &820399802
 Transform:
@@ -29427,8 +29427,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &821635313
 Transform:
@@ -29575,8 +29575,8 @@ GameObject:
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &825314604
 Transform:
@@ -29770,8 +29770,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &829360892
 Transform:
@@ -30236,8 +30236,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &840119357
 Transform:
@@ -30373,7 +30373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &844700584
 Transform:
@@ -30509,7 +30509,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &846426116
 Transform:
@@ -30816,8 +30816,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &850213397
 Transform:
@@ -31173,7 +31173,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &855772366
 Transform:
@@ -31336,8 +31336,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &862439013
 Transform:
@@ -31501,7 +31501,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22434572, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22434572, guid: f4e5eee1c0c67974eb655382e1e1bc98, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -31603,7 +31603,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &867115587
 Transform:
@@ -31738,8 +31738,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &870185151
 MeshCollider:
@@ -31830,8 +31830,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &871732171
 MeshCollider:
@@ -32079,8 +32079,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &876398955
 Transform:
@@ -32197,8 +32197,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &893935975
 Transform:
@@ -32561,8 +32561,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &904548612
 Transform:
@@ -32913,7 +32913,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &909592032
 Transform:
@@ -33048,8 +33048,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &910480167
 Transform:
@@ -33185,7 +33185,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &913897404
 Transform:
@@ -33388,8 +33388,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &917473195
 Transform:
@@ -33521,7 +33521,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &923130837
 Transform:
@@ -33686,7 +33686,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &923575167
 Transform:
@@ -33894,7 +33894,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &925490713
 Transform:
@@ -34042,7 +34042,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &932606771
 Transform:
@@ -34133,8 +34133,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &933161733
 MeshCollider:
@@ -34350,8 +34350,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &940456764
 Transform:
@@ -34655,8 +34655,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &946856136
 Transform:
@@ -34820,8 +34820,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &949044862
 Transform:
@@ -34912,8 +34912,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &950457429
 Transform:
@@ -35152,8 +35152,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &956727338
 Transform:
@@ -35273,8 +35273,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &960184100
 Transform:
@@ -35499,8 +35499,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &962381151
 Transform:
@@ -35668,7 +35668,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &967204539
 Transform:
@@ -36137,8 +36137,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &980235916
 Transform:
@@ -36230,7 +36230,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &981234125
 Transform:
@@ -36535,8 +36535,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &986923812
 Transform:
@@ -36718,8 +36718,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &988738240
 Transform:
@@ -36792,8 +36792,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &992221800
 Transform:
@@ -36884,8 +36884,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &993991800
 Transform:
@@ -37020,8 +37020,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &995845426
 Transform:
@@ -37522,8 +37522,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1009061562
 MonoBehaviour:
@@ -37785,8 +37785,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1015476618
 Transform:
@@ -37995,7 +37995,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1022197423
 MeshCollider:
@@ -38048,7 +38048,7 @@ Transform:
   m_GameObject: {fileID: 1022197422}
   m_LocalRotation: {x: 0, y: -.994331539, z: 0, w: .106324464}
   m_LocalPosition: {x: -311.900024, y: 815.399963, z: -1095.09985}
-  m_LocalScale: {x: .99999994, y: 1, z: .99999994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1136624399}
   m_RootOrder: 15
@@ -38130,8 +38130,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1026337023
 Transform:
@@ -38222,8 +38222,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1026374419
 Transform:
@@ -38314,8 +38314,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1026914617
 Transform:
@@ -38676,8 +38676,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1028860539
 Transform:
@@ -38769,7 +38769,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1030786124
 Transform:
@@ -38861,7 +38861,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1031148817
 Transform:
@@ -38996,8 +38996,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1031903511
 Transform:
@@ -39007,7 +39007,7 @@ Transform:
   m_GameObject: {fileID: 1031903510}
   m_LocalRotation: {x: 0, y: .703471363, z: 0, w: .710723639}
   m_LocalPosition: {x: -295.599976, y: 816, z: -1113.69995}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085347642}
   m_RootOrder: 34
@@ -39089,7 +39089,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1034551327
 Renderer:
@@ -39128,7 +39128,7 @@ Transform:
   m_GameObject: {fileID: 1034551326}
   m_LocalRotation: {x: 0, y: -.662263274, z: 0, w: -.749271274}
   m_LocalPosition: {x: -5.80000019, y: -3.56999993, z: 17.6000004}
-  m_LocalScale: {x: .780000031, y: .779999971, z: 1}
+  m_LocalScale: {x: .780000031, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 3
@@ -39283,7 +39283,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1037643088
 Transform:
@@ -39375,7 +39375,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1041172109
 Transform:
@@ -39553,7 +39553,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1045215631
 Transform:
@@ -40317,8 +40317,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1087614099
 Transform:
@@ -40409,8 +40409,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1091495829
 Transform:
@@ -40420,7 +40420,7 @@ Transform:
   m_GameObject: {fileID: 1091495828}
   m_LocalRotation: {x: 0, y: .319936216, z: 0, w: .947439134}
   m_LocalPosition: {x: -285.960022, y: 817.609985, z: -1146.05994}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1027376302}
   m_RootOrder: 63
@@ -40629,7 +40629,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1097111866
 Transform:
@@ -40807,8 +40807,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1118185573
 Transform:
@@ -40881,8 +40881,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1118424130
 Transform:
@@ -40973,8 +40973,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1119546397
 Transform:
@@ -41109,8 +41109,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1120690576
 Transform:
@@ -41270,8 +41270,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1123450863
 MeshCollider:
@@ -41957,7 +41957,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1149656053
 Transform:
@@ -42048,8 +42048,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1150479254
 MeshCollider:
@@ -42195,8 +42195,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1155214758
 Transform:
@@ -42268,8 +42268,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1156961732
 Transform:
@@ -42503,7 +42503,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1171906093
 Transform:
@@ -42623,8 +42623,8 @@ GameObject:
   m_Name: WheatBundle
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1173339927
 MonoBehaviour:
@@ -42772,8 +42772,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1176864370
 Transform:
@@ -42916,7 +42916,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1178744132
 Transform:
@@ -43151,8 +43151,8 @@ GameObject:
   m_Name: WheatBundle
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1182470569
 MonoBehaviour:
@@ -43315,8 +43315,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1184338117
 Transform:
@@ -43407,8 +43407,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1186203809
 Transform:
@@ -43544,7 +43544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1187093192
 Transform:
@@ -43635,8 +43635,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1187469897
 Transform:
@@ -43799,8 +43799,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1192960686
 Transform:
@@ -43936,7 +43936,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1194874040
 Transform:
@@ -44264,8 +44264,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1199346489
 Transform:
@@ -44485,8 +44485,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1201150838
 Transform:
@@ -44577,8 +44577,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1201560093
 Transform:
@@ -44930,8 +44930,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1210063427
 Transform:
@@ -45110,8 +45110,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1217251914
 Transform:
@@ -45619,7 +45619,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1230885087
 Transform:
@@ -45803,7 +45803,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1237433689
 Transform:
@@ -46063,8 +46063,8 @@ GameObject:
   m_Name: WheatBundle
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1240726367
 Transform:
@@ -46517,8 +46517,8 @@ GameObject:
   m_Name: Trough
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1252022780
 MonoBehaviour:
@@ -46794,8 +46794,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1266263955
 Transform:
@@ -47030,8 +47030,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1274291415
 Transform:
@@ -47123,7 +47123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1276062959
 Transform:
@@ -47361,7 +47361,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1283027209
 Renderer:
@@ -47524,8 +47524,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1286078929
 Transform:
@@ -47776,8 +47776,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1293983031
 Transform:
@@ -48178,8 +48178,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1310658423
 Transform:
@@ -48314,8 +48314,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1318025229
 MeshCollider:
@@ -48339,7 +48339,7 @@ Transform:
   m_GameObject: {fileID: 1318025228}
   m_LocalRotation: {x: -.254636109, y: .654309094, z: .671971977, w: .235571086}
   m_LocalPosition: {x: -351.720001, y: 817.090027, z: -1178}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1027376302}
   m_RootOrder: 27
@@ -48478,8 +48478,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1322256430
 Transform:
@@ -48570,8 +48570,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1322710324
 Transform:
@@ -48953,7 +48953,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1335189523
 Transform:
@@ -49146,8 +49146,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1339234459
 MeshCollider:
@@ -49426,8 +49426,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1348453295
 Transform:
@@ -49518,8 +49518,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1348745390
 Transform:
@@ -49666,8 +49666,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1351058436
 Transform:
@@ -49677,7 +49677,7 @@ Transform:
   m_GameObject: {fileID: 1351058435}
   m_LocalRotation: {x: .0326250158, y: .31826815, z: .0966120437, w: .942500472}
   m_LocalPosition: {x: -275.47998, y: 818.469971, z: -1094.59998}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1536577387}
   m_RootOrder: 14
@@ -49758,8 +49758,8 @@ GameObject:
   m_Name: WheatBundle
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1351350885
 Transform:
@@ -49903,7 +49903,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1355010075
 Transform:
@@ -50081,7 +50081,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1363581960
 Transform:
@@ -50322,8 +50322,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1368319426
 Transform:
@@ -50832,8 +50832,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1384156533
 Transform:
@@ -50973,7 +50973,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1395279695
 Transform:
@@ -51065,7 +51065,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1397595233
 Transform:
@@ -51157,7 +51157,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1398510102
 Transform:
@@ -51319,8 +51319,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1403134351
 Transform:
@@ -51717,7 +51717,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1416835348
 Transform:
@@ -51871,7 +51871,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1420913953
 Transform:
@@ -51962,8 +51962,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1424289423
 Transform:
@@ -52112,8 +52112,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1425155578
 Transform:
@@ -52420,7 +52420,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1432091518
 Transform:
@@ -52607,8 +52607,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1434266782
 Transform:
@@ -52748,7 +52748,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1437164513
 Transform:
@@ -52895,8 +52895,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1442852823
 Transform:
@@ -53088,7 +53088,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1448870775
 Transform:
@@ -53179,8 +53179,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1449028107
 Transform:
@@ -53271,8 +53271,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1452762823
 Transform:
@@ -53392,7 +53392,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1457005454
 Transform:
@@ -53665,8 +53665,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1463034829
 Transform:
@@ -53740,7 +53740,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1466848880
 Transform:
@@ -54299,8 +54299,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1478297463
 Transform:
@@ -54492,7 +54492,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1484353467
 Transform:
@@ -54642,7 +54642,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1488516604
 Transform:
@@ -54733,8 +54733,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1491709645
 Transform:
@@ -55592,7 +55592,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1523690640
 Transform:
@@ -55779,8 +55779,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1529696555
 MeshCollider:
@@ -55872,7 +55872,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1532964491
 Transform:
@@ -55882,7 +55882,7 @@ Transform:
   m_GameObject: {fileID: 1532964490}
   m_LocalRotation: {x: 0, y: .76214534, z: 0, w: .647406042}
   m_LocalPosition: {x: -5.52380371, y: -3.90002441, z: -40.2011719}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 2
@@ -56357,8 +56357,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1544703224
 Transform:
@@ -56557,8 +56557,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1548141315
 Transform:
@@ -56750,8 +56750,8 @@ GameObject:
   m_Name: PlantPot
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1552534713
 Transform:
@@ -56845,7 +56845,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22488922, guid: bf51dff20d8f3304184fd111fb039a21, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 22488922, guid: bf51dff20d8f3304184fd111fb039a21, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -56956,8 +56956,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1558674459
 Transform:
@@ -57049,7 +57049,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1560158837
 Renderer:
@@ -57088,7 +57088,7 @@ Transform:
   m_GameObject: {fileID: 1560158836}
   m_LocalRotation: {x: 0, y: .628107429, z: 0, w: -.778126717}
   m_LocalPosition: {x: -366.690002, y: 815.200012, z: -1169.80005}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 2
@@ -57140,8 +57140,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1561839538
 Transform:
@@ -57285,7 +57285,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1565873452
 Transform:
@@ -57376,8 +57376,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1566067557
 MeshCollider:
@@ -57624,8 +57624,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1574040267
 Transform:
@@ -57716,8 +57716,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1574041695
 Transform:
@@ -57808,8 +57808,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1575262088
 Transform:
@@ -57901,7 +57901,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1575734891
 Transform:
@@ -58055,7 +58055,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1579455257
 Renderer:
@@ -58146,8 +58146,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1581215363
 Transform:
@@ -58239,7 +58239,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1582696769
 Transform:
@@ -58249,7 +58249,7 @@ Transform:
   m_GameObject: {fileID: 1582696768}
   m_LocalRotation: {x: 0, y: -.211034507, z: 0, w: -.977478623}
   m_LocalPosition: {x: -2.31999993, y: 26.8899994, z: 74.3899994}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 966542358}
   m_RootOrder: 0
@@ -58330,8 +58330,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1584258241
 Transform:
@@ -58423,7 +58423,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1584769586
 Transform:
@@ -58680,7 +58680,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1602118726
 Transform:
@@ -58828,7 +58828,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1604186419
 Transform:
@@ -59046,8 +59046,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1608041333
 Transform:
@@ -59137,8 +59137,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1609536837
 Transform:
@@ -59424,7 +59424,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421846, guid: 09a0ae038b896d84b8e7497dd5d2fd64, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 22421846, guid: 09a0ae038b896d84b8e7497dd5d2fd64, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -59741,8 +59741,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1628628914
 Transform:
@@ -60021,8 +60021,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1638302111
 Transform:
@@ -60201,8 +60201,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1644501056
 Transform:
@@ -60294,7 +60294,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1645381678
 Transform:
@@ -60438,7 +60438,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1646908104
 Transform:
@@ -60573,8 +60573,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1650156866
 Transform:
@@ -60584,7 +60584,7 @@ Transform:
   m_GameObject: {fileID: 1650156865}
   m_LocalRotation: {x: .0346049927, y: -.983504713, z: -.0147037897, w: .176931754}
   m_LocalPosition: {x: -350.929993, y: 816.22998, z: -1169.16003}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1027376302}
   m_RootOrder: 28
@@ -60665,8 +60665,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1650398992
 MeshCollider:
@@ -60873,8 +60873,8 @@ GameObject:
   m_Name: Cauldron
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1657327915
 Transform:
@@ -60994,7 +60994,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1661189648
 Transform:
@@ -61085,8 +61085,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1666980683
 Transform:
@@ -61222,7 +61222,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1671039279
 Renderer:
@@ -61313,8 +61313,8 @@ GameObject:
   m_Name: Oar
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1671122885
 Transform:
@@ -61644,8 +61644,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1679744696
 Transform:
@@ -61736,8 +61736,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1687605704
 MeshCollider:
@@ -61873,7 +61873,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1690199569
 Transform:
@@ -62420,8 +62420,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1705010341
 Transform:
@@ -62867,8 +62867,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1720085238
 Transform:
@@ -62959,8 +62959,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1723572541
 Transform:
@@ -63469,8 +63469,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1750822748
 Transform:
@@ -63633,8 +63633,8 @@ GameObject:
   m_Name: Planter
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1758632173
 Transform:
@@ -63999,8 +63999,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1777643281
 Transform:
@@ -64073,8 +64073,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1782013360
 Transform:
@@ -64307,8 +64307,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1783036063
 Transform:
@@ -64425,8 +64425,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1785160233
 Transform:
@@ -64561,8 +64561,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1789927328
 Transform:
@@ -64723,8 +64723,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1793201673
 Transform:
@@ -64798,7 +64798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1793296238
 Transform:
@@ -64889,8 +64889,8 @@ GameObject:
   m_Name: Cauldron
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1794185262
 Transform:
@@ -64982,7 +64982,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1795171502
 Transform:
@@ -65185,8 +65185,8 @@ GameObject:
   m_Name: Pumpkin
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1805607207
 Transform:
@@ -65278,7 +65278,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1807639684
 Transform:
@@ -65369,8 +65369,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1807785929
 Transform:
@@ -65462,7 +65462,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1809618431
 Transform:
@@ -65472,7 +65472,7 @@ Transform:
   m_GameObject: {fileID: 1809618430}
   m_LocalRotation: {x: 0, y: -.686398387, z: 0, w: -.72722578}
   m_LocalPosition: {x: -6.69000006, y: -3.29999995, z: 38.3600006}
-  m_LocalScale: {x: .780000031, y: .779999971, z: 1}
+  m_LocalScale: {x: .780000031, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 854454220}
   m_RootOrder: 42
@@ -65697,8 +65697,8 @@ GameObject:
   m_Name: Wheelbarrow
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1817412401
 Transform:
@@ -65708,7 +65708,7 @@ Transform:
   m_GameObject: {fileID: 1817412400}
   m_LocalRotation: {x: -.0675133765, y: -.415791541, z: .145360634, w: .895226061}
   m_LocalPosition: {x: -231.100037, y: 841.019958, z: -1234.53992}
-  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1600545068}
   m_RootOrder: 1
@@ -65966,8 +65966,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1835660384
 Transform:
@@ -66059,7 +66059,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1836050976
 Transform:
@@ -66761,7 +66761,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1851655969
 Transform:
@@ -67063,8 +67063,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1862326805
 MeshCollider:
@@ -67156,7 +67156,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1862726811
 Transform:
@@ -67550,8 +67550,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1873208481
 Transform:
@@ -67896,8 +67896,8 @@ GameObject:
   m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1898662552
 MonoBehaviour:
@@ -68056,7 +68056,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1901299484
 Transform:
@@ -68148,7 +68148,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1902518679
 Transform:
@@ -68239,8 +68239,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1904093892
 Transform:
@@ -68404,7 +68404,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1910202750
 Transform:
@@ -68572,7 +68572,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1918294683
 Transform:
@@ -68664,7 +68664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1918903289
 Transform:
@@ -68756,7 +68756,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1924896217
 Transform:
@@ -68948,7 +68948,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1927415963
 Transform:
@@ -69094,8 +69094,8 @@ GameObject:
   m_Name: Anvil
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1929904890
 Transform:
@@ -69169,7 +69169,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1931210408
 Transform:
@@ -69259,8 +69259,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1938338998
 Transform:
@@ -69333,8 +69333,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &1942704503
 MeshCollider:
@@ -69749,7 +69749,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1950036280
 Transform:
@@ -70184,8 +70184,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1959697479
 Transform:
@@ -70275,8 +70275,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1962421266
 Transform:
@@ -70402,7 +70402,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1964711293
 Transform:
@@ -70670,7 +70670,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1970989494
 Transform:
@@ -71705,8 +71705,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2001227986
 Transform:
@@ -72082,7 +72082,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2007977120
 Transform:
@@ -72173,8 +72173,8 @@ GameObject:
   m_Name: RopePile
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2009166335
 Transform:
@@ -72458,8 +72458,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2014702059
 Transform:
@@ -72608,8 +72608,8 @@ GameObject:
   m_Name: Watermelon
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2016594209
 Transform:
@@ -72701,7 +72701,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2017065651
 Transform:
@@ -72792,8 +72792,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2018960401
 Transform:
@@ -72885,7 +72885,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2024330763
 Transform:
@@ -72976,8 +72976,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2024383876
 Transform:
@@ -73563,8 +73563,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2052421128
 Transform:
@@ -73656,7 +73656,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2054109380
 Transform:
@@ -73835,8 +73835,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2056407699
 Transform:
@@ -74011,8 +74011,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2062179170
 Transform:
@@ -74251,8 +74251,8 @@ GameObject:
   m_Name: Broom
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &2068533592
 MeshCollider:
@@ -74364,7 +74364,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
       propertyPath: m_LocalScale.x
@@ -74400,7 +74400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2069707247
 Transform:
@@ -74597,8 +74597,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2074941520
 Transform:
@@ -74810,7 +74810,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2077239289
 Transform:
@@ -74922,7 +74922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22449642, guid: d52f9a0460e2555419b927073293f37e, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 22449642, guid: d52f9a0460e2555419b927073293f37e, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -75193,8 +75193,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2083471141
 Transform:
@@ -75391,8 +75391,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2086936812
 Transform:
@@ -75483,8 +75483,8 @@ GameObject:
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2087465688
 Transform:
@@ -75575,8 +75575,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &2094353854
 MeshCollider:
@@ -75835,8 +75835,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2098675553
 Transform:
@@ -75928,7 +75928,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2103243197
 Transform:
@@ -75938,7 +75938,7 @@ Transform:
   m_GameObject: {fileID: 2103243196}
   m_LocalRotation: {x: 0, y: .950121343, z: 0, w: -.311880499}
   m_LocalPosition: {x: -372.779999, y: 815.200012, z: -1162.71997}
-  m_LocalScale: {x: 1, y: .779999971, z: .779999971}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .779999971}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 28
@@ -76019,8 +76019,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2103320014
 Transform:
@@ -76111,8 +76111,8 @@ GameObject:
   m_Name: Crate
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2109805476
 Transform:
@@ -76298,8 +76298,8 @@ GameObject:
   m_Name: Tombstone
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2113115069
 Transform:
@@ -76372,8 +76372,8 @@ GameObject:
   m_Name: Cabbage
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2115643382
 Transform:
@@ -76464,8 +76464,8 @@ GameObject:
   m_Name: Bucket
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2117614552
 Transform:
@@ -76683,8 +76683,8 @@ GameObject:
   m_Name: Barrel
   m_TagString: Prop
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2135129622
 Transform:
@@ -76776,7 +76776,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2138003185
 Transform:
@@ -76912,7 +76912,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2142469897
 Transform:
@@ -76922,7 +76922,7 @@ Transform:
   m_GameObject: {fileID: 2142469896}
   m_LocalRotation: {x: 0, y: .403139472, z: 0, w: -.915138602}
   m_LocalPosition: {x: -353.320007, y: 815.200012, z: -1146.92004}
-  m_LocalScale: {x: 1, y: .779999971, z: 1}
+  m_LocalScale: {x: .779999912, y: .779999971, z: .780000031}
   m_Children: []
   m_Father: {fileID: 2084655223}
   m_RootOrder: 3
