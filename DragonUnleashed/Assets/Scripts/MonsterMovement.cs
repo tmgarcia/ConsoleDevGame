@@ -48,6 +48,7 @@ public class MonsterMovement : MonoBehaviour
 		{
 			if (!t.isRunning)
 			{
+				t.ResetTimer();
 				t.StartTimer();
 			}
 		}
@@ -108,10 +109,14 @@ public class MonsterMovement : MonoBehaviour
 
 	void OnDestroy()
 	{
-		if (anchor != null && anchor.GetComponent<Spawner>() != null && transform.parent != null)
+		if (anchor != null && anchor.GetComponent<Spawner>() != null)
 		{
 			anchor.GetComponent<Spawner>().currentSpawned--;
-			Destroy(transform.parent.gameObject);
+
+			if (transform.parent != null)
+			{
+				Destroy(transform.parent.gameObject);
+			}
 		}
 	}
 }

@@ -64,6 +64,8 @@ public class Spawner : MonoBehaviour
 				{
 					spawnedAnimal.GetComponentInChildren<Flammable>().BurninationLevel = 300.0f;
 				}
+				spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchor = gameObject;
+				spawnedAnimal.GetComponentInChildren<MonsterMovement>().anchorPosition = transform.position;
 				currentSpawned++;
 
 				NPCSpawnInstance.SetActive(false);

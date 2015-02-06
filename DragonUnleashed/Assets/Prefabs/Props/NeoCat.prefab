@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingMinutes: 0
-  StartingSeconds: 6
+  StartingSeconds: 4
   isRunning: 0
   currentDisplayMinutes: 0
   currentDisplaySeconds: 0

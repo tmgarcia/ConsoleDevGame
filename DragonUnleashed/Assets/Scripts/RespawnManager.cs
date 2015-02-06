@@ -62,17 +62,21 @@ public class RespawnManager : MonoBehaviour
 		{
 			if (remainingVillagerLives > 0)
 			{
-				--remainingVillagerLives;
-				UpdateVillagerLiveText();
+				//--remainingVillagerLives;
+				//print(character.renderer.material.color);
+				character.renderer.material.color = Color.white;
+				//print(character);
+				//character.GetComponent<Mimic>().SwitchModels();
 				if(PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == character)
 				{
 					character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+					GetComponent<PhotonView>().RPC("SetVillagerLives", PhotonTargets.All, remainingVillagerLives - 1);
 				}
 			}
 			else
 			{
 				Destroy(character);
-				if (--numVillagerAlive == 0)
+				if (numVillagerAlive == 0)
 				{
 					GameOverManager.instance.ShowDragonWin();
 				}
@@ -82,5 +86,12 @@ public class RespawnManager : MonoBehaviour
 		{
 			character.transform.position = DragonRespawnPoints[Random.Range(0, DragonRespawnPoints.Count)].transform.position;
 		}
+	}
+
+	[RPC]
+	public void SetVillagerLives(int remaining)
+	{
+		remainingVillagerLives = remaining;
+		UpdateVillagerLiveText();
 	}
 }
