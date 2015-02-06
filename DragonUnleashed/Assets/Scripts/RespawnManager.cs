@@ -60,22 +60,19 @@ public class RespawnManager : MonoBehaviour
 	{
 		if (character.GetComponent<VillagerMovement>() != null)
 		{
-			if (remainingVillagerLives > 1)
+
+			if (PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == character)
 			{
-				if(PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == character)
-				{
-					character.GetComponent<Mimic>().ResetAfterDeath();
-					character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
-					GetComponent<PhotonView>().RPC("SetVillagerLives", PhotonTargets.All, remainingVillagerLives - 1);
-				}
+				character.GetComponent<Mimic>().ResetAfterDeath();
+				character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
+				GetComponent<PhotonView>().RPC("SetVillagerLives", PhotonTargets.All, remainingVillagerLives - 1);
+				character.GetComponent<Flammable>().BurninationLevel = 0.0f;
 			}
-			else
+
+			if (remainingVillagerLives == 0)
 			{
 				Destroy(character);
-				if (--numVillagerAlive == 0)
-				{
-					GameOverManager.instance.ShowDragonWin();
-				}
+				GameOverManager.instance.ShowDragonWin();
 			}
 		}
 		else

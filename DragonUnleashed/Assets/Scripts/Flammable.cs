@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Flammable : Damageable
 {
-	public float BurninationLevel { get; set; }
+	public float BurninationLevel; //{ get; set; }
 	public ParticleSystem fire;
 	public ParticleSystem dustCloud;
 	public ParticleSystem dustPoof;
@@ -61,15 +61,17 @@ public class Flammable : Damageable
 
 	void Update()
 	{
+		float percentHealth = (CurrentIntegrity / StartingIntegrity);
+		// float percentBlackened = (1.0f - percentHealth);
+		renderer.material.color = percentHealth * Color.white;
+
 		//AdjustFlameParticles();
 		if (BurninationLevel > ignitionThreshold)
 		{
 			AdjustFlameParticles();
 			ReduceIntegrity();
 			ReduceBurnination();
-			float percentHealth = (CurrentIntegrity / StartingIntegrity);
-			// float percentBlackened = (1.0f - percentHealth);
-			renderer.material.color = percentHealth * Color.white;
+
 		}
 		else if (personalFire.enableEmission)
 		{

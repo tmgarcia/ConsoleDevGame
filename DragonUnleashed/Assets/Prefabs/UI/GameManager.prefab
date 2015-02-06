@@ -13,8 +13,6 @@ GameObject:
   - 114: {fileID: 11409962}
   - 114: {fileID: 11409960}
   - 114: {fileID: 11412170}
-  - 114: {fileID: 11412168}
-  - 114: {fileID: 11413674}
   - 114: {fileID: 11413672}
   m_Layer: 0
   m_Name: GameManager
@@ -779,23 +777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 2
---- !u!114 &11412168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba2a62421833424fa81d7f3717f3a3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HudUI: {fileID: 0}
-  GameSetupUI: {fileID: 0}
-  OptionsUI: {fileID: 0}
-  DebugUI: {fileID: 0}
-  GameOverUI: {fileID: 0}
-  UISpacingFromCamera: .310000002
 --- !u!114 &11412170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -809,7 +790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVillagerLives: 8
   remainingVillagerLives: 0
-  villagerLivesNumberDisplay: {fileID: 0}
   VillagerRespawnPoints:
   - {fileID: 112162}
   - {fileID: 112158}
@@ -843,36 +823,6 @@ MonoBehaviour:
   DebugUI: {fileID: 0}
   GameOverUI: {fileID: 0}
   UISpacingFromCamera: .310000002
---- !u!114 &11413674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181c77dbcca39984e81a1e88387d1144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVillagerLives: 15
-  remainingVillagerLives: 0
-  villagerLivesNumberDisplay: {fileID: 0}
-  VillagerRespawnPoints:
-  - {fileID: 113666}
-  - {fileID: 113662}
-  - {fileID: 113668}
-  - {fileID: 113658}
-  - {fileID: 113660}
-  - {fileID: 113652}
-  - {fileID: 113664}
-  - {fileID: 113674}
-  DragonRespawnPoints:
-  - {fileID: 113672}
-  - {fileID: 113670}
-  - {fileID: 113654}
-  - {fileID: 113656}
-  numVillagerAlive: 0
-  VillagerLivePool: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
