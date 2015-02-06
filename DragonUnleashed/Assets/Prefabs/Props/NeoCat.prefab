@@ -116,7 +116,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: ee56069f96414ce459267d501022acff, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .100000001
+  m_Volume: .0500000007
   m_Pitch: 1.70000005
   Loop: 1
   Mute: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anchor: {fileID: 0}
   anchorPosition: {x: 0, y: 0, z: 0}
-  footstep: {fileID: 0}
-  screaming: {fileID: 0}
+  footstep: {fileID: 8214744}
+  screaming: {fileID: 8214742}
   minMoveDisance: 3
   maxMoveDistance: 20
   maxAnchorDistance: 100
