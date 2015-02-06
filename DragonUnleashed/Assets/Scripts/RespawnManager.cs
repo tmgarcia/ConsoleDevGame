@@ -7,7 +7,7 @@ public class RespawnManager : MonoBehaviour
 	public static RespawnManager instance;
 	public int maxVillagerLives;
 	public int remainingVillagerLives;
-	public GameObject villagerLivesNumberDisplay;
+	//public GameObject villagerLivesNumberDisplay;
 	public List<GameObject> VillagerRespawnPoints;
 	public List<GameObject> DragonRespawnPoints;
 	private static PhotonView ScenePhotonView;
@@ -60,15 +60,11 @@ public class RespawnManager : MonoBehaviour
 	{
 		if (character.GetComponent<VillagerMovement>() != null)
 		{
-			if (remainingVillagerLives > 0)
+			if (remainingVillagerLives > 1)
 			{
-				//--remainingVillagerLives;
-				//print(character.renderer.material.color);
-				character.renderer.material.color = Color.white;
-				//print(character);
-				//character.GetComponent<Mimic>().SwitchModels();
 				if(PlayersManager.instance.GetPlayer(PlayersManager.instance.localPlayerID).GetComponent<BasePlayerScript>().playerCharacter == character)
 				{
+					character.GetComponent<Mimic>().ResetAfterDeath();
 					character.transform.position = VillagerRespawnPoints[Random.Range(0, VillagerRespawnPoints.Count)].transform.position;
 					GetComponent<PhotonView>().RPC("SetVillagerLives", PhotonTargets.All, remainingVillagerLives - 1);
 				}
@@ -76,7 +72,7 @@ public class RespawnManager : MonoBehaviour
 			else
 			{
 				Destroy(character);
-				if (numVillagerAlive == 0)
+				if (--numVillagerAlive == 0)
 				{
 					GameOverManager.instance.ShowDragonWin();
 				}

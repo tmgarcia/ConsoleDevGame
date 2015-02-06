@@ -31,6 +31,13 @@ public class Mimic : MonoBehaviour {
         }
 	}
 
+	public void ResetAfterDeath()
+	{
+		SetCurrentDisguise("Villager");
+		gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
+		gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, currentDisguise);
+	}
+
     [RPC]
     public void SwitchModels()
     {
