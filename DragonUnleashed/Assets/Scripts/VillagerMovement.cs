@@ -4,6 +4,7 @@ using System.Collections;
 public class VillagerMovement : MonoBehaviour {
 
     private PhotonView photonView;
+    private VillagerFloorDetection floorDetection;
     public float speed = 30;
     public float aimSpeed = 15;
     public float jumpheight = 0.3f;
@@ -22,6 +23,7 @@ public class VillagerMovement : MonoBehaviour {
     {
         isGrounded = true;
         photonView = gameObject.GetComponent<PhotonView>();
+        floorDetection = gameObject.GetComponent<VillagerFloorDetection>();
         tether = transform.FindChild("CamTetherPoint");
         cam = tether.FindChild("VillagerCamera").gameObject;
         isLocal = GetComponent<NetworkAgent>().IsLocalCharacter();
@@ -43,7 +45,11 @@ public class VillagerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.S)) accelaration -= forward;
             if (Input.GetKey(KeyCode.D)) accelaration -= right;
             accelaration.Normalize();
-            if (Input.GetKeyDown(KeyCode.Space)&&canJump()) accelaration += Vector3.up*jumpheight*(1/Time.deltaTime);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                floorDetection.CheckIfGrounded();
+                if (floorDetection.isGrounded) accelaration += Vector3.up * jumpheight * (1 / Time.deltaTime);
+            }
 
             gameObject.GetComponent<Rigidbody>().velocity += accelaration * Time.deltaTime * ((gameObject.GetComponent<Archery>().GetAiming())? aimSpeed:speed);
             float storedY = gameObject.GetComponent<Rigidbody>().velocity.y;
@@ -83,11 +89,6 @@ public class VillagerMovement : MonoBehaviour {
             transform.rotation = Quaternion.Lerp(transform.rotation, gameObject.GetComponent<NetworkAgent>().GetNetworkRotation(), Time.deltaTime * 5);
         }
 	}
-
-    private bool canJump()
-    {
-        return isGrounded;
-    }
 
     private bool CamCollide()
     {

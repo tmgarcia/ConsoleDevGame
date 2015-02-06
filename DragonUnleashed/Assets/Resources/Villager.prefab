@@ -136,25 +136,9 @@ GameObject:
   - 114: {fileID: 11479900}
   - 81: {fileID: 8118162}
   - 64: {fileID: 6450656}
+  - 114: {fileID: 11471492}
   m_Layer: 8
   m_Name: Villager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &191468
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 491468}
-  - 65: {fileID: 6591468}
-  - 114: {fileID: 11491468}
-  m_Layer: 0
-  m_Name: FloorDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,27 +239,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 601.825256, y: 15.7407274, z: 1284.58887}
+  m_LocalPosition: {x: 606.132019, y: 1.40680456, z: 1108.66187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 401514}
   - {fileID: 401510}
   - {fileID: 480754}
-  - {fileID: 491468}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &491468
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191468}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.24199998, z: -.111000001}
-  m_LocalScale: {x: 1, y: .400000006, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480758}
-  m_RootOrder: 3
 --- !u!20 &2080758
 Camera:
   m_ObjectHideFlags: 1
@@ -417,18 +388,6 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 6a4e3a345ff2df748ba5fd105d1e52fc, type: 3}
---- !u!65 &6591468
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191468}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &8118162
 AudioListener:
   m_ObjectHideFlags: 1
@@ -528,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingIntegrity: 20
   damageRole: 1
+  BurninationLevel: 0
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
   dustPoof: {fileID: 19886336, guid: 48576dcb9f86ddc4da4204f9092dbf14, type: 2}
@@ -546,6 +506,17 @@ MonoBehaviour:
   Role: 1
   IsLocal: 0
   InitialSetup: 0
+--- !u!114 &11471492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967f3b3c7ff3f674fb749462389ff195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -621,17 +592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 158776, guid: 4dc6c521dbfa51646844d8ea987e57df, type: 2}
---- !u!114 &11491468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 967f3b3c7ff3f674fb749462389ff195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!124 &12480758
 Behaviour:
   m_ObjectHideFlags: 1
