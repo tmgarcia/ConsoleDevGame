@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225dfdef59df16b48b680a9d196a6d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingIntegrity: 1000
+  StartingIntegrity: 2000
   damageRole: 0
 --- !u!114 &11483812
 MonoBehaviour:

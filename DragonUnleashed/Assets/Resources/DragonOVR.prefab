@@ -107,6 +107,7 @@ GameObject:
   - 114: {fileID: 11456982}
   - 114: {fileID: 11456976}
   - 114: {fileID: 11456988}
+  - 114: {fileID: 11466360}
   m_Layer: 9
   m_Name: DragonBody_Four
   m_TagString: Untagged
@@ -128,6 +129,7 @@ GameObject:
   - 114: {fileID: 11457538}
   - 114: {fileID: 11457536}
   - 114: {fileID: 11457534}
+  - 114: {fileID: 11466358}
   m_Layer: 9
   m_Name: DragonBody_Three
   m_TagString: Untagged
@@ -149,6 +151,7 @@ GameObject:
   - 114: {fileID: 11457544}
   - 114: {fileID: 11457542}
   - 114: {fileID: 11457540}
+  - 114: {fileID: 11466356}
   m_Layer: 9
   m_Name: DragonBody_Two
   m_TagString: Untagged
@@ -170,6 +173,7 @@ GameObject:
   - 114: {fileID: 11457550}
   - 114: {fileID: 11457548}
   - 114: {fileID: 11457546}
+  - 114: {fileID: 11466354}
   m_Layer: 9
   m_Name: DragonBody_One
   m_TagString: Untagged
@@ -628,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225dfdef59df16b48b680a9d196a6d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingIntegrity: 1000
+  StartingIntegrity: 2000
   damageRole: 0
 --- !u!114 &11429932
 MonoBehaviour:
@@ -856,6 +860,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 429936}
   parentRotationOVR: {fileID: 0}
+--- !u!114 &11466354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8888e5fe01b41f745a66643b7f1b27d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableObject: {fileID: 129936}
+--- !u!114 &11466356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8888e5fe01b41f745a66643b7f1b27d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableObject: {fileID: 129936}
+--- !u!114 &11466358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8888e5fe01b41f745a66643b7f1b27d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableObject: {fileID: 129936}
+--- !u!114 &11466360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8888e5fe01b41f745a66643b7f1b27d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableObject: {fileID: 129936}
 --- !u!114 &11499140
 MonoBehaviour:
   m_ObjectHideFlags: 1
