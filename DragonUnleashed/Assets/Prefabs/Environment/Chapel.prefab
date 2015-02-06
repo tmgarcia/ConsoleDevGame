@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2367482}
   - 64: {fileID: 6423148}
   - 114: {fileID: 11475388}
+  - 82: {fileID: 8207918}
   m_Layer: 0
   m_Name: Chapel
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167482}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 589.085449, y: 1.14345419, z: 1059.04468}
+  m_LocalRotation: {x: 0, y: -.994331539, z: 0, w: .106324464}
+  m_LocalPosition: {x: -311.900024, y: 815.399963, z: -1095.09985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,6 +72,69 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 27f765f8b87ce6f42947805a89507218, type: 3}
+--- !u!82 &8207918
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 55a275be55fe1e4409b917b3491fb251, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .791000009
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: -1.58585846
+      outSlope: -1.58585846
+      tangentMode: 0
+    - time: 1
+      value: .00427350448
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00318471342
+      value: .679487169
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .601910889
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11475388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,7 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingIntegrity: 100
-  CurrentIntegrity: 0
   damageRole: 2
   fire: {fileID: 19882392, guid: dd450f834d944c34fb7f1357b7ceed03, type: 2}
   dustCloud: {fileID: 19892054, guid: 557265c0c290ddc42985e5261a778089, type: 2}
