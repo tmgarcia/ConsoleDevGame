@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class RespawnManager : MonoBehaviour
 {
 	public static RespawnManager instance;
-	public int maxVillagerLives = 15;
+	public int maxVillagerLives;
 	public int remainingVillagerLives;
 	public GameObject villagerLivesNumberDisplay;
 	public List<GameObject> VillagerRespawnPoints;

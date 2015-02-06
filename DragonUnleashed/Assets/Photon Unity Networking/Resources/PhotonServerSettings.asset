@@ -54,4 +54,5 @@ MonoBehaviour:
   - SetDragonIntegrity
   - CopyObject
   - SwitchModels
+  - SetVillagerLives
   DisableAutoOpenWizard: 0
