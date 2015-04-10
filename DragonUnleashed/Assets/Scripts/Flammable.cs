@@ -161,12 +161,25 @@ public class Flammable : Damageable
 
 		//sink
 		Destroy(gameObject.collider);
+        destroyArrows();
 		gameObject.AddComponent<Rigidbody>();
 		Destroy(rigidbody, 3.5f);
 		Destroy(gameObject, 5.0f);
 		Destroy(personalFire, 5.0f);
 		Destroy(personalDust, 5.0f);
 	}
+
+    private void destroyArrows()
+    {
+        Transform[] allChildren = gameObject.GetComponentsInChildren<Transform>();
+        foreach (Transform child in allChildren)
+        {
+            if (child.gameObject.layer == 10)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+    }
 
 	private void poof() // Disposes of small objects with a poof of smoke
 	{
