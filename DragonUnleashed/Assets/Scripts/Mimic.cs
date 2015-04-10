@@ -23,29 +23,28 @@ public class Mimic : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.E) && !Input.GetKey(KeyCode.Mouse1)) MimicProp();
             if (currentDisguise != "Villager" && Input.GetKeyDown(KeyCode.Mouse1))
             {
-                gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
                 gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, "Villager");
             }
             if (currentDisguise != "Villager" && Input.GetKeyUp(KeyCode.Mouse1))
             {
-                gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
                 gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, currentDisguise);
             }
+            gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
         }
 	}
 
 	public void ResetAfterDeath()
 	{
 		SetCurrentDisguise("Villager");
-		gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
 		gameObject.GetComponent<PhotonView>().RPC("CopyObject", PhotonTargets.All, currentDisguise);
 	}
 
     [RPC]
     public void SwitchModels()
     {
-        transform.FindChild("Staff").gameObject.SetActive(!transform.FindChild("Staff").gameObject.GetActive());
-        transform.FindChild("QuiverRig").gameObject.SetActive(!transform.FindChild("QuiverRig").gameObject.GetActive());
+        bool isItSecretIsItSafe = currentDisguise == "Villager" || Input.GetKey(KeyCode.Mouse1);
+        transform.FindChild("Staff").gameObject.SetActive(isItSecretIsItSafe);
+        transform.FindChild("QuiverRig").gameObject.SetActive(isItSecretIsItSafe);
     }
 
     void MimicProp()
@@ -59,7 +58,6 @@ public class Mimic : MonoBehaviour {
         {
             if (hit.collider.tag == "Prop")
             {
-                if(currentDisguise == "Villager")gameObject.GetComponent<PhotonView>().RPC("SwitchModels", PhotonTargets.All);
                 string newDigs = hit.collider.gameObject.name;
                 if(newDigs.Contains("(Clone)")) newDigs = newDigs.Remove(newDigs.Length-7);
                 currentDisguise = newDigs;
