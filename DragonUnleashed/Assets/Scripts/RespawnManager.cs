@@ -69,7 +69,7 @@ public class RespawnManager : MonoBehaviour
 				character.GetComponent<Flammable>().BurninationLevel = 0.0f;
 			}
 
-			if (remainingVillagerLives == 0)
+			if (remainingVillagerLives <= 0)
 			{
 				Destroy(character);
 				GameOverManager.instance.ShowDragonWin();
